@@ -38,14 +38,16 @@
 html,
 body {
   overflow-x: hidden;
+  /* background-color: #313131; */
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -155,9 +157,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
+
+
+.sidebar-avatar {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
 @media (min-width: 30em) {
   .sidebar {
     font-size: .75rem; /* 14px */
+  }
+  .sidebar-avatar {
+    width: 50%;
   }
 }
 
@@ -166,10 +179,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #fff;
 }
+
+
 .sidebar-item {
   padding: 1rem;
+  font-size: 1rem;
 }
 .sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-item-footer {
+  padding: 1rem;
+  /* font-size: 1rem; */
+}
+.sidebar-item-footer p:last-child {
   margin-bottom: 0;
 }
 
@@ -189,6 +213,7 @@ a.sidebar-nav-item:focus {
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
 }
+
 
 @media (min-width: 48em) {
   .sidebar-item {
@@ -293,6 +318,8 @@ a.sidebar-nav-item:focus {
       -ms-transform: translateX(14rem);
           transform: translateX(14rem);
 }
+
+
 
 
 /*

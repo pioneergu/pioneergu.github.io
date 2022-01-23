@@ -7,6 +7,10 @@
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
+  <div class="sidebar-avatar">
+    <img src="{{ site.author.avatar }}" alt="avatar" onerror="this.style.display='none'">
+    <!-- <img src="./public/images/moon-round.png" alt="avatar" onerror="this.style.display='none'"> -->
+  </div>
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
@@ -30,7 +34,7 @@
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
-  <div class="sidebar-item">
+  <div class="sidebar-item-footer">
     <p>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
     </p>
