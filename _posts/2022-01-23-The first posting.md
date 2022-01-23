@@ -3,6 +3,8 @@ layout: post
 title: The First Posting
 ---
 
+---
+
 
 독학으로 Programming을 공부한지 언 2년이 다 되어간다.  
 공부한 것을 매일 매일 써먹질 못 하는 초보이다 보니...  
@@ -14,3 +16,5 @@ title: The First Posting
 ```python
 print("Hello World!")
 ```
+
+---
