@@ -15,6 +15,10 @@ author:
   url:               https://pioneergu.github.io
   email:             hangmoonam@gmail.com
 
+# defaults:
+#   - 
+#     permalink: /posts/:title/
+
 
 # Gems
 plugins:
