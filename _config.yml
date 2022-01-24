@@ -40,9 +40,13 @@ defaults:
     values:
       layout: "category"
 
+category_path: "category" # <- default value
+category_layout: "category.html" # <- default value
+
 # Gems
 plugins:      # << Plugin에 적힌 Gem이 Github Pages에서 작동함. Gemspec은 Bundler에서 
   - jekyll-paginate
+  - jekyll-category-pages
 
 # Custom vars
 version:             1.1.0
