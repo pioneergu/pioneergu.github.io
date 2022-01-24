@@ -19,18 +19,19 @@ author:
 #   - 
 #     permalink: /posts/:title/
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+# jekyll-archives:
+#   enabled: [categories, tags]
+#   layouts:
+#     category: category
+#     tag: tag
+#   permalinks:
+#     tag: /tags/:name/
+#     category: /categories/:name/
 
 # Gems
-plugins:
+plugins:      # << Plugin에 적힌 Gem이 Github Pages에서 작동함. Gemspec은 Bundler에서 
   - jekyll-paginate
+  - jekyll-category-pages # 이게 있어야 Category MD로 category page만들어진다.
 
 # Custom vars
 version:             1.1.0
