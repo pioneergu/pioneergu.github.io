@@ -64,32 +64,30 @@ layout: default
         {% endfor %}
         <br>
         
-        <!-- <ul class="list-group"> -->
-          {% for sub_category in sub_categories %}
-          <li class="list-group-item" style="list-style: none;">
-            <i class="far fa-folder-open fa-fw"></i>
-            <!-- <a href="{{ site.baseurl }}/categories/{{ sub_category | slugify | url_encode }}/" -->
-            <a href="{{ site.baseurl }}/{{ category_name }}/{{ sub_category | slugify | url_encode }}/"
-              class="ml-1 mr-2">{{ sub_category }}</a>
-            {% assign posts_size = site.categories[sub_category] | size %}
-            <span class="text-muted small font-weight-light">{{ posts_size }}
-              post{% if posts_size > 1 %}s{% endif %}
-            </span>
-            <ul class="list-group">
-              {% for post in site.categories[sub_category] %}
-                <li class="list-group-item">
-                  
-                    <a href="{{ site.baseurl }}{{ post.url }}">
-                      {{ post.title }}
-                    </a>
-                    <span class="tab">&#9;&#9;&#9;</span>
-                    <small>{{ post.date | date_to_string }}</small>
-                </li>
-              {% endfor %}
-            </ul>
-          </li>
-          {% endfor %}
-        <!-- </ul> -->
+        {% for sub_category in sub_categories %}
+        <li class="list-group-item" style="list-style: none;">
+          <i class="far fa-folder-open fa-fw"></i>
+          <a href="{{ site.baseurl }}/{{ category_name }}/{{ sub_category | slugify | url_encode }}/"
+            class="ml-1 mr-2">{{ sub_category }}</a>
+          {% assign posts_size = site.categories[sub_category] | size %}
+          <span class="text-muted small font-weight-light">{{ posts_size }}
+            post{% if posts_size > 1 %}s{% endif %}
+          </span>
+          <ul class="list-group">
+            {% for post in site.categories[sub_category] %}
+              <li class="list-group-item">
+                
+                  <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                  <span class="tab">&#9;&#9;&#9;</span>
+                  <small>{{ post.date | date_to_string }}</small>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+
       </div>
       {% endif %}
 
