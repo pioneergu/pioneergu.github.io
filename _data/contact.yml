@@ -4,8 +4,8 @@
   type: github
   icon: 'fab fa-github'
 -
-  type: twitter
-  icon: 'fab fa-twitter'
+  type: instagram
+  icon: 'fab fa-instagram'
 -
   type: email
   icon: 'fas fa-envelope'
@@ -28,3 +28,6 @@
 #   type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
+# -
+#   type: twitter
+#   icon: 'fab fa-twitter'
