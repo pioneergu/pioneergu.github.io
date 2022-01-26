@@ -1,5 +1,5 @@
 /*
- * The syntax dark mode styles.
+ * The syntax dark mode styles. c26c75
  */
 
 @mixin dark-syntax {
@@ -10,7 +10,7 @@
   .highlight .err { color: #960050; background-color: #1e0010; } /* Error */
   .highlight .k { color: #c678dd; } /* Keyword */
   .highlight .l { color: #c678dd; } /* Literal */
-  .highlight .n { color: #cccccc; } /* Name */
+  .highlight .n { color: #c26c75; } /* Name */
   .highlight .o { color: #56b6c2; } /* Operator */
   .highlight .p { color: #cccccc; } /* Punctuation */
   .highlight .cm { color: #75715e; } /* Comment.Multiline */
@@ -44,9 +44,9 @@
   .highlight .nv { color: #cccccc; } /* Name.Variable */
   .highlight .ow { color: #c678dd; } /* Operator.Word */
   .highlight .w { color: #cccccc; } /* Text.Whitespace */
-  .highlight .mf { color: #ce9927; } /* Literal.Number.Float */
+  .highlight .mf { color: #d18c49; } /* Literal.Number.Float */
   .highlight .mh { color: #c678dd; } /* Literal.Number.Hex */
-  .highlight .mi { color: #ce9927; } /* Literal.Number.Integer */
+  .highlight .mi { color: #d18c49; } /* Literal.Number.Integer */
   .highlight .mo { color: #c678dd; } /* Literal.Number.Oct */
   .highlight .sb { color: #e6db74; } /* Literal.String.Backtick */
   .highlight .sc { color: #e6db74; } /* Literal.String.Char */
@@ -59,10 +59,10 @@
   .highlight .sr { color: #e6db74; } /* Literal.String.Regex */
   .highlight .s1 { color: #e6db74; } /* Literal.String.Single */
   .highlight .ss { color: #e6db74; } /* Literal.String.Symbol */
-  .highlight .bp { color: #cccccc; } /* Name.Builtin.Pseudo */
-  .highlight .vc { color: #cccccc; } /* Name.Variable.Class */
-  .highlight .vg { color: #68a3e7; } /* Name.Variable.Global */
-  .highlight .vi { color: #cccccc; } /* Name.Variable.Instance */
+  .highlight .bp { color: #d18c49; } /* Name.Builtin.Pseudo */
+  .highlight .vc { color: #d18c49; } /* Name.Variable.Class */
+  .highlight .vg { color: #61afef; } /* Name.Variable.Global */
+  .highlight .vi { color: #d18c49; } /* Name.Variable.Instance */
   .highlight .il { color: #c678dd; } /* Literal.Number.Integer.Long */
   .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
   .highlight .gd { color: #f92672; background-color: #561c08; } /* Generic.Deleted & Diff Deleted */
@@ -70,7 +70,7 @@
 
   /* -----  custom styles ------ */
 
-  --highlight-bg-color: #252525;
+  --highlight-bg-color: #23272e;
   --highlighter-rouge-color: #de6b18;
   --highlight-lineno-color: #6c6c6d;
   --inline-code-bg: #272822;
