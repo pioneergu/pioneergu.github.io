@@ -36,7 +36,8 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
   
 결국 있을 웬만한 기능은 다 있고 깔끔한 Dark(and Light) theme인 [Chirpy theme](https://chirpy.cotes.page/)를 선택하게 되었다. (현재 이 Blog theme이다.)  
   
-이 테마를 적용하고 지금 이 theme보다 예쁜 design의 theme([devlopr theme](https://devlopr.netlify.app/#/))를 발견하였다.  
+이 테마를 적용하고 나서 좀 더 검색을 해보니  
+지금 이 theme보다 나름 더 예쁘다고 생각되는 design의 theme([devlopr theme](https://devlopr.netlify.app/#/))를 발견하였다.  
 순간 theme를 바꿀까 고민했지만... 차차 이 Blog를 나만의 Design으로 꾸며보기로 결정했다!
 
 ### 내 마음에 드는 테마들
