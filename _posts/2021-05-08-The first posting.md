@@ -3,7 +3,7 @@ title: The First Posting
 author:
   name: Pioneergu
   link: https://pioneergu.github.io
-date: 2022-01-23 11:33:00 +0900
+date: 2021-05-08 17:50:00 +0900
 categories: [Blogging]
 tags: [blogging, first]    # TAG names should always be lowercase
 math: false
@@ -19,7 +19,7 @@ toc: false
 특히 개발환경 설정등과 같은 것은 할 때마다 매번 새로운것 같아 시간이 엄청 낭비 된다.
   
 공부한 것을 정리하며 내 것으로 만들기 위해  
-나도 블로그를 시작한다.
+나도 블로그를 시작해 본다.
 ```python
 print("Hello World!")
 ```
