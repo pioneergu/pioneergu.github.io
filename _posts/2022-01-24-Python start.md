@@ -8,7 +8,6 @@ categories: [Blogging]
 tags: [blogging, futures, stocks]    # TAG names should always be lowercase
 math: false
 mermaid: false
-toc: false
 ---
 
 ---

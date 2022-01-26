@@ -8,7 +8,6 @@ categories: [Python, Multi-Processing]
 tags: [python, processing]    # TAG names should always be lowercase
 math: false
 mermaid: false
-toc: false
 ---
 
 ```python
