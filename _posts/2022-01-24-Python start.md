@@ -6,8 +6,6 @@ author:
 date: 2022-01-24 14:22:00 +0900
 categories: [Blogging]
 tags: [blogging, futures, stocks]    # TAG names should always be lowercase
-math: false
-mermaid: false
 ---
 
 ---

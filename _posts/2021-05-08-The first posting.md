@@ -6,8 +6,6 @@ author:
 date: 2021-05-08 17:50:00 +0900
 categories: [Blogging]
 tags: [blogging, first]    # TAG names should always be lowercase
-math: false
-mermaid: false
 ---
 
 

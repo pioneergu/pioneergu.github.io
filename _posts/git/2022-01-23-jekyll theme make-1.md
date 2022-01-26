@@ -6,10 +6,6 @@ author:
 date: 2022-01-25 23:24:00 +0900
 categories: [Git and Github]
 tags: [blogging, jekyll, github]    # TAG names should always be lowercase
-math: false
-mermaid: false
-toc: false
-
 ---
 
 ---
