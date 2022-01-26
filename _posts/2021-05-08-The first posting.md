@@ -20,8 +20,8 @@ tags: [blogging, first]    # TAG names should always be lowercase
 print("Hello World!")
 ```
 
-Markdown syntex: ![thumbs-up-regular](/assets/svg/thumbs-up-regular-white.svg){: width="20" height="20" .normal}  
-HTML syntex in MD: <span fill="red"><img src="/assets/svg/thumbs-up-regular-white.svg" width="20" height="20" style="align-content: start"></span>  
+Markdown syntax: ![thumbs-up-regular](/assets/svg/thumbs-up-regular-white.svg){: width="20" height="20" .normal}  
+HTML syntax in MD: <span fill="red"><img src="/assets/svg/thumbs-up-regular-white.svg" width="20" height="20" style="align-content: start"></span>  
 >The thumbs up is svg file.
 >If you want to change color of svg, you can change the color in svg file.  
 >Futhermore, some HTML inline style sheet, like align, is not applicable to MD file,  
