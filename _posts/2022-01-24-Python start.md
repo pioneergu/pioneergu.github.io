@@ -1,7 +1,7 @@
 ---
-title: Python 시작의 계기...
+title: Python 공부 시작의 계기...
 author:
-  name: Pioneergu
+  name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-01-24 14:22:00 +0900
 categories: [Blogging]

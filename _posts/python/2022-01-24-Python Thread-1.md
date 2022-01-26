@@ -1,7 +1,7 @@
 ---
 title: Python Thread (1)
 author:
-  name: Pioneergu
+  name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-01-26 16:35:00 +0900
 categories: [Python, Multi-Thread]
