@@ -55,8 +55,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 
 
 ---
-## Jekyll 테마를 이용해 Github 블로그 만들기 (2)
-Jekyll 테마를 골랐으니 이제 Theme를 적용하고 Github Pages에 업로드를 해보도록 하자!  
-Link:
+## NEXT: Jekyll 테마를 이용해 Github 블로그 만들기 (2)
+Jekyll 테마를 골랐으니 이제 Theme를 적용하고 Github Pages에 업로드를 해보도록 하자!
 
 ---
