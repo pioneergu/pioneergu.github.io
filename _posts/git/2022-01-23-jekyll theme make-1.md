@@ -50,7 +50,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 - `Dark and Funtional Theme`
 > 1. Chirpy Theme: <https://chirpy.cotes.page/>  
 >  - Github: <https://github.com/cotes2020>  
-> 2. Clean Blog Theme: <https://devlopr.netlify.app/#/>  
+> 2. Devlopr Theme: <https://devlopr.netlify.app/#/>  
 >  - Github: <https://github.com/sujaykundu777/devlopr-jekyll>
 
 
