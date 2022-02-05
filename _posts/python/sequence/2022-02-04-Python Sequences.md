@@ -21,7 +21,7 @@ Python의 Sequence type은 `Mutable`과 `Immutable` Sequence Type으로 나뉜�
 |                   | range               |
 |                   | bytes               |  
 
-> NOTE: `Mutable`은 element 값의 변경이 가능한 Type이며, `Immutable`은 element 값의 변경이 불가능하다.
+> NOTE: `Mutable`은 변경이 가능한 Type이며, `Immutable`은 변경이 불가능하다.
   
 `tuple` element의 값을 변경하는 코드를 실행해보자.  
 ```python
@@ -240,6 +240,7 @@ except ValueError:
 ```
 > finding element is not exist
 
+---
 ## **Caveats** (주의사항)
 
 `list object`를 `Concatenation`을 하게 되면 Return되는 object는 New object이다.  
@@ -248,7 +249,7 @@ element자체가 `immutable object`라면 element를 수정할 때 `immutable`�
 `mutable object`면 orinal object의 element를 수정할 때 copy본의 element도 같이 수정되는 의도치 않은 문제가 생길수 있게 된다.  
 - 참고사항
 > **Mutable object**: `list`, `set`, `dict`  
-**Immutable object**: `int`, `float`, `complex`, `bool`, `string`, `tuple`, `frozen set`
+**Immutable object**: `int`, `float`, `complex`, `bool`, `string`, `tuple`, `frozen set`, `range`
 
 ```python
 a = [[1, 2]]
@@ -270,4 +271,6 @@ print(l)
 original list의 element를 수정하였으나 copy본인 l의 element가 다 바뀌어버리는 의도치 않은 결과가 나오게 된다.  
 이와 관련해서 다음 `copy`에 대해서 자세히 다뤄보도록 한다.
 
+---
 ## NEXT: **Shallow Copy, Deep Copy**
+---
