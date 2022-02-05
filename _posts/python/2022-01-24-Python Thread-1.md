@@ -8,6 +8,9 @@ categories: [Python, Multi-Thread]
 tags: [python, thread]    # TAG names should always be lowercase
 ---
 
+---
+## **Later**
+
 ```python
 Thread-1
 ```
