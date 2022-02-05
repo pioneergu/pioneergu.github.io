@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-01-24 14:22:00 +0900
-categories: [Blogging]
+categories: [Blogging, 일상잡다]
 tags: [blogging, futures, stocks]    # TAG names should always be lowercase
 ---
 

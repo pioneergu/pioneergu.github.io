@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2021-05-08 17:50:00 +0900
-categories: [Blogging]
+categories: [Blogging, 일상잡다]
 tags: [blogging, first]    # TAG names should always be lowercase
 ---
 
@@ -25,6 +25,6 @@ HTML syntax in MD: <span><img src="/assets/svg/thumbs-up-regular-white.svg" widt
 >The thumbs up is svg file.
 >If you want to change color of svg, you can change the color in svg file.  
 >Futhermore, some HTML inline style sheet, like align, is not applicable to MD file,  
->But!! if enclosed with span, it would be line-style.
+>But!! if enclosed with span, it would be inline-style.
 
 ---
