@@ -1,5 +1,5 @@
 ---
-title: Jekyll 테마를 이용해 Github 블로그 만들기 (1)
+title: Jekyll 테마를 이용해 GitHub 블로그 만들기 (1)
 author:
   name: pioneergu
   link: https://pioneergu.github.io
@@ -11,10 +11,10 @@ tags: [blogging, jekyll, github]    # TAG names should always be lowercase
 ---
 ## Github Blog (with jekyll theme) 사용 이유
 뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면  
-많은 분들이 Github blog를 사용하고 계셔서 관심이 생기게 되었다.  
+많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다.  
   
 비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거  
-Git도 배워볼겸 Github blog를 만들어보기로 마음을 먹게 되었다.
+Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다.
 
 ---
 ## Jekyll-theme-chirpy 테마 선정
@@ -23,7 +23,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
   
 > Jekyll theme 모음: <https://jekyll-themes.com/>
   
-처음에 고른 jekyll theme는 [lanyon theme](https://lanyon.getpoole.com/)였다.  
+처음에 고른 jekyll theme는 [lanyon theme](https://lanyon.getpoole.com/){: target="_blank"}였다.  
 아주 Simple해서 마음에 들었었는데...  
 초보자인 내가 category나 tag기능 등을 직접 만들어 Customizing하기엔 시간낭비가 크다는 느낌을 받았다.  
 (이것 말고도 배울게 많은데...)  

@@ -10,9 +10,11 @@ tags: [blogging, 화폐박물관]    # TAG names should always be lowercase
 
 ---
 화폐박물관을 다녀옴
- 
-![Desktop View](https://w.namu.la/s/8d7cf0f577691e498e68bcaaa6e2abc8ea514deb7345cc10fd807bf2590488e979ef37ec6823b901e5c55993ca5bad955c7cce1de6dbbaec361c295c8b64b90fd8cce38ea8905b5865982eea0ad434c5a2223b9e23fd4891b4fcd2b307dc0c5a){: style="max-width: 70%" .normal}
-![Desktop View](https://www.dropbox.com/s/v8npzhqplgraiis/20220209_145550.jpg?dl=0){: style="max-width: 70%" .normal}
-![Desktop View](/assets/img/favicons/android-chrome-192x192.png){: style="max-width: 70%" .normal}
+
+![Desktop View](https://drive.google.com/uc?export=view&id=1i8mmG2gnGT5FQcmQva14Nheu-PiF2Azu){: style="max-width: 30%" .normal}
+
+![Desktop View](https://drive.google.com/uc?id=114GjSIGhBaJ-Z4vT6p6gab-bemM2HSkk&authuser=hangmoonam%40gmail.com&usp=drive_fs"){: style="max-width: 30%" .normal}
+
+![Desktop View](https://dsm01pap007files.storage.live.com/y4mJQvtFu42FcB8ejbgYv20G-xrsZkY_-5gir0_MVhbRWHYbg9Xn4-1QYfKS74qClHaGQpvKOz2FSq7rNIpNLEzIZYN2ARzUb1dtQhSKaHHPACUZK-n_2LhZjPUcR6VE8j_xTfmcRelTJiUlrLDgk-912GhfqcjzCFyBEjClezVLCvTmJSJRVniE_j2wBfjMyfb?width=1280&height=720&cropmode=none){: style="max-width: 30%" .normal}
 
 ---

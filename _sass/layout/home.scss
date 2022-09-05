@@ -42,6 +42,7 @@
         color: rgba(108, 117, 125, 0.57);
         border-color: var(--btn-paginator-border-color);
         background-color: var(--button-bg);
+        // background-color: #fff;
       }
     }
 
@@ -52,6 +53,13 @@
   } // .page-item
 
 } // .pagination
+
+// #row {
+//   // display: block;
+//   // height: 10rem;
+//   // width: 100%;
+//   background-image: url(../img/base_images/BlogCover.png);
+// }
 
 #post-list {
   margin-top: 1rem;

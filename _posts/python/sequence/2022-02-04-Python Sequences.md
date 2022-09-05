@@ -21,7 +21,7 @@ Python의 Sequence type은 `Mutable`과 `Immutable` Sequence Type으로 나뉜�
 |                   | range               |
 |                   | bytes               |  
 
-> NOTE: `Mutable`은 변경이 가능한 Type이며, `Immutable`은 변경이 불가능하다.
+> NOTE: `Mutable`은 내용의 변경이 가능한 Type이며, `Immutable`은 변경이 불가능하다.
   
 `tuple` element의 값을 변경하는 코드를 실행해보자.  
 ```python
