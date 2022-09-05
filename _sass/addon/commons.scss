@@ -673,10 +673,10 @@ $sidebar-display: "sidebar-display";
   #avatar {
     > a {
       display: block;
-      width: 6rem;
-      height: 6rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
-      border: 2px solid rgba(222, 222, 222, 0.7);
+      // border: 2px solid rgba(222, 222, 222, 0.7);
       overflow: hidden;
       transform: translateZ(0); // fixed the zoom in Safari
       -webkit-transition: border-color 0.35s ease-in-out;
@@ -1096,8 +1096,8 @@ $sidebar-display: "sidebar-display";
   min-height: 100vh;
   padding-bottom: $footer-height;
   // background-image: url(../img/base_images/github-main-bg.png);
-  background-size: 100% auto;
-  background-position: center;
+  // background-size: 100% auto;
+  // background-position: center;
 
   @include pl-pr(0);
 }
@@ -1617,8 +1617,8 @@ $sidebar-display: "sidebar-display";
         @extend %profile-ml;
 
         > a {
-          width: 6.2rem;
-          height: 6.2rem;
+          width: 10rem;
+          height: 10rem;
 
           &.mx-auto {
             margin-left: 0 !important;
