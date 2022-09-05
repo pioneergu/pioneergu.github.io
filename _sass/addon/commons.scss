@@ -256,6 +256,7 @@ img[data-src] {
   // background-size: 100% auto;
   .panel-heading {
     @include label(inherit);
+    color: #bbb !important;
   }
 
   .post-tag {
