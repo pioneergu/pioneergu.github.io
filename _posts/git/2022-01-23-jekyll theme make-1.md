@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-01-25 23:24:00 +0900
-categories: [Git and Github]
+categories: [Git and Github, Github]
 tags: [blogging, jekyll, github]    # TAG names should always be lowercase
 ---
 

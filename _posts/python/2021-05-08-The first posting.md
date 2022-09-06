@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2021-05-08 17:50:00 +0900
-categories: [Blogging, 일상잡다]
+categories: [Python]
 tags: [blogging, first]    # TAG names should always be lowercase
 ---
 
@@ -16,10 +16,19 @@ tags: [blogging, first]    # TAG names should always be lowercase
   
 공부한 것을 정리하며 내 것으로 만들기 위해  
 나도 블로그를 시작해 본다.😊  
+
 ```python
 print("Hello World!")
 ```
+{:.nolineno}
+아래는 `pyscript`로 출력한 결과~!! 세상 좋네.  
 
+<div class="language-plaintext highlighter-rouge rouge-code">
+<py-script>
+  print("Hello World!")
+</py-script>
+</div>
+  
 Markdown syntax: ![thumbs-up-regular](/assets/svg/thumbs-up-regular-white.svg){: width="20" height="20" .normal}  
 HTML syntax in MD: <span><img src="/assets/svg/thumbs-up-regular-white.svg" width="20" height="20"></span>  
 >The thumbs up is svg file.
