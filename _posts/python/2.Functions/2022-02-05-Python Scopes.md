@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-02-04 17:54:00 +0900
-categories: [Python, Scopes, Closures and Decorators]
+categories: [Python, 2.Functions]
 tags: [python, Scopes]    # TAG names should always be lowercase
 ---
 

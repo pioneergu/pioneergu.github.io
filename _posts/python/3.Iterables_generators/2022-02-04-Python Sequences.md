@@ -4,8 +4,8 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-02-04 17:54:00 +0900
-categories: [Python, Sequence]
-tags: [python, sequence]    # TAG names should always be lowercase
+categories: [Python, 3.Iterables and Generator]
+tags: [python, sequence, mutable, immutable]    # TAG names should always be lowercase
 ---
 
 ---
@@ -22,13 +22,14 @@ Python의 Sequence type은 `Mutable`과 `Immutable` Sequence Type으로 나뉜�
 |                   | bytes               |  
 
 > NOTE: `Mutable`은 내용의 변경이 가능한 Type이며, `Immutable`은 변경이 불가능하다.
+{: .prompt-tip}
   
 `tuple` element의 값을 변경하는 코드를 실행해보자.  
 ```python
 t = (1, 2, 3)
 t[0] = 10
 ```
-```terminal
+```text
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-3-155b9e8fb284> in <module>()
@@ -36,6 +37,7 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'tuple' object does not support item assignment
 ```
+{: .no-code-header}
 
 위 코드의 실행 결과처럼 `tuple`에 새로운 값을 assign하려고 하면 `TypeError`를 띄우게 된다.  
   
@@ -47,7 +49,11 @@ TypeError: 'tuple' object does not support item assignment
 >>> t[0][0] = 10
 ```
 {: .nolineno}
-> ([10, 2], 3, 4)
+
+```text
+([10, 2], 3, 4)
+```
+{: .no-code-header}
 
 ---
 ## **Concatenation and Repetition**
@@ -67,11 +73,14 @@ print(f"id of l1: {id(l1)}")
 print(f"id of l2: {id(l2)}")
 print(f"id of l3: {id(l3)}")
 ```
-> l3: [1, 2, 3, 4, 5, 6]  
+```text
+l3: [1, 2, 3, 4, 5, 6]  
 id of l1: 2619302087680  
 id of l2: 2619302081984  
 id of l3: 2619308460288  
-  
+```
+{: .no-code-header}
+
 위의 결과를 보면 알 수 있듯이 `Concatenation`의 결과인 `l3`는 `l1` 및 `l2`와 다른 메모리 주소를 보여준다.
     
 아래의 `Inplace-concatenation`을 보면 메모리 주소가 변하지 않는 것을 볼 수 있다.
@@ -87,19 +96,22 @@ print(f"id of l1: {id(l1)}")
 print(f"id of l2: {id(l2)}")
 print(f"id of l3: {id(l3)}")
 ```
-> l1: [1, 2, 3, 4, 5, 6]  
+```text
+l1: [1, 2, 3, 4, 5, 6]  
 l3: None  
 id of l1: 2619302087680  
 id of l2: 2619314922560  
 id of l3: 140719011362992  
-  
+```
+{: .no-code-header}
+
 `l3`를 보면 `None`인 것을 볼 수 있는데 `Inplace-concatenation`은 `Return`이 없이 자기 자신을 변경 시키는 것이 특징이다.  
   
 다른 Type의 Sequence를 `Concatenation`하면 `TypeError`를 띄운다
 ```python
 (1, 2, 3) + [4, 5, 6]
 ```
-```terminal
+```text
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-25-67a9e2ed8695> in <module>()
@@ -107,6 +119,8 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: can only concatenate tuple (not "list") to tuple
 ```
+{: .no-code-header}
+
 ```python
 'abc' + ['d', 'e', 'f']
 ```
@@ -118,24 +132,36 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: must be str, not list
 ```
+{: .no-code-header}
+
 아래와 같이 해결 가능하다.
 ```python
 >>> (1, 2, 3) + tuple([4, 5, 6])
 ```
 {: .nolineno}
-> (1, 2, 3, 4, 5, 6)
+```text
+(1, 2, 3, 4, 5, 6)
+```
+{: .no-code-header}
 
 ```python
 >>> tuple('abc') + ('d', 'e', 'f')
 ```
 {: .nolineno}
-> ('a', 'b', 'c', 'd', 'e', 'f')
+```text
+('a', 'b', 'c', 'd', 'e', 'f')
+```
+{: .no-code-header}
 
 ```python
 >>> ''.join(tuple('abc') + ('d', 'e', 'f'))
 ```
 {: .nolineno}
-> 'abcdef'
+
+```text
+'abcdef'
+```
+{: .no-code-header}
 
 참고로 `tuple`은 immutable sequence type이므로 `concatenation`을 할 경우 **New object를 생성**한다.
 
@@ -149,9 +175,13 @@ print(l2)
 print(f"id of l1: {id(l1)}")
 print(f"id of l2: {id(l2)}")
 ```
-> [1, 2, 3, 1, 2, 3, 1, 2, 3]  
+
+```text
+[1, 2, 3, 1, 2, 3, 1, 2, 3]  
 id of l1: 2619302087424  
 id of l2: 2619314821952
+```
+{: .no-code-header}
 
 `Repetition`도 마찬가지로 `l2` 의 메모리 주소가 `l1`과 다른 **New object**를 Return한다.
 
@@ -167,7 +197,11 @@ id of l2: 2619314821952
 >>> l[0:3], l[:3], l[3:6], l[6:9], l[6:], l[6:100]
 ```
 {: .nolineno}
-> ([1, 2, 3], [1, 2, 3], [4, 5, 6], [7, 8, 9], [7, 8, 9], [7, 8, 9])
+
+```text
+([1, 2, 3], [1, 2, 3], [4, 5, 6], [7, 8, 9], [7, 8, 9], [7, 8, 9])
+```
+{: .no-code-header}
 
 `sequence[start:stop:step]`는 `sequence[slice(start, stop, step)]`과 동일하다.  
 ```python
@@ -176,8 +210,12 @@ sl = slice(0, 3)
 print(l[0:3])
 print(l[sl])
 ```
-> [1, 2, 3]  
-[1, 2, 3]  
+
+```text
+[1, 2, 3]
+[1, 2, 3]
+```
+{: .no-code-header}
 
 `-`를 써서 slice도 가능한데 맨 마지막 위치가 `-1`로 시작해서 좌측으로 갈수록 `-1`씩 더해주면 된다.  
 그리고 step을 `-1`을 주면 반대로 slicing을 한다.  
@@ -186,8 +224,10 @@ print(l[sl])
 >>> l[-3:-1], l[::-1]
 ```
 {: .nolineno}
-> ([7, 8], [9, 8, 7, 6, 5, 4, 3, 2, 1])
-
+```text
+([7, 8], [9, 8, 7, 6, 5, 4, 3, 2, 1])
+```
+{: .no-code-header}
 
 ---
 ## **Finding in Sequences**
@@ -199,7 +239,11 @@ Sequence 안에 element의 index를 찾는 법.
 >>> s.index('h')
 ```
 {: .nolineno}
-> 0
+
+```text
+0
+```
+{: .no-code-header}
 
 Optional로 찾기 시작할 위치를 start로 지정가능 하며,
 optional로 end를 지정할 수도 있다.  
@@ -210,7 +254,10 @@ optional로 end를 지정할 수도 있다.
 >>> s.index('h'), s.index('h', 5), s.index('h', 5, 13)
 ```
 {: .nolineno}
-> (0, 9, 9)
+```text
+(0, 9, 9)
+```
+{: .no-code-header}
 
 만일 찾고자하는 element를 찾지 못하면 `ValueError`를 띄운다.
 
@@ -227,6 +274,7 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: substring not found
 ```
+{: .no-code-header}
 
 `ValueError`로 인해 프로그램이 종료되는 것을 방지하기 위해서,  
 아래와 같이 예외처리를 해 줄 수 있다.
@@ -238,7 +286,10 @@ try:
 except ValueError:
     print('finding element is not exist')
 ```
-> finding element is not exist
+```text
+finding element is not exist
+```
+{: .no-code-header}
 
 ---
 ## **Caveats** (주의사항)
@@ -258,15 +309,23 @@ print(l)
 print(id(l[0]), id(l[1]))
 print(l[0] is l[1])
 ```
-> [[1, 2], [1, 2]]  
+{:.nolineno}
+```text
+[[1, 2], [1, 2]]  
 2619315234368 2619315234368  
 True
+```
+{: .no-code-header}
 
 ```python
 a[0][0] = 50
 print(l)
 ```
-> [[50, 2], [50, 2]]  
+{:.nolineno}
+```text
+[[50, 2], [50, 2]]  
+```
+{: .no-code-header}
 
 original list의 element를 수정하였으나 copy본인 l의 element가 다 바뀌어버리는 의도치 않은 결과가 나오게 된다.  
 이와 관련해서 다음 `copy`에 대해서 자세히 다뤄보도록 한다.
