@@ -113,6 +113,8 @@ code {
     word-break: break-word;
     border-radius: 4px;
     background-color: var(--inline-code-bg);
+    color: var(--inline-code-color);
+    font-family: 'Source Sans Pro', 'Noto Sans KR', 'Microsoft Yahei', sans-serif;
   }
 
   &.filepath {
@@ -171,6 +173,18 @@ div {
     }
   }
   &.no-code-header {
+    .code-header {
+      display: none;
+    }
+  }
+  &.language-text.highlighter-rouge {
+    .highlight {
+      background: var(--highlight-text-bg-color);
+    }
+    .highlight pre{
+      color: var(--highlight-text-color);
+      background: var(--highlight-text-bg-color);
+    }
     .code-header {
       display: none;
     }

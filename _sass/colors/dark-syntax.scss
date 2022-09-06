@@ -71,9 +71,13 @@
   /* -----  custom styles ------ */
 
   --highlight-bg-color: #23272e;
+  --highlight-text-color: #aaa;
+  --highlight-text-bg-color: rgb(25, 25, 25);
   --highlighter-rouge-color: #de6b18;
   --highlight-lineno-color: #6c6c6d;
-  --inline-code-bg: #272822;
+  // --inline-code-bg: #272822;
+  --inline-code-bg: transparent;
+  --inline-code-color: #e6be77;
   --code-header-text-color: #6a6a6a;
   --code-header-muted-color: rgb(60 60 60);
   --code-header-icon-color: rgb(86 86 86);

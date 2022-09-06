@@ -37,7 +37,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'tuple' object does not support item assignment
 ```
-{: .no-code-header}
 
 위 코드의 실행 결과처럼 `tuple`에 새로운 값을 assign하려고 하면 `TypeError`를 띄우게 된다.  
   
@@ -53,7 +52,6 @@ TypeError: 'tuple' object does not support item assignment
 ```text
 ([10, 2], 3, 4)
 ```
-{: .no-code-header}
 
 ---
 ## **Concatenation and Repetition**
@@ -79,7 +77,6 @@ id of l1: 2619302087680
 id of l2: 2619302081984  
 id of l3: 2619308460288  
 ```
-{: .no-code-header}
 
 위의 결과를 보면 알 수 있듯이 `Concatenation`의 결과인 `l3`는 `l1` 및 `l2`와 다른 메모리 주소를 보여준다.
     
@@ -103,7 +100,6 @@ id of l1: 2619302087680
 id of l2: 2619314922560  
 id of l3: 140719011362992  
 ```
-{: .no-code-header}
 
 `l3`를 보면 `None`인 것을 볼 수 있는데 `Inplace-concatenation`은 `Return`이 없이 자기 자신을 변경 시키는 것이 특징이다.  
   
@@ -119,12 +115,11 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: can only concatenate tuple (not "list") to tuple
 ```
-{: .no-code-header}
 
 ```python
 'abc' + ['d', 'e', 'f']
 ```
-```terminal
+```text
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-26-8cbdd441adc1> in <module>()
@@ -132,7 +127,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: must be str, not list
 ```
-{: .no-code-header}
 
 아래와 같이 해결 가능하다.
 ```python
@@ -142,7 +136,6 @@ TypeError: must be str, not list
 ```text
 (1, 2, 3, 4, 5, 6)
 ```
-{: .no-code-header}
 
 ```python
 >>> tuple('abc') + ('d', 'e', 'f')
@@ -151,7 +144,6 @@ TypeError: must be str, not list
 ```text
 ('a', 'b', 'c', 'd', 'e', 'f')
 ```
-{: .no-code-header}
 
 ```python
 >>> ''.join(tuple('abc') + ('d', 'e', 'f'))
@@ -161,7 +153,6 @@ TypeError: must be str, not list
 ```text
 'abcdef'
 ```
-{: .no-code-header}
 
 참고로 `tuple`은 immutable sequence type이므로 `concatenation`을 할 경우 **New object를 생성**한다.
 
@@ -181,7 +172,6 @@ print(f"id of l2: {id(l2)}")
 id of l1: 2619302087424  
 id of l2: 2619314821952
 ```
-{: .no-code-header}
 
 `Repetition`도 마찬가지로 `l2` 의 메모리 주소가 `l1`과 다른 **New object**를 Return한다.
 
@@ -201,7 +191,6 @@ id of l2: 2619314821952
 ```text
 ([1, 2, 3], [1, 2, 3], [4, 5, 6], [7, 8, 9], [7, 8, 9], [7, 8, 9])
 ```
-{: .no-code-header}
 
 `sequence[start:stop:step]`는 `sequence[slice(start, stop, step)]`과 동일하다.  
 ```python
@@ -215,7 +204,6 @@ print(l[sl])
 [1, 2, 3]
 [1, 2, 3]
 ```
-{: .no-code-header}
 
 `-`를 써서 slice도 가능한데 맨 마지막 위치가 `-1`로 시작해서 좌측으로 갈수록 `-1`씩 더해주면 된다.  
 그리고 step을 `-1`을 주면 반대로 slicing을 한다.  
@@ -227,7 +215,6 @@ print(l[sl])
 ```text
 ([7, 8], [9, 8, 7, 6, 5, 4, 3, 2, 1])
 ```
-{: .no-code-header}
 
 ---
 ## **Finding in Sequences**
@@ -243,7 +230,6 @@ Sequence 안에 element의 index를 찾는 법.
 ```text
 0
 ```
-{: .no-code-header}
 
 Optional로 찾기 시작할 위치를 start로 지정가능 하며,
 optional로 end를 지정할 수도 있다.  
@@ -257,7 +243,6 @@ optional로 end를 지정할 수도 있다.
 ```text
 (0, 9, 9)
 ```
-{: .no-code-header}
 
 만일 찾고자하는 element를 찾지 못하면 `ValueError`를 띄운다.
 
@@ -274,7 +259,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: substring not found
 ```
-{: .no-code-header}
 
 `ValueError`로 인해 프로그램이 종료되는 것을 방지하기 위해서,  
 아래와 같이 예외처리를 해 줄 수 있다.
@@ -289,7 +273,6 @@ except ValueError:
 ```text
 finding element is not exist
 ```
-{: .no-code-header}
 
 ---
 ## **Caveats** (주의사항)
