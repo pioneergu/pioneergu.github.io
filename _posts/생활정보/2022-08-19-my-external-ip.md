@@ -13,6 +13,21 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 
 아래에서 현재 *당신 컴퓨터의 IP주소(External IP)*를 확인 할 수 있다.  
 
+<!-- <script>
+  import("https://api.ipify.org?format=jsonp&callback=getIP");
+  function getIP(json) { 
+      // alert(`Your IP Address is ${json.ip}`) 
+      document.getElementById("ip").innerHTML = json.ip;
+      }
+</script> -->
+<script>
+  function getIPFromAmazon() {
+	fetch("https://checkip.amazonaws.com/").then(res => res.text()).then(data => console.log(data))
+  }
+
+  document.getElementById("ip").innerHTML = getIPFromAmazon();
+</script>
+
 <h4>
 <blockquote class="prompt-tip">
   당신의 IP주소는: <span id="ip" class="orange">Loading IP Address...</span> 입니다.
