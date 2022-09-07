@@ -31,10 +31,10 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 여담이지만, 깃허브 블로그의 이미지에 대한 걱정이 해결되니 깃허브 블로그로 넘어가고 싶어졌다. 그런데 이미 만든 티스토리 블로그도 아깝다는 생각이 동시에 드는 것이 아닌가... 그래서 둘다 운영하기로 마음을 먹었고 깃허브 블로그에 올리는 마크다운(kramdown) 포스트를 티스토리에 자동으로 파싱해 주는 것을 만드는 숙제가 생겨버렸다.
 
 아참 그리고 `jsdelivr`라는 `무료 CDN`이 있는데 `jsdelivr`를 이용해 GitHub Pages에 올린 Image Link로 바로 CDN을 사용할 수 있다.  
-> 자세한 내용은 여기 참조: 공사중...  
+> 자세한 내용은 여기 참조: [GitHub 블로그 무료 CDN 사용하기 - jsdelivr](https://pioneergu.github.io/posts/github-blog-jsdelivr-cdn/){: target="_blank"}
 
 여기에서 CDN 서비를 사용하려면 우선 깃허브 repository에 이미지를 업로드 하고 이미지 Link만 바꿔 주면 빠른 CDN 서비스를 무료로 사용할 수 있다.  
-다만, GitHub Blog의 용량 제한에 걸리지 않으려면 *Page의 Background Image나 Title Image등은 CDN을 사용*하고, *블로그 포스팅에 들어가는 이미지는 Cloud Service를 사용*하는 것이 좋을 것 같다.  
+다만, GitHub Blog의 용량 제한에 걸리지 않으려면 *Page의 Background Image나 Title Image등은 CDN을 사용*하고, *블로그 포스팅에 들어가는 이미지는 `원드라이브`와 같은 Cloud Service를 사용*하는 것이 좋을 것 같다.  
 
 이제 원드라이브나 구글드라이브 같은 클라우드 서비스를 활용한 이미지 호스팅에 대해서 알아보자~  
 
@@ -109,7 +109,7 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 
 두 가지 방법을 다 해보니 개인적으로 외부로의 `공유제한 풀기와 링크의 수동 수정이 없는 원드라이브의 이미지 호스팅 방법`이 훨씬 편한것 같다.  
 각자의 사정에 맞게 잘 골라서 쓰면 될 듯하다~😎
-> Image 로딩에 걸리는 시간을 Test 해보진 않았지만,  
+> Image 로딩에 걸리는 시간을 정확히 Test 해보진 않았지만,  
 > 이 페이지에 접속했을때 원드라이브의 이미지 로딩이 훨씬 빠른 느낌이다...  
 {:.prompt-tip}
 

@@ -84,10 +84,11 @@ theme_mode: dark  # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
+# img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: ./assets/img/favicons/android-chrome-192x192.png
+avatar: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -100,7 +101,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: pioneergu/pioneergu.github.io        # <gh-username>/<repo>
-    issue_term:   # < url | pathname | title | ...>
+    issue_term: pathname  # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo:             # <gh-username>/<repo>
