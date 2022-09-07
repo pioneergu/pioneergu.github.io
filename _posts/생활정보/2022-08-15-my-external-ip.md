@@ -3,7 +3,7 @@ title: 내 IP주소 확인!
 author:
   name: pioneergu
   link: https://pioneergu.github.io
-date: 2022-08-19 15:24:00 +0900
+date: 2022-08-15 15:24:00 +0900
 categories: [생활정보]
 tags: [IP주소, external IP]    # TAG names should always be lowercase
 ---
