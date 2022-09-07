@@ -12,11 +12,6 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 ## **내 아이피주소(IP address) 직접 확인!**
 
 아래에서 현재 *당신 컴퓨터의 IP주소(External IP)*를 확인 할 수 있다.  
-
-<h4>
-<blockquote class="prompt-tip">당신의 IP주소는: <span id="ip" class="orange">Loading IP Address...</span> 입니다.</blockquote>
-</h4>
-
 <script>
     import("https://api.ipify.org?format=jsonp&callback=getIP");
     function getIP(json) { 
@@ -24,6 +19,12 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
         document.getElementById("ip").innerHTML = json.ip;
         }
 </script>
+
+<h4>
+<blockquote class="prompt-tip">
+  당신의 IP주소는: <span id="ip" class="orange">Loading IP Address...</span> 입니다.
+</blockquote>
+</h4>
 
 추가로 검색포털을 활용하여 IP 주소를 확인 할 수 있다~  
 아래에 그 내용이 있다.
