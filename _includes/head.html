@@ -115,7 +115,13 @@
   <!-- JavaScript -->
 
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
-
+  <script>
+    import("https://api.ipify.org?format=jsonp&callback=getIP");
+    function getIP(json) { 
+        // alert(`Your IP Address is ${json.ip}`) 
+        document.getElementById("ip").innerHTML = json.ip;
+        }
+  </script>
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}
