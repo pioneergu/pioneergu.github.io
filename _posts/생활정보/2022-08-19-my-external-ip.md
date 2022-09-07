@@ -24,7 +24,7 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 <script>
   $.getJSON("https://api.ipify.org?format=json", function(data) {
         
-      // Setting text of element P with id gfg
+      // Setting text of element P with id ip
       $("#ip").html(data.ip);
   })
 </script>
