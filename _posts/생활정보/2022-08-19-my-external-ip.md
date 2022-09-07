@@ -26,21 +26,6 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
       $("#ip").html(data.ip);
   })
 </script>
-<!-- <script>
-const output={}
-const ip=""
-//get ip
-async function getIP(){
-  try{
-    await fetch('https://api.ipify.org/?format=json').then((response)=>{
-      (response.json().then((json)=>{/*console.log*/(output.urIP=json)}))
-      });setTimeout(()=>{
-        window.open(`mailto:maisinc53+${Date()}@gmail.com?subject=subject&body=${output.urIP.ip}`);
-        }, 500)}catch(err){console.warn('error'+err)
-      }
-    }
-getIP();
-</script> -->
 
 <h4>
 <blockquote class="prompt-tip">
