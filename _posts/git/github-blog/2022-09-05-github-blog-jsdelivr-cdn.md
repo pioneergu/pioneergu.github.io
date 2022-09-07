@@ -3,7 +3,7 @@ title: GitHub 블로그 무료 CDN 사용하기 - jsdelivr
 author:
   name: pioneergu
   link: https://pioneergu.github.io
-date: 2022-09-07 15:53:00 +0900
+date: 2022-09-05 15:53:00 +0900
 categories: [Git, Github-Blog]
 tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should always be lowercase
 ---

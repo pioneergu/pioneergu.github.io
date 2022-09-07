@@ -492,6 +492,7 @@ img[data-src] {
 
   em {
     @extend %normal-font-style;
+    // word-break: break-all;
   }
 }
 
