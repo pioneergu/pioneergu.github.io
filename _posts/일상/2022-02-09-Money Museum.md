@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-02-09 20:50:00 +0900
-categories: [Life]
+categories: [일상]
 tags: [blogging, 일상, 한국은행, 화폐박물관]    # TAG names should always be lowercase
 ---
 

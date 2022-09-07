@@ -9,7 +9,7 @@ tags: [blogging, jekyll, github]    # TAG names should always be lowercase
 ---
 
 ---
-## Github Blog (with jekyll theme) 사용 이유
+## **Github Blog (with jekyll theme) 사용 이유**
 뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면  
 많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다.  
   
@@ -17,7 +17,7 @@ tags: [blogging, jekyll, github]    # TAG names should always be lowercase
 Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다.
 
 ---
-## Jekyll-theme-chirpy 테마 선정
+## **Jekyll-theme-chirpy 테마 선정**
 Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여러 사이트가 검색되는데  
 그 중에서 개인적으로는 아래의 사이트가 Jekyll theme를 카테고리별로 볼 수 있어 마음에 든다.
   
@@ -37,7 +37,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 지금 이 theme보다 나름 더 예쁘다고 생각되는 design의 theme([devlopr theme](https://devlopr.netlify.app/#/){: target="_blank"})를 발견하였다.  
 순간 theme를 바꿀까 고민했지만... 차차 이 Blog를 나만의 Design으로 꾸며보기로 결정했다!
 
-### 내 마음에 드는 테마들
+### **내 마음에 드는 테마들**
 
 - `Simple and Clean Theme`
 > 1. Lanyon Theme: <https://lanyon.getpoole.com/>{: target="_blank"}  
@@ -53,7 +53,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 
 
 ---
-## NEXT: Jekyll 테마를 이용해 Github 블로그 만들기 (2)
+## NEXT: [**Jekyll 테마를 이용해 Github 블로그 만들기 (2)**](https://pioneergu.github.io/posts/jekyll-theme-make-2/){: target="_blank"}
 Jekyll 테마를 골랐으니 이제 Theme를 적용하고 Github Pages에 업로드를 해보도록 하자!
 
 ---

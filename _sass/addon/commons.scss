@@ -39,6 +39,15 @@ body {
 
 /* --- Typography --- */
 
+p em {
+  font-style: normal;
+  color: orange;
+}
+
+p strong {
+  color: orangered;
+}
+
 h1 {
   @extend %heading;
 
@@ -254,6 +263,14 @@ img[data-src] {
     @include label(inherit);
     color: #bbb !important;
   }
+  .panel-category-heading {
+    @include label(inherit);
+    color: #bbb !important;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    padding-left: 0;
+    margin: 0;
+  }
 
   .post-tag {
     display: inline-block;
@@ -276,6 +293,35 @@ img[data-src] {
   [data-topbar-visible=true] & > div {
     top: 6rem;
   }
+}
+
+// right panel category
+#access-category {
+  li {
+    height: 1.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    list-style: none;
+  }
+
+  a {
+    &:hover {
+      @extend %link-hover;
+    }
+
+    @extend %no-bottom-border;
+
+    color: inherit;
+  }
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.panel-sub-category {
+  padding-left: 1.5rem;
 }
 
 #access-lastmod {

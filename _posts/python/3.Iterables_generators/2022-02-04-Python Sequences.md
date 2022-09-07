@@ -41,7 +41,7 @@ TypeError: 'tuple' object does not support item assignment
 위 코드의 실행 결과처럼 `tuple`에 새로운 값을 assign하려고 하면 `TypeError`를 띄우게 된다.  
   
 반면 `tuple`안에 `mutable` sequence type인 `list`가 있는 경우,  
-`list`의 element는 **수정이 가능**하다.  
+`list`의 element는 *수정이 가능*하다.  
 
 ```python
 >>> t = ([1, 2], 2, 3)
@@ -154,7 +154,7 @@ TypeError: must be str, not list
 'abcdef'
 ```
 
-참고로 `tuple`은 immutable sequence type이므로 `concatenation`을 할 경우 **New object를 생성**한다.
+참고로 `tuple`은 immutable sequence type이므로 `concatenation`을 할 경우 *New object를 생성*한다.
 
 ### **Repetition**
 
@@ -173,7 +173,7 @@ id of l1: 2619302087424
 id of l2: 2619314821952
 ```
 
-`Repetition`도 마찬가지로 `l2` 의 메모리 주소가 `l1`과 다른 **New object**를 Return한다.
+`Repetition`도 마찬가지로 `l2` 의 메모리 주소가 `l1`과 다른 *New object*를 Return한다.
 
 ---
 ## **Slicing**
@@ -282,8 +282,8 @@ finding element is not exist
 element자체가 `immutable object`라면 element를 수정할 때 `immutable`이기 때문에 수정하려는 값으로 reference를 바꾸게 되어 문제가 없지만,  
 `mutable object`면 orinal object의 element를 수정할 때 copy본의 element도 같이 수정되는 의도치 않은 문제가 생길수 있게 된다.  
 - 참고사항
-> **Mutable object**: `list`, `set`, `dict`  
-**Immutable object**: `int`, `float`, `complex`, `bool`, `string`, `tuple`, `frozen set`, `range`
+> *Mutable object*: `list`, `set`, `dict`  
+*Immutable object*: `int`, `float`, `complex`, `bool`, `string`, `tuple`, `frozen set`, `range`
 
 ```python
 a = [[1, 2]]
