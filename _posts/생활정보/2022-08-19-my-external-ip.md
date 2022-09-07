@@ -13,13 +13,20 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 
 아래에서 현재 *당신 컴퓨터의 IP주소(External IP)*를 확인 할 수 있다.  
 
-<script>
+<!-- <script>
   import("https://api.ipify.org?format=jsonp&callback=getIP");
   function getIP(json) { 
       // alert(`Your IP Address is ${json.ip}`) 
       document.getElementById("ip").innerHTML = json.ip;
       }
   getIP(json)
+</script> -->
+<script>
+  $.getJSON("https://api.ipify.org?format=json", function(data) {
+        
+      // Setting text of element P with id gfg
+      $("#ip").html(data.ip);
+  })
 </script>
 <!-- <script>
 const output={}
