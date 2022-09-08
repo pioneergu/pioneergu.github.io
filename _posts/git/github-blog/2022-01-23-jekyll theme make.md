@@ -37,6 +37,7 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 지금 이 theme보다 나름 더 예쁘다고 생각되는 design의 theme([devlopr theme](https://devlopr.netlify.app/#/){: target="_blank"})를 발견하였다.  
 순간 theme를 바꿀까 고민했지만... 차차 이 Blog를 나만의 Design으로 꾸며보기로 결정했다!
 
+---
 ### **내 마음에 드는 테마들**
 
 - `Simple and Clean Theme`
@@ -50,6 +51,8 @@ Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여�
 >  - Github: <https://github.com/cotes2020>{: target="_blank"}
 > 2. Devlopr Theme: <https://devlopr.netlify.app/#/>{: target="_blank"}
 >  - Github: <https://github.com/sujaykundu777/devlopr-jekyll>{: target="_blank"}
+
+---
 
 ## **Jekyll-theme-chirpy 테마 설치**
 ### **Chirpy Theme**
