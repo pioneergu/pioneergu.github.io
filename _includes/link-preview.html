@@ -1,0 +1,18 @@
+{% assign docs = site.posts | where:"permalink", include.file %}
+
+<section class="blog blog-block">
+    <div class="row">
+    <div class="col-sm-12 col-md-12">  
+    {% for doc in docs %}
+            <div class="blog-post-small">
+            <img src="{{ doc.image }}">
+            <div class="title">
+            <a href="{{ doc.url }}">{{ doc.title | truncate: 40 }}</a></div>
+            <p>{{ doc.content | markdownify | strip_html | truncatewords: 30 }}</p>
+            <a href="{{ doc.url }}" class="link-url">Read More</a>
+            </div>  
+    {% endfor %}   
+    </div>
+    </div>
+    <div class="mb-30"></div> 
+</section>

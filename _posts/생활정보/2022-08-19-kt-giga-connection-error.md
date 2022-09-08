@@ -8,12 +8,15 @@ categories: [생활정보]
 tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG names should always be lowercase
 ---
 
+
+{% include link-preview.html file="/posts/ex-roller-coaster-mod/index.html" %}
+
 ---
 ## **KT GIGA Wifi 접속 오류 Case**
 
 `KT Giga Wifi` 공유기의 경우 `homehub.olleh.com`나 `homehub.kt.com`또는 `172.30.1.254`를 브라우져 주소창에 입력하고 이동하면 관리자 페이지에 접속이 가능하다.  
 엄밀히 말하면 `Window키 + R`을 눌러 `cmd`엔터를 쳐주면 나오는 창에 `ipconfig`를 치고 엔터를 쳐주면 나오는 주소 중 `기본게이트웨이`의 주소로 접속을 하면 된다.  
-그런데 간혹 아래처럼 `기본게이트웨이`가 기본 주소가 아닌 엉뚱한 주소로 되어 있는 경우가 있다.
+그런데 간혹 아래처럼 `기본게이트웨이`가 KT공유기 기본설정인 `172.30.1.254`가 아닌 `엉뚱한 주소`로 되어 있는 경우가 있다.
 
 ![kt-gateway][kt-gateway]
 
@@ -36,6 +39,7 @@ tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG na
 이제 `homehub.olleh.com`나 `172.30.1.254`로 접속을 하면 잘 접속이 되는것을 확인 할 수 있다.👍
 
 ![kt-login][kt-login]{: style="max-width: 70%"}
+
 
 [kt-gateway]: https://dsm01pap007files.storage.live.com/y4mvzKQDa1YxCo_F7NmFoNLXYdsN7S4GOxcwTaZfblo9Qi2RCN1r6KLoUI3qHXRmom2Q502qmutPzZWzR9_f3ojdezBRS7lBjH1SH_8ZdE42di6bkC1_BxVrCPNkXybWENalpxJ1H0QfMy_v5-rR4DEEP2Ph5tBOQD6ivXR4d2PAC_UWXij4HbA34r4395GyVga?width=500&height=246&cropmode=none
 [kt-error]: https://dsm01pap007files.storage.live.com/y4mEnW5n5L0E3V-713ZpS0seHc9TtGotKlAF4RhvqHFwVAB8NTmBuPmACiUdHNgPEwKd3WrOM0cBiWcivnT5_NSIqGBcRins-ELyEERiHa9FrdPki45nttCkXo5PJ005xtARGGhHS0uAgelxkWu2x3kgCKXhBVpoxing2HAaYhfUgHLtZKRg6J3drxu8TcxA4l1?width=336&height=299&cropmode=none

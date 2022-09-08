@@ -37,17 +37,17 @@ github:
 instagram:
   username: hangmoonam
 
-# twitter:
-#   username: twitter_username            # change to your twitter username
+twitter:
+  username: pioneergu            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Pioneergu
+  name: pioneergu
   email: hangmoonam@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/pioneergu      # change to your twitter homepage
     - https://github.com/pioneergu        # change to your github homepage
     - https://www.instagram.com/hangmoonam/
     # Uncomment below to add more social links
@@ -84,11 +84,13 @@ theme_mode: dark  # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
-img_cdn:
+img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
+# img_cdn: https://cdn.jsdelivr.net
+# img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png
+# avatar: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png
+avatar: /assets/img/favicons/android-chrome-192x192.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true

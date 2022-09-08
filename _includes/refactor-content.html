@@ -69,9 +69,14 @@
       {% if _pair.size < 2 %}
         {% continue %}
       {% endif %}
-
+      
+      <!-- img_cdn 사용 시 원드라이브 src 오류 해결 코드 -->
       {% capture _key %}{{ _pair | first }}{% endcapture %}
-      {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
+      {% if _key == 'src' %}
+        {% capture _value %}{{ _pair | slice: 1, -1 | replace: '"', '' }}{% endcapture %}
+      {% else %}
+        {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
+      {% endif %}
 
       {% case _key %}
         {% when 'width' %}
