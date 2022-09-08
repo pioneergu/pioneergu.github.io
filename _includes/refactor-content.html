@@ -68,15 +68,15 @@
       {% assign _pair = _attr | split: '=' %}
       {% if _pair.size < 2 %}
         {% continue %}
+      <!-- img_cdn 사용 시 원드라이브 src 오류 해결 코드 -->
+      {% elsif _pair.size == 2 %}
+        {% capture _key %}{{ _pair | first }}{% endcapture %}
+        {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
+      {% elsif _pair.size > 2 %}
+        {% capture _key %}{{ _pair | first }}{% endcapture %}
+        {% capture _value %}{{ _pair | slice: 1, -1 | replace: '"', '' }}{% endcapture %}
       {% endif %}
       
-      <!-- img_cdn 사용 시 원드라이브 src 오류 해결 코드 -->
-      {% capture _key %}{{ _pair | first }}{% endcapture %}
-      {% if _key == 'src' %}
-        {% capture _value %}{{ _pair | slice: 1, -1 | replace: '"', '' }}{% endcapture %}
-      {% else %}
-        {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
-      {% endif %}
 
       {% case _key %}
         {% when 'width' %}
@@ -91,6 +91,9 @@
         {% break %}
       {% endif %}
     {% endfor %}
+
+    {{ 'hi' }}
+    {{ _src }}
 
     {% if _src %}
       {% unless _src contains '://' %}
