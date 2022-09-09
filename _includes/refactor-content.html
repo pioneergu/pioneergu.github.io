@@ -76,7 +76,6 @@
         {% capture _key %}{{ _pair | first }}{% endcapture %}
         {% capture _value %}{{ _pair | slice: 1, -1 | replace: '"', '' }}{% endcapture %}
       {% endif %}
-      
 
       {% case _key %}
         {% when 'width' %}
