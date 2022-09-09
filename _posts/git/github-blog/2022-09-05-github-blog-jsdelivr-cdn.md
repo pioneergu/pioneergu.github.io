@@ -27,6 +27,7 @@ GitHub Pages를 이용하여 Blog를 사용중이라면 jsdelivr로 무료 CDN�
 
 <https://www.jsdelivr.com/github>{: target="_blank"}에 접속하여 GitHub에 업로드한 File의 Link를 입력하여 `변환된 CDN Link`를 얻을 수도 있다.  
 
+---
 ## **Chirpy Theme에서 사용**
 Chirpy Theme에서는 `_config.yml`파일에 `img_cdn`을 넣어주고 site에서 `/`로 시작하는 모든 이미지를 자동으로 CDN Link로 Parsing 해주는 기능이 있다.  
 아래는 이 블로그 (Chirpy Theme)의 `_config.yml`의 CDN Link `자동으로 Parsing` 해주는 것을 설정하는 부분을 발췌한 내용이다.
@@ -39,6 +40,22 @@ Chirpy Theme에서는 `_config.yml`파일에 `img_cdn`을 넣어주고 site에�
 img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
 ```
 {:file="_config.yml"}
+
+---
+## **Chirpy Theme의 CDN 자동 Parsing 기능의 문제 발견 및 해결**
+Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*하는 `refactor-content.html`을 include하는 부분이 보인다.
+
+{% raw %}
+```liquid
+{% capture _content %}
+  {% if layout.refactor or page.layout == 'page' %}
+    {% include refactor-content.html content=content %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+{% endcapture %}
+```
+{% endraw %}
 
 
 ### **참고사항**
