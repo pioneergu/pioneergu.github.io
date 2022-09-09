@@ -55,16 +55,17 @@ img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
 
 그런데 Chirpy theme의 CDN Link 자동 parsing 기능을 켜니까 Onedrive에서 임배드하여 호스팅 한 이미지링크가 깨지는 것이 아니겠는가?  
 
-![cdn-parsing-error](/assets/img/posting/git/cdn-parsing-error.jpg)
+![cdn-parsing-error](/assets/img/posting/git/cdn-parsing-error.jpg){: style="border: solid 2px #aaa"}
 
 이러면 안 되는데...  
 크롬개발자도구를 열어 url 을 확인해 보니 자동 Parsing을 위해 `_config.yml`에 넣어준 `img_cdn`의 링크가 Onedrive에서 `임배드 기능으로 생성된 link` 중간에 아래의 *노란 밑줄*처럼 `엉뚱한 곳`에 들어가 있는 것이 아니겠는가?  
+원래라면 `https://`로 시작하는 Onedrive link에는 변화가 없어야 하는데 말이다.
 
-![cdn-parsing-error-url](/assets/img/posting/git/cdn-parsing-error-url.jpg)
+![cdn-parsing-error-url](/assets/img/posting/git/cdn-parsing-error-url.jpg){: style="border: solid 2px #aaa"}
 
 이제 이걸 고쳐보자.🤞
 
-## **Chirpy theme의 jsdelivr cdn link 자동 파싱 기능 분석**
+### **Chirpy theme의 jsdelivr cdn link 자동 파싱 기능 분석**
 
 > 시작 전 참고사항
 > Jekyll theme의 경우 대부분이 Liquid template 언어로 작성이 되어 있다.  
@@ -87,6 +88,9 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
 ```
 {:file="page.html"}
 {% endraw %}
+
+아래의 코드는 `page.html`에서 불러오는 `refactor-content.html`인데 아래에 발췌한 코드는 `image path`에 `://`가 없는 경우 `_config.yml`에서 지정해 준 `img_cdn`의 path를 image path 앞에 붙여 주는 역할을 하는 부분이다.  
+
 
 {% raw %}
 ```liquid
@@ -116,12 +120,16 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
     {% assign _attrs = _left | split: ' ' %}
 
     {% for _attr in _attrs %}
+
+      <!-- 여기에서 img tag내의 내용을 `=`로 나누어서 attr의 key 와 value로 나누어줌 -->
+      <!-- 그런데 onedrive link에는 `=`가 패스에 많기 때문에 link가 쪼개짐. -->
       {% assign _pair = _attr | split: '=' %}
       {% if _pair.size < 2 %}
         {% continue %}
       {% endif %}
         
       {% capture _key %}{{ _pair | first }}{% endcapture %}
+
       <!-- 여기가 오류가 생기는 부분 -->
       {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
 
@@ -140,6 +148,8 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
     {% endfor %}
 
     {% if _src %}
+
+      <!-- src에 ://가 없는 경우 src에 img_cdn을 prefix 함. -->
       {% unless _src contains '://' %}
 
         <!-- Add CDN URL -->
@@ -179,6 +189,39 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
 {:file="refactor-content.html"}
 {% endraw %}
 
+위 코드의 `30번 Line`에서 `<img> tag`내의 attribute를 `=`기준으로 split하여 `[key, value]` 형태의 list를 만들어 나누어 주게 된다.  
+> 예를들어 image tag가 `<img src="aaa.com/abc.png">` 라면,
+> - `_pair`는 **[src, aaa.com/abc.png]**가 된다.
+{:.prompt-info}
+
+그리고나서 `_pair` list의 `0번 index` 값은 `_key`에,  
+`마지막 index`는 `_value`에 넣게 되는데 image path가 일반적인 경우라면 문제가 되지 않는다.  
+
+하지만, onedrive에서 `임베드`로 따온 link에는 link에 `=`가 매우 많기 때문에 이 방식에 문제가 생겨버린다.
+> 원드라이브의 임베드 링크는 아래와 같은데,  
+> https://dsm01pap007files.storage.live.com/y ... h3?width=660&height=286&cropmode=none  
+> 이 경우 `_pair`는 아래와 같이 되므로 문제가 생긴다.  
+> - **[src, https://dsm01pap007files.storage.live.com/y ... h3?width, 660&height, 286&cropmode, none]**
+{:.prompt-info}
+
+### **Chirpy theme의 jsdelivr cdn link 자동 파싱 문제 해결**
+
+이 부분을 해결하기 위해서 `_pair의` `size`가 `2`가 넘어가는 경우 *2번째 index부터 마지막까지 slice*를 해서 `_value`에 assign 하는 방법으로 해결하였다.  
+위 코드의 `31번 부터 38번 Line`을 아래와 같이 수정하였다 아래의 코드를 참조 바란다.  
+{% raw %}
+```liquid
+{% if _pair.size < 2 %}
+  {% continue %}
+<!-- img_cdn 사용 시 원드라이브 src 오류 해결 코드 -->
+{% elsif _pair.size == 2 %}
+  {% capture _key %}{{ _pair | first }}{% endcapture %}
+  {% capture _value %}{{ _pair | last | replace: '"', '' }}{% endcapture %}
+{% elsif _pair.size > 2 %}
+  {% capture _key %}{{ _pair | first }}{% endcapture %}
+  {% capture _value %}{{ _pair | slice: 1, -1 | replace: '"', '' }}{% endcapture %}
+{% endif %}
+```
+{% endraw %}
 
 
 끝~!👍
