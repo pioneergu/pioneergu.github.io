@@ -191,7 +191,7 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
 
 위 코드의 `30번 Line`에서 `<img> tag`내의 attribute를 `=`기준으로 split하여 `[key, value]` 형태의 list를 만들어 나누어 주게 된다.  
 > 예를들어 image tag가 `<img src="aaa.com/abc.png">` 라면,
-> - `_pair`는 **[src, aaa.com/abc.png]**가 된다.
+> - `_pair`는 `[src, aaa.com/abc.png]`가 된다.
 {:.prompt-info}
 
 그리고나서 `_pair` list의 `0번 index` 값은 `_key`에,  
@@ -201,7 +201,7 @@ Chirpy Theme의 `page.html`을 보면 아래와 같이 Contents를 *Refactoring*
 > 원드라이브의 임베드 링크는 아래와 같은데,  
 > https://dsm01pap007files.storage.live.com/y ... h3?width=660&height=286&cropmode=none  
 > 이 경우 `_pair`는 아래와 같이 되므로 문제가 생긴다.  
-> - **[src, https://dsm01pap007files.storage.live.com/y ... h3?width, 660&height, 286&cropmode, none]**
+> - `[src, https://dsm01pap007files.storage.live.com/y ... h3?width, 660&height, 286&cropmode, none]`
 {:.prompt-info}
 
 ### **Chirpy theme의 jsdelivr cdn link 자동 파싱 문제 해결**
