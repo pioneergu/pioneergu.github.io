@@ -37,6 +37,19 @@ body {
   font-family: 'Source Sans Pro', 'Noto Sans KR', 'Microsoft Yahei', sans-serif;
 }
 
+// post image preview
+.post-meta {
+  background-image: url(https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/moon_circle.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+.post-meta h1 {
+  font-weight: bold;
+}
+
+
 /* --- YouTube --- */
 
 .video {
