@@ -7,7 +7,8 @@ date: 2022-07-01 22:08:00 +0900
 categories: [마인크래프트]
 tags: [ex roller coaster, minecraft java, 도티tv, 마인크래프트 자바, 초현실 롤러코스터, 포지모드]    # TAG names should always be lowercase
 
-image: "https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png"
+image:
+  path: /assets/img/posting/minecraft/ExRollerCoaster-Mod.jpg
 ---
 
 ---

@@ -6,10 +6,7 @@ author:
 date: 2022-09-05 15:53:00 +0900
 categories: [Git, Github-Blog]
 tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should always be lowercase
-image:
-  path: /assets/img/favicons/moon_circle.png
-  width: 100%
-  height: 20%
+
 ---
 
 ---

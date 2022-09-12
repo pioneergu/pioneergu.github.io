@@ -38,12 +38,14 @@ body {
 }
 
 // post image preview
-.post-meta {
-  background-image: url(https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/moon_circle.png);
+.post-head-img-bg {
+  background-color: var(--main-wrapper-bg);
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: soft-light;
   padding: 1rem;
+  // opacity: 0.5;
 }
 .post-meta h1 {
   font-weight: bold;
