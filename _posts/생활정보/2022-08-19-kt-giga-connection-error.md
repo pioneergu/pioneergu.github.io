@@ -36,9 +36,11 @@ tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG na
 
 ![kt-share][kt-share]{: style="max-width: 50%"}
 
-이제 `homehub.olleh.com`나 `172.30.1.254`로 접속을 하면 잘 접속이 되는것을 확인 할 수 있다.👍
+이제 `homehub.olleh.com`나 `172.30.1.254`로 접속을 하면 잘 접속이 되는것을 확인 할 수 있다.
 
 ![kt-login][kt-login]{: style="max-width: 70%"}
+
+보안문제 때문에라도 LAN선을 모뎀에 연결 된 채로 두는 것보다 KT Giga Wifi 공유기에 연결을 해 주는것이 좋다.👍
 
 
 [kt-gateway]: https://dsm01pap007files.storage.live.com/y4mvzKQDa1YxCo_F7NmFoNLXYdsN7S4GOxcwTaZfblo9Qi2RCN1r6KLoUI3qHXRmom2Q502qmutPzZWzR9_f3ojdezBRS7lBjH1SH_8ZdE42di6bkC1_BxVrCPNkXybWENalpxJ1H0QfMy_v5-rR4DEEP2Ph5tBOQD6ivXR4d2PAC_UWXij4HbA34r4395GyVga?width=500&height=246&cropmode=none

@@ -6,6 +6,8 @@ author:
 date: 2022-08-11 12:24:00 +0900
 categories: [생활정보]
 tags: [미성년자, 통장개설, 서류, 기본증명서 발급, 가족관계등록부 발급]    # TAG names should always be lowercase
+image:
+  path: 
 ---
 
 ---
