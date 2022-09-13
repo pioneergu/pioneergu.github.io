@@ -78,7 +78,7 @@ image:
 
 -   다운이 받아지는 폴더로 들어가면 아래와 같은 파일이 다운 받아져 있을 것이다. 이 파일을 실행 하려면 자바가 설치되어 있어야 한다.
 
-![forge-install-5][/assets/img/posting/minecraft/forge-install-5.jpg]
+![forge-install-5](/assets/img/posting/minecraft/forge-install-5.jpg)
 
 -   자바의 설치를 진행하기 위해 아래 링크로 접속해 `Windows오프라인(64비트)자바를 다운로드` 받고 설치를 진행 해 주면된다.
 
@@ -91,6 +91,7 @@ image:
 
 -   자바를 설치해 줬으니 아까 다운로드 받은 `forge-1.7.10-10.13.4.1614-1.7.10-installer.jar`를 더블클릭해서 설치해 주자.
 -   아래와 같은 화면이 뜨면 기본값으로 `Install Client`가 선택이 되어 있는데 그대로 두고, 설치위치는 `C:\Users\[User-name]\AppData\Roaming\.minecraft`로 되어 있는데 `건드리지말고 확인을 눌러 설치`를 진행하자.  
+
 ![forge-install-7](/assets/img/posting/minecraft/forge-install-7.jpg)
 
 Forge의 설치는 완료가 되었다.
