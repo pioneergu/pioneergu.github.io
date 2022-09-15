@@ -43,7 +43,7 @@ image:
 ---
 ## **1. Java 설치**
 
-우선 자바를 설치해야 하는데 자바에는 **JRE(Java Reutime Environment)**가 있고, **JDK(Java Development Kit)**이 있다.  
+우선 자바를 설치해야 하는데 자바에는 *JRE(Java Reutime Environment)*가 있고, *JDK(Java Development Kit)*이 있다.  
 간단히 얘기해서 JRE는 자바로 만들어진 프로그램을 실행만 하는 것이고, JDK는 JRE에 개발도구들이 추가된 것이라고 생각하면 되는데, 마인크래프트 모드(포지) 서버를 돌리기 위해서는 `JRE`가 필요하다.  
 > (페이퍼 버킷 같은경우 `JDK`를 요구하고, 포지 같은경우는 `JDK`가 설치되어 있음 안 된다.  
 > 이런식으로 서비스 제공자마다 다를 수 있으니 참고 바란다.)
@@ -58,6 +58,7 @@ image:
 
 > `설치`를 눌러 설치를 진행해 주면 되는데 `구버젼`의 자바가 설치되어 있는 경우 `설치 해제`를 권장하는 문구가 뜨는데,  
 > `꼭 설치해제를 해주도록 하자!!!`
+{:.prompt-tip}
 
 ---
 ## **2. 포지(forge)를 서버모드로 설치**
@@ -123,15 +124,17 @@ Installer를 누르면 광고화면이 나오게 되는데 `우측상단`에 아
 > 참고로, 친구들이랑 즐기는 용도면 2기가면 충분하다.
 > 
 > ![forge-server9](/assets/img/posting/minecraft/forge-server9.jpg)
+{:.prompt-info}
 
 이제 만들어준 `StartServer.bat`파일을 더블클릭하여 실행해 준다.
 
 ---
 
-### ***(실행 오류 시 참고사항)**
+### **(실행 오류 시 참고사항)**
 
 > 만일 java `jdk`가 설치되어 있다면 아래와 같은 오류를 띄우며 실행이 되지 않는다.  
 > 이런 경우 `포지모드 서버`를 구축하려면 `jdk`를 지워야 한다.
+{:.prompt-warning}
 
 ```
 C:\Users\pyoneer\Desktop\롤러코스터서버>java -Xms1G -Xmx2G -jar forge-1.7.10-10.13.4.1614-1.7.10-universal.jar
