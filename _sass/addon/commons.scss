@@ -1329,7 +1329,7 @@ $sidebar-display: "sidebar-display";
   }
 }
 
-/* hide sidebar and panel */
+/* hide sidebar and panel (max-width: 849px)*/
 @media all and (max-width: 849px) {
   @mixin slide($append: null) {
     $basic: transform 0.4s ease;
@@ -1554,11 +1554,14 @@ $sidebar-display: "sidebar-display";
 
 }
 
-/* panel hidden */
+/* panel hidden (max-width: 1199px)*/
 @media all and (max-width: 1199px) {
   #panel-wrapper {
     display: none;
   }
+  // #sidebar {
+  //   display: none;
+  // }
 
   #main > div.row {
     -webkit-box-pack: center !important;
