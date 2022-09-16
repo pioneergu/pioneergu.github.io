@@ -70,12 +70,16 @@ iframe {
 
 /* --- Typography --- */
 
-p em {
+p em, 
+ul em, 
+ol em {
   font-style: normal;
   color: orange;
 }
 
-p strong {
+p strong, 
+ul strong, 
+ol strong {
   color: orangered;
 }
 
