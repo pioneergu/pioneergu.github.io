@@ -68,7 +68,7 @@ tags: [iptime, portforwarding, 포트포워딩]    # TAG names should always be 
 지정해준 외부포트번호인 `25565`를 `Port Number`에 입력하고 엔터를 누르면,  
 아래와 같이 초록색 깃발과 함께 `Port 25565 is open on [외부IP주소]`라는 문구가 뜨면 성공한 것이다!
 
-![portfowarding-test](kt-portforwarding-5.jpg)
+![kt-portforwarding-5](/assets/img/posting/생활정보/kt-portforwarding-5.jpg)
 
 이제 친구에게 `나의 외부IP주소:25565`를 알려주고,  
 집에서 친구와 마인크래프트 모드를 온라인으로 즐기자~!👏

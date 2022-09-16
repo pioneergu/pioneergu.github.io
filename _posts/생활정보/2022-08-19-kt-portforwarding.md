@@ -33,11 +33,11 @@ tags: [kt giga, portforwarding, 포트포워딩]    # TAG names should always be
 처음 접속을 하게 되면 `id와 비밀번호를 꼭 변경`하게 되어 있는데 이를 잘 적어두지 않으면 나중에 찾기 힘들다...  
 만일 **id와 비밀번호를 잊었다면**, 공유기 본체 측면에 초기화버튼을 뾰족한걸로 5초정도 누르면 **id와 비밀번호가 초기화** 된다.
 
-![kt-portforwarding-2](/assets/img/posting/생활정보/kt-portforwarding-2.jpg)
+![kt-portforwarding-2](/assets/img/posting/생활정보/kt-portforwarding-2.jpg){: style="max-width: 90%"}
 
 로그인을 하게 되면 아래와 같은 화면이 나오게 되는데 `장치설정` > `트래픽관리` > `포트포워딩`으로 들어가준다.
 
-![kt-portforwarding-3](/assets/img/posting/생활정보/kt-portforwarding-3.jpg)
+![kt-portforwarding-3](/assets/img/posting/생활정보/kt-portforwarding-3.jpg){: style="max-width: 90%"}
 
 > `내부 IP 주소:` 나의 `내부 IP주소`를 적어준다. [내 IP주소 확인하는 방법-클릭](https://pioneergu.github.io/posts/my-external-ip/){: target="_blank"}  
 > `외부포트:` 마크서버를 열기 위해선 25565를 적는다.
