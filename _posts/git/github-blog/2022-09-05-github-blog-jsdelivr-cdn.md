@@ -10,9 +10,24 @@ tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should alway
 ---
 
 ---
-## **jsdelivr 사용하기**
+## **CDN**
+아래의 지도는 *해저케이블* 지도이다.  
 
-GitHub Pages를 이용하여 Blog를 사용중이라면 jsdelivr로 무료 CDN을 사용 할 수 있다.  
+![submarinecablemap](/assets/img/posting/submarinecablemap.jpg){: style="max-width:90%"}
+> 제대로된 지도가 궁금하다면: <https://www.submarinecablemap.com/>{: target="_blank"}
+{:.prompt-tip}
+
+바다를 건너 데이터를 전송할 때 저 해저케이블들을 통해서 데이터가 전송 되는 것인데, 
+아무리 데이터 전송속도가 빠르다 한들 물리적으로 먼 곳에서의 용량이 큰 데이터 다운로드는 상대적으로 매우 느릴 수 밖에 없다.  
+그래서 만들어진 것이 *CDN*이라는 콘텐츠 전송 네트워크 이다.  
+지리적으로 먼 곳에 있는 콘텐츠에 접속을 할 때 용량이 큰 이미지나 동영상의 경우 지리적으로 `가까운 CDN 서버`에 미리 저장 해 둬서 빠른 로딩을 경험 할 수 있게 해준다.  
+(e.g. 한국에서 미국의 웹사이트에 접속할 때 용량이 큰 콘텐츠는 한국 CDN서버에서 다운로드 받아 웹사이트의 빠른 로딩이 가능하게 해 준다.)
+
+---
+## **jsdelivr CDN 사용하기**
+전 세계의 사용자가 내 블로그를 접속했을때 이미지 로딩으로 한참을 기다려야 할 수는 없다. 게다가 GitHub에 업로드 된 이미지는 CDN서버에 올라가지 않기 때문에 그냥 한국에서도 느리다.  
+따라서, GitHub Jekyll Blog를 사용하려면 CDN 서비스의 이용이 필수라 할 수 있다.  
+다행히도, GitHub Pages를 이용하여 Blog를 사용중이라면 `jsdelivr`로 *무료 CDN*을 사용 할 수 있다.  
 사용법은 매우 간단하다.  
 
 > 따로 설치하거나 뭐 그런것 없이 GitHub 블로그에 업로드한 file의 *file path* 앞에 아래와 같은 정보들을 입력한 Link를 file path에 넣어주면 된다.  
