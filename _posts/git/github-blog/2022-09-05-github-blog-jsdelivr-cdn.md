@@ -13,7 +13,7 @@ tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should alway
 ## **CDN**
 아래의 지도는 *해저케이블* 지도이다.  
 
-![submarinecablemap](/assets/img/posting/submarinecablemap.jpg){: style="max-width:90%"}
+![submarinecablemap](/assets/img/posting/git/submarinecablemap.jpg){: style="max-width:90%"}
 > 제대로된 지도가 궁금하다면: <https://www.submarinecablemap.com/>{: target="_blank"}
 {:.prompt-tip}
 
