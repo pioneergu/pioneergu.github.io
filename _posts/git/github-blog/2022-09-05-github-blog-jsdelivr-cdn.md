@@ -6,7 +6,8 @@ author:
 date: 2022-09-05 15:53:00 +0900
 categories: [Git, Github-Blog]
 tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should always be lowercase
-
+image:
+  path: /assets/img/posting/git/submarinecablemap.jpg
 ---
 
 ---
@@ -21,7 +22,7 @@ tags: [blogging, jekyll, github, free CDN, jsdelivr]    # TAG names should alway
 아무리 데이터 전송속도가 빠르다 한들 물리적으로 먼 곳에서의 용량이 큰 데이터 다운로드는 상대적으로 매우 느릴 수 밖에 없다.  
 그래서 만들어진 것이 *CDN*이라는 콘텐츠 전송 네트워크 이다.  
 지리적으로 먼 곳에 있는 콘텐츠에 접속을 할 때 용량이 큰 이미지나 동영상의 경우 지리적으로 `가까운 CDN 서버`에 미리 저장 해 둬서 빠른 로딩을 경험 할 수 있게 해준다.  
-(e.g. 한국에서 미국의 웹사이트에 접속할 때 용량이 큰 콘텐츠는 한국 CDN서버에서 다운로드 받아 웹사이트의 빠른 로딩이 가능하게 해 준다.)
+> (e.g. 한국에서 미국의 웹사이트에 접속할 때 용량이 큰 콘텐츠는 미리 저장된 한국 CDN서버에서 다운로드 받아 웹사이트의 빠른 로딩이 가능하게 해 준다.)
 
 ---
 ## **jsdelivr CDN 사용하기**
