@@ -3,7 +3,7 @@ title: ipTIME 포트포워딩
 author:
   name: pioneergu
   link: https://pioneergu.github.io
-date: 2022-08-19 17:21:00 +0900
+date: 2022-08-18 17:21:00 +0900
 categories: [생활정보]
 tags: [iptime, portforwarding, 포트포워딩]    # TAG names should always be lowercase
 ---
