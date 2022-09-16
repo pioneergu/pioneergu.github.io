@@ -1,5 +1,5 @@
 ---
-title: ipTIME 포트포워딩
+title: KT GIGA Wifi 포트포워딩
 author:
   name: pioneergu
   link: https://pioneergu.github.io
