@@ -213,7 +213,10 @@ C:\Users\pyoneer\Desktop\롤러코스터서버>pause
 접속하려는 서버에도 같은 모드가 설치되어 있어야 멀티플레이 게임이 가능하다.  
 이제 다음으로 친구들이 내 서버로 접속 할 수 있게 포트포워딩 하는 방법을 알아보려 한다.
 
----
-## Next: [KT 공유기 포트포워딩, 마인크래프트 자바 온라인플레이](https://pioneergu.tistory.com/12)
+> 공유기가 *KT GIGA* 일 경우
+> <https://pioneergu.github.io/posts/kt-portforwarding/>{: target="_blank"}
+{:.prompt-info}
 
----
+> 공유기가 *ipTME*일 경우
+> <https://pioneergu.github.io/posts/iptime-portforwarding/>{: target="_blank"}
+{:.prompt-info}

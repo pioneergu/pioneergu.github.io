@@ -12,7 +12,11 @@ tail_includes:
 {% include lang.html %}
 
 {% if page.image.path %}
-  {% assign _bg_img_path = 'https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master' | append: page.image.path %}
+  {% if page.image.path contains '://' %}
+    {% assign _bg_img_path = page.image.path %}
+  {% else %}
+    {% assign _bg_img_path = 'https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master' | append: page.image.path %}
+  {% endif %}
   <!-- {{ _bg_img_path }} -->
   <!-- {% assign _bg_img_path = page.image.path %} -->
 {% else %}

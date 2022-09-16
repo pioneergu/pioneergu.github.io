@@ -3,13 +3,10 @@ title: KT GIGA Wifi 공유기 관리자 모드 접속이 안되는 경우
 author:
   name: pioneergu
   link: https://pioneergu.github.io
-date: 2022-08-19 23:10:00 +0900
+date: 2022-08-20 23:31:00 +0900
 categories: [생활정보]
 tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG names should always be lowercase
 ---
-
-
-{% include link-preview.html file="/posts/ex-roller-coaster-mod/index.html" %}
 
 ---
 ## **KT GIGA Wifi 접속 오류 Case**

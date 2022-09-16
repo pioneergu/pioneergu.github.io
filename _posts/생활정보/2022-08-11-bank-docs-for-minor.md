@@ -7,7 +7,7 @@ date: 2022-08-11 12:24:00 +0900
 categories: [생활정보]
 tags: [미성년자, 통장개설, 서류, 기본증명서 발급, 가족관계등록부 발급]    # TAG names should always be lowercase
 image:
-  path: 
+  path: https://dsm01pap007files.storage.live.com/y4mC9rD2Sw4cWUX5uHXx1OCmrb2mGVcqTrsSBEYgydsrf8uIttQVEObK9VoqC6eYTqJCRYWGDx8-jJQc6AjzurpwcfOQ3Wi2iHWwq5P-pzUh1Told1jXC29UA_dJ9bF3_gThnuD-1ZNV3XTGaHGOOQcyngOVF1f0SZGwpj5j1jwVrDf1aSUzN_2Oae7tVQ19F9p?width=660&height=583&cropmode=none
 ---
 
 ---
@@ -29,6 +29,8 @@ image:
 *✔ 부모의 신분증 지참 필!*
 ### **4. 통장사용 인감**  
 *✔ 미성년자의 통장에 사용할 도장도 필요하다~*  
+
+필요한 서류는 확인 했으니 이제 서류의 발급 방법을 알아 보자.  
   
 ---
 ## **기본증명서(상세) 및 가족관계등록부 발급 방법**
