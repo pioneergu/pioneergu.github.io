@@ -42,34 +42,3 @@ $$ {\color{Apricot}x_{norm}} = {x - min(x) \over max(x) - min(x)}\ \ \ (0\le x_{
 <!-- TradingView Widget END -->
 
   
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_c075d"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETH/" rel="noopener" target="_blank"><span class="blue-text">ETH Chart</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 799,
-  "height": 610,
-  "symbol": "ETH",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "details": false,
-  "studies": [
-    "MACD@tv-basicstudies"
-  ],
-  "container_id": "tradingview_c075d"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
