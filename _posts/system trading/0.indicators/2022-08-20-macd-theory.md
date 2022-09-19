@@ -127,9 +127,9 @@ MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 �
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETH/" rel="noopener" target="_blank"><span class="blue-text">ETH Chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
-    var widgetWidth = document.getElementById('core-wrapper').clientWidth - 100;
+    var widgetWidth = document.getElementById('tradingview-widget-container').clientWidth - 20;
     function tradingviewResize() {
-      widgetWidth = document.getElementById('core-wrapper').clientWidth - 100;
+      widgetWidth = document.getElementById('tradingview-widget-container').clientWidth - 20;
       new TradingView.widget(
       {
         "width": widgetWidth,
