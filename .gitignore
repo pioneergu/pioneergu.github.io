@@ -21,3 +21,6 @@ package-lock.json
 
 # images
 _images
+
+# temporary posts
+_temp_post

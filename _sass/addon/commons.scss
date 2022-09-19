@@ -37,6 +37,16 @@ body {
   font-family: 'Source Sans Pro', 'Noto Sans KR', 'Microsoft Yahei', sans-serif;
 }
 
+// trading view
+.tradingview-widget-container {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+
+
 // post image preview
 .post-head-img-bg {
   background-color: var(--main-wrapper-bg);
