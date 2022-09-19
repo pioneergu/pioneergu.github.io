@@ -4,7 +4,7 @@ author:
   name: pioneergu
   link: https://pioneergu.github.io
 date: 2022-08-20 16:56:00 +0900
-categories: [System Trading, Indicators]
+categories: [System Trading, 0.Indicators]
 tags: [macd, indicators, 고찰]    # TAG names should always be lowercase
 ---
 
