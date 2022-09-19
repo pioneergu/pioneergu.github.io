@@ -123,40 +123,39 @@ MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 �
   
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" id="tradingview-widget-container">
-  <div id="tradingview_c075d"></div>
+  <div id="tradingview_c075d" style="height:600px"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETH/" rel="noopener" target="_blank"><span class="blue-text">ETH Chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
-    var widgetWidth = document.getElementById('tradingview-widget-container').clientWidth - 20;
+    var widgetWidth = document.getElementById('tradingview_c075d');
+    widgetWidth.style.height = document.getElementById('tradingview-widget-container').clientWidth - 20 + 'px';
     function tradingviewResize() {
-      widgetWidth = document.getElementById('tradingview-widget-container').clientWidth - 20;
-      new TradingView.widget(
-      {
-        "width": widgetWidth,
-        "height": widgetWidth,
-        "symbol": "ETH",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
-        "style": "1",
-        "locale": "en",
-        "toolbar_bg": "#f1f3f6",
-        "enable_publishing": false,
-        "withdateranges": true,
-        "hide_side_toolbar": false,
-        "allow_symbol_change": true,
-        "details": false,
-        "studies": [
-          "MACD@tv-basicstudies"
-        ],
-        "container_id": "tradingview_c075d"
-      });
-      // console.log(widgetWidth)
+      widgetWidth.style.height = document.getElementById('tradingview-widget-container').clientWidth - 20 + 'px';
     }
     window.onload = function() {
       tradingviewResize();
       window.addEventListener('resize', tradingviewResize);
     }
+    new TradingView.widget(
+    {
+      "autosize": true,
+      "symbol": "ETH",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "en",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "withdateranges": true,
+      "hide_side_toolbar": false,
+      "allow_symbol_change": true,
+      "details": false,
+      "studies": [
+        "MACD@tv-basicstudies"
+      ],
+      "container_id": "tradingview_c075d"
+    });
   </script>
 </div>
 <!-- TradingView Widget END -->
