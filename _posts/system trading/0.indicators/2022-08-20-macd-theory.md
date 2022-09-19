@@ -122,33 +122,41 @@ MACD는 가격이 한방향으로 `추세가 잘` 나거나 `가격 변동폭이
 MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 하다보면 MACD지표에 대한 이해도가 높아질 것이다.  
   
 <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
+<div class="tradingview-widget-container" id="tradingview-widget-container">
   <div id="tradingview_c075d"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETH/" rel="noopener" target="_blank"><span class="blue-text">ETH Chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 799,
-  "height": 610,
-  "symbol": "ETH",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "withdateranges": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "details": false,
-  "studies": [
-    "MACD@tv-basicstudies"
-  ],
-  "container_id": "tradingview_c075d"
-}
-  );
+    var widgetWidth = document.getElementById('core-wrapper').clientWidth - 100;
+    function tradingviewResize() {
+      widgetWidth = document.getElementById('core-wrapper').clientWidth - 100;
+      new TradingView.widget(
+      {
+        "width": widgetWidth,
+        "height": widgetWidth,
+        "symbol": "ETH",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "withdateranges": true,
+        "hide_side_toolbar": false,
+        "allow_symbol_change": true,
+        "details": false,
+        "studies": [
+          "MACD@tv-basicstudies"
+        ],
+        "container_id": "tradingview_c075d"
+      });
+      // console.log(widgetWidth)
+    }
+    window.onload = function() {
+      tradingviewResize();
+      window.addEventListener('resize', tradingviewResize);
+    }
   </script>
 </div>
 <!-- TradingView Widget END -->
