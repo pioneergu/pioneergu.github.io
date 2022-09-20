@@ -123,7 +123,7 @@ MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 �
   
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div id="tradingview_c075d" style="height:600px"></div>
+  <div id="tradingview_c075d" style="height:550px"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETH/" rel="noopener" target="_blank"><span class="blue-text">ETH Chart</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
@@ -147,17 +147,6 @@ MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 �
       ],
       "container_id": "tradingview_c075d"
     });
-  </script>
-  <script type="text/javascript">
-    var widgetWidth = document.getElementById('tradingview_c075d');
-    widgetWidth.style.height = document.getElementById('tradingview_c075d').clientWidth - 20 + 'px';
-    function tradingviewResize() {
-      widgetWidth.style.height = document.getElementById('tradingview_c075d').clientWidth - 20 + 'px';
-    }
-    window.onload = function() {
-      tradingviewResize();
-      window.addEventListener('resize', tradingviewResize);
-    }
   </script>
 </div>
 <!-- TradingView Widget END -->
