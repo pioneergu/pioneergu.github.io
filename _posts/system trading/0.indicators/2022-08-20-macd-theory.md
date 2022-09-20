@@ -147,6 +147,15 @@ MACD 지표가 있어 직관적인 Test를 해 볼 수 있으니 이것저것 �
       ],
       "container_id": "tradingview_c075d"
     });
+    var widgetWidth = document.getElementById('tradingview_c075d');
+    widgetWidth.style.height = document.getElementById('tradingview_c075d').clientWidth - 20 + 'px';
+    function tradingviewResize() {
+      widgetWidth.style.height = document.getElementById('tradingview_c075d').clientWidth - 20 + 'px';
+    }
+    window.onload = function() {
+      tradingviewResize();
+      window.addEventListener('resize', tradingviewResize);
+    }
   </script>
 </div>
 <!-- TradingView Widget END -->
