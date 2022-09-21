@@ -1,5 +1,5 @@
 ---
-title: Feature Scaling
+title: Data Preprocessing - Feature Scaling
 author:
   name: pioneergu
   link: https://pioneergu.github.io
@@ -10,35 +10,26 @@ math: true
 ---
 
 ---
-## **print() 함수로 파일에 기록(출력)하기**
+## **Data Preprocessing**
 
-#### **Standardisation**
+#### **Standardization**
 대부분의 경우 잘 맞는다.
 
 $$ {\color{Apricot}x_{stand}} = {x - mean(x) \over standard\ deviation(x)} \ \ \ (-3\le x_{stand} \le3)$$
 
-#### **Normalisation**
+```python
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+
+X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+X_test[:, 3:] = sc.transform(X_test[:, 3:]) # 같은 Scale을 가져야 하므로 X_test는 fit method 안쓴다.
+```
+
+#### **Normalization**
 데이터가 정규분포를 따를 때 사용하면 좋다.  
 
 $$ {\color{Apricot}x_{norm}} = {x - min(x) \over max(x) - min(x)}\ \ \ (0\le x_{norm} \le1)$$
 
 
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-  {
-  "colorTheme": "dark",
-  "isTransparent": false,
-  "width": "510",
-  "height": "600",
-  "locale": "en",
-  "importanceFilter": "-1,0,1",
-  "currencyFilter": "KRW,USD"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
 
   
