@@ -82,14 +82,17 @@ iframe {
 
 p em, 
 ul em, 
-ol em {
+ol em, 
+td em {
   font-style: normal;
   color: orange;
 }
 
-p strong, 
-ul strong, 
-ol strong {
+#id-red {
+  color: red;
+}
+
+p strong {
   color: orangered;
 }
 
