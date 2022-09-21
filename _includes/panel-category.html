@@ -24,7 +24,6 @@
   {% assign posts_of_category = category | last %}
   {% assign first_post = posts_of_category | first %}
 
-  <!-- <div id="access-lastmod" class="post"></div> -->
   {% if category_name == first_post.categories[0] %}
     {% assign sub_categories = "" | split: "" %}
 
@@ -54,16 +53,6 @@
         <!-- content count -->
         {% assign top_posts_size = site.categories[category_name] | size %}
         <span class="text-muted small font-weight-light">
-          <!-- {% if sub_categories_size > 0 %}
-            {{ sub_categories_size }}
-            {% if sub_categories_size > 1 %}
-              {{ site.data.locales[lang].categories.category_measure.plural
-                | default: site.data.locales[lang].categories.category_measure }}
-            {% else %}
-              {{ site.data.locales[lang].categories.category_measure.singular
-                | default: site.data.locales[lang].categories.category_measure }}
-            {% endif %},
-          {% endif %} -->
 
           {{ top_posts_size }}
 
@@ -126,9 +115,7 @@
   {% assign group_index = group_index | plus: 1 %}
   
   {% endif %}
-  <!-- </div> -->
   {% endfor %}
 
   <div id="access-lastmod" class="post">
-    <!-- <hr> -->
   </div>

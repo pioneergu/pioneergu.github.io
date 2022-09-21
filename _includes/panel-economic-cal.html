@@ -1,0 +1,22 @@
+{% comment %}
+  Get Economic Calendar
+{% endcomment %}
+
+<!-- TradingView Widget BEGIN -->
+<div class="panel-heading">{{- site.data.locales[lang].panel.economic_calendar -}}</div>
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "width": "300",
+  "height": "450",
+  "locale": "en",
+  "importanceFilter": "0,1",
+  "currencyFilter": "KRW,USD"
+  }
+  </script>
+</div>
+<!-- TradingView Widget END -->
