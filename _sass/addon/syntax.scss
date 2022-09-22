@@ -181,6 +181,7 @@ div {
       display: none;
     }
   }
+  /* text code block */
   &.language-text.highlighter-rouge {
     .highlight {
       background: var(--highlight-text-bg-color);
@@ -188,9 +189,6 @@ div {
     .highlight pre{
       color: var(--highlight-text-color);
       background: var(--highlight-text-bg-color);
-    }
-    .code-header {
-      display: none;
     }
     pre.lineno {
       display: none;
