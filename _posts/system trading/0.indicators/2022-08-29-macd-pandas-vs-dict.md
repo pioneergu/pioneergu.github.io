@@ -11,7 +11,7 @@ tags: [macd, indicators, pandas, dictionary]    # TAG names should always be low
 ---
 ## **실시간 MACD 지표계산 코드작성 (pandas와 dictionary)**
 
-Dictionary를 활용한 실시간 차트의 MACD 모의 계산은 이 전글에서 다루었으니,  
+Dictionary를 활용한 실시간 차트의 MACD 모의 계산은 [이전글](https://pioneergu.github.io/posts/macd-code/#%EC%8B%A4%EC%8B%9C%EA%B0%84-macd-%EC%A7%80%ED%91%9C-%EB%AA%A8%EC%9D%98-%EA%B3%84%EC%82%B0){: target="_blank"}에서 다루었으니,  
 `pandas library`를 사용하여 `실시간 차트 모의계산 함수`를 우선 만들도록 해보겠다.
 
 ```python
