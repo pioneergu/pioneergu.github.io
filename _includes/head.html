@@ -113,8 +113,12 @@
   {% endif %}
 
   <!-- JavaScript -->
-
+  
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
+  
+  <!-- PyScript -->
+  
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
