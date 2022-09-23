@@ -12,7 +12,8 @@ tags: [blogging, jekyll, deploy, deploy fail]    # TAG names should always be lo
 ## **GitHub pages Gem관련 Deploy 오류 발생**
 
 GitHub pages로 `Deploy`하여 사용하는 `Jekyll Theme Blog`를 잘 사용하고 있는 중에 `pyscript`를 쓰려고 시도하던 중 `pyscript`의 code가 Deploy만 하면 온라인상에서 Code 줄바뀜이 안 되는 현상을 발견하였다. (local에선 잘 된다.)  
-> [pyscript Deploy 시 Code 줄바꿈 오류 해결 방법](https://pioneergu.github.io/posts/pyscript/){: tager="_blank"}
+> [pyscript Deploy 시 Code 줄바꿈 오류 해결 방법](https://pioneergu.github.io/posts/pyscript/){: tager="_blank"}  
+
 이걸 해결해 보려고 `gemspec`을 건드려보고 `bundle update`도 하는 등 이것저것 손을 막 댔다.  
 그런데!! 갑자기 어느순간 `Deploy Error`가 뜨는것 아니겠는가!? 😢
 
