@@ -11,7 +11,9 @@ tags: [blogging, jekyll, deploy, deploy fail]    # TAG names should always be lo
 ---
 ## **GitHub pages Gem관련 Deploy 오류 발생**
 
-GitHub pages로 `Deploy`하여 사용하는 `Jekyll Theme Blog`를 잘 사용하고 있는 중에 `pyscript`가 Deploy하면 온라인상에서 Code 줄바뀜이 안되는 현상을 발견하여 이걸 해결해 보려고 `gemspec`을 건드려보고 `bundle update`도 하는 등 이것저것 손을 막 댔다.  
+GitHub pages로 `Deploy`하여 사용하는 `Jekyll Theme Blog`를 잘 사용하고 있는 중에 `pyscript`를 쓰려고 시도하던 중 `pyscript`의 code가 Deploy만 하면 온라인상에서 Code 줄바뀜이 안 되는 현상을 발견하였다. (local에선 잘 된다.)  
+> [pyscript Deploy 시 Code 줄바꿈 오류 해결 방법](https://pioneergu.github.io/posts/pyscript/){: tager="_blank"}
+이걸 해결해 보려고 `gemspec`을 건드려보고 `bundle update`도 하는 등 이것저것 손을 막 댔다.  
 그런데!! 갑자기 어느순간 `Deploy Error`가 뜨는것 아니겠는가!? 😢
 
 > Deploy Error가 생기면 아래 주황색 박스 친부분의 `✔`가 ❌로 바뀌게 된다.
@@ -29,6 +31,7 @@ Error: The process '/opt/hostedtoolcache/Ruby/2.7.6/x64/bin/bundle' failed with 
 
 그런데 내 경우는 이 방법으로 해결이 되질 않았다...
 
+---
 ## **Deploy 오류 해결**
 구글링을 하다보니 gem version이나 spec 관련 오류는 gem을 싹 지우고 다시 세팅 하면 해결이 되는듯 했다.
 우선 `gem cleanup`을 하고 `bundle update`를 한 후 `bundle install`을 해주자.  
