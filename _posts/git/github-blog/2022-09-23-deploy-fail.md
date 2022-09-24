@@ -1,5 +1,5 @@
 ---
-title: GitHub(jekyll) Blog Deploy Fail 오류
+title: GitHub(jekyll) Blog Deploy Error
 author:
   name: pioneergu
   link: https://pioneergu.github.io
