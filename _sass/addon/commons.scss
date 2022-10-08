@@ -1349,6 +1349,21 @@ $sidebar-display: "sidebar-display";
 /* hide sidebar and panel (max-width: 849px)*/
 @media all and (max-width: 849px) {
   // 아래 코드가 있으면 우측의 toc nav가 sticky가 안된다.
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
+  @mixin slide($append: null) {
+    $basic: transform 0.4s ease;
+    @if $append {
+      -webkit-transition: $basic, $append;
+      transition: $basic, $append;
+    } @else {
+      -webkit-transition: $basic;
+      transition: $basic;
+    }
+  }
   [#{$sidebar-display}] {
     #sidebar {
       transform: translateX(0);
@@ -1359,6 +1374,7 @@ $sidebar-display: "sidebar-display";
       transform: translateX(#{$sidebar-width});
     }
   }
+
 }
 
 /* hide sidebar (max-width: 849px)*/
@@ -1374,10 +1390,7 @@ $sidebar-display: "sidebar-display";
     }
   }
 
-  html,
-  body {
-    overflow-x: hidden;
-  }
+
 
   #sidebar {
     @include slide;
@@ -1391,7 +1404,6 @@ $sidebar-display: "sidebar-display";
       transition: none;
     }
   }
-
   #main-wrapper {
     @include slide;
 
