@@ -116,8 +116,8 @@
   } // .post-preview
 } // #post-list
 
-/* Hide SideBar and TOC */
-@media all and (max-width: 830px) {
+/* Hide SideBar and TOC (max-width: 830px)*/
+@media all and (max-width: 1200px) {
   .pagination {
     justify-content: space-evenly;
 
@@ -131,8 +131,8 @@
   }
 }
 
-/* Sidebar is visible */
-@media all and (min-width: 831px) {
+/* Sidebar is visible (min-width: 831px)*/
+@media all and (min-width: 1199px) {
   #post-list {
     margin-top: 1.5rem;
 
@@ -176,8 +176,8 @@
 
 }
 
-/* Pannel hidden */
-@media all and (max-width: 1200px) {
+/* Pannel hidden (max-width: 1200px)*/
+@media all and (max-width: 850px) {
   #post-list {
     padding-right: 0;
   }

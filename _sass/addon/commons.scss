@@ -985,7 +985,7 @@ $sidebar-display: "sidebar-display";
   height: $topbar-height;
   position: fixed;
   top: 0;
-  left: $sidebar-width; /* same as sidebar width */
+  left: $sidebar-width-small; /* same as sidebar width */
   right: 0;
   transition: top 0.2s ease-in-out;
   z-index: 50;
@@ -1280,7 +1280,7 @@ $sidebar-display: "sidebar-display";
 /*
   Responsive Design:
 
- {sidebar, content, panel} >= 1120px screen width
+ {sidebar, content, panel} >= 1200px screen width
  {sidebar, content} >= 850px screen width
  {content} <= 849px screen width
 
@@ -1348,6 +1348,21 @@ $sidebar-display: "sidebar-display";
 
 /* hide sidebar and panel (max-width: 849px)*/
 @media all and (max-width: 849px) {
+  // 아래 코드가 있으면 우측의 toc nav가 sticky가 안된다.
+  [#{$sidebar-display}] {
+    #sidebar {
+      transform: translateX(0);
+    }
+
+    #topbar-wrapper,
+    #main-wrapper {
+      transform: translateX(#{$sidebar-width});
+    }
+  }
+}
+
+/* hide sidebar (max-width: 849px)*/
+@media all and (max-width: 1199px) {
   @mixin slide($append: null) {
     $basic: transform 0.4s ease;
     @if $append {
@@ -1362,17 +1377,6 @@ $sidebar-display: "sidebar-display";
   html,
   body {
     overflow-x: hidden;
-  }
-
-  [#{$sidebar-display}] {
-    #sidebar {
-      transform: translateX(0);
-    }
-
-    #topbar-wrapper,
-    #main-wrapper {
-      transform: translateX(#{$sidebar-width});
-    }
   }
 
   #sidebar {
@@ -1403,9 +1407,16 @@ $sidebar-display: "sidebar-display";
     width: 100%;
   }
 
-  #breadcrumb,
-  #search-wrapper {
+  // #breadcrumb,
+  // #search-wrapper {
+  //   display: none;
+  // }
+  #breadcrumb {
     display: none;
+  }
+
+  #search-wrapper {
+    max-width: $search-max-width;
   }
 
   #topbar-wrapper {
@@ -1418,6 +1429,9 @@ $sidebar-display: "sidebar-display";
   #panel-wrapper {
     margin-top: 0;
   }
+  // #core-wrapper {
+  //   margin-top: 0;
+  // }
 
   #topbar-title,
   #sidebar-trigger,
@@ -1442,31 +1456,63 @@ $sidebar-display: "sidebar-display";
       margin-top: 3rem;
     }
   }
-
 } /* max-width: 849px */
 
+/* max-width: 849px */
 @media all and (max-width: 849px) and (orientation: portrait) {
   [data-topbar-visible=false] #topbar-wrapper {
     top: 0;
   }
+  // #panel-wrapper {
+  //   display: none;
+  // }
+  // // #sidebar {
+  // //   display: none;
+  // // }
+
+  // #main > div.row {
+  //   -webkit-box-pack: center !important;
+  //   -ms-flex-pack: center !important;
+  //   justify-content: center !important;
+  // }
 }
 
-/* Phone & Pad */
-@media all and (min-width: 577px) and (max-width: 1199px) {
+/* Phone & Pad (max-width: 1199px) */
+@media all and (min-width: 577px) and (max-width: 849px) {
   footer > .d-flex > div {
     width: 312px;
   }
 }
 
-/* Sidebar is visible */
-@media all and (min-width: 850px) {
+/* Sidebar is visible original (min-width: 850px) */
+@media all and (min-width: 1199px) {
   /* Solved jumping scrollbar */
   html {
     overflow-y: scroll;
   }
+  /* sidebar가 나중에 없어질때의 code로 돌리려면 아래 #sidebar 삭제 */
+  #sidebar {
+    width: $sidebar-width-small;
+
+    .site-subtitle {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .sidebar-bottom {
+      a,
+      span {
+        width: 2rem;
+      }
+
+      .icon-border {
+        left: -3px;
+      }
+    }
+  }
 
   #main-wrapper {
-    margin-left: $sidebar-width;
+    margin-left: $sidebar-width-small;
   }
 
   .profile-wrapper {
@@ -1506,40 +1552,54 @@ $sidebar-display: "sidebar-display";
 
 }
 
-/* Pad horizontal */
-@media all and (min-width: 992px) and (max-width: 1199px) {
+/* Pad horizontal (min-width: 992px) and (max-width: 1199px)*/
+@media all and (min-width: 850px) and (max-width: 1199px) {
   #main .col-lg-11 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 96%;
-    flex: 0 0 96%;
-    max-width: 96%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 
 /* Compact icons in sidebar & panel hidden */
 @media all and (min-width: 850px) and (max-width: 1199px) {
-  #sidebar {
-    width: $sidebar-width-small;
+  /* sidebar가 나중에 없어질때의 code */
+  // #sidebar {
+  //   width: $sidebar-width-small;
 
-    .site-subtitle {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+  //   .site-subtitle {
+  //     margin-left: 1rem;
+  //     margin-right: 1rem;
+  //   }
 
-    .sidebar-bottom {
-      a,
-      span {
-        width: 2rem;
-      }
+  //   .sidebar-bottom {
+  //     a,
+  //     span {
+  //       width: 2rem;
+  //     }
 
-      .icon-border {
-        left: -3px;
-      }
-    }
+  //     .icon-border {
+  //       left: -3px;
+  //     }
+  //   }
+  // }
+  #back-to-top {
+    bottom: 5.5rem;
+    right: 5%;
   }
 
+  /* sidebar가 나중에 없어지는 기존은 left임 */
+  #panel-wrapper {
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
+
+  // #topbar-wrapper {
+  //   left: 210px;
+  // }
   #topbar-wrapper {
-    left: 210px;
+    left: 0px;
   }
 
   #search-results > div {
@@ -1557,8 +1617,12 @@ $sidebar-display: "sidebar-display";
     font-size: 90%;
   }
 
+  /* sidebar가 나중에 없어지는 기존은 left임 */
+  // #main-wrapper {
+  //   margin-left: 210px;
+  // }
   #main-wrapper {
-    margin-left: 210px;
+    margin-left: 0px;
   }
 
   #breadcrumb {
@@ -1572,13 +1636,16 @@ $sidebar-display: "sidebar-display";
 }
 
 /* panel hidden (max-width: 1199px)*/
-@media all and (max-width: 1199px) {
+@media all and (max-width: 849px) {
   #panel-wrapper {
     display: none;
   }
   // #sidebar {
   //   display: none;
   // }
+  #search-wrapper {
+    display: none;
+  }
 
   #main > div.row {
     -webkit-box-pack: center !important;
@@ -1589,7 +1656,8 @@ $sidebar-display: "sidebar-display";
 
 /* --- desktop mode, both sidebar and panel are visible --- */
 
-@media all and (min-width: 1200px) {
+/* (min-width: 1200px) */
+@media all and (min-width: 850px) {
   #back-to-top {
     bottom: 6.5rem;
   }

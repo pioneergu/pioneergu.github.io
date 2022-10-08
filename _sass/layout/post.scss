@@ -353,7 +353,7 @@ nav[data-toggle=toc] {
   }
 }
 
-/* Hide SideBar and TOC */
+/* Hide SideBar and TOC (max-width: 849px) */
 @media all and (max-width: 849px) {
   .post-navigation {
     padding-left: 0;
