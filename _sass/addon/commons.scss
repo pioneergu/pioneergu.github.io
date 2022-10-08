@@ -1562,6 +1562,10 @@ $sidebar-display: "sidebar-display";
     text-align: left;
   }
 
+  // 아래꺼 키면 Main이 Sidebar에 붙어서 표현된다.
+  // #main {
+  //   margin-left: 2rem;
+  // }
 }
 
 /* Pad horizontal (min-width: 992px) and (max-width: 1199px)*/
@@ -1713,6 +1717,32 @@ $sidebar-display: "sidebar-display";
 @media all and (min-width: 1400px) {
   #back-to-top {
     right: calc((100vw - #{$sidebar-width} - 1140px) / 2 + 3rem);
+  }
+  #sidebar {
+    width: $sidebar-width;
+
+    .site-subtitle {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .sidebar-bottom {
+      a,
+      span {
+        width: 2rem;
+      }
+
+      .icon-border {
+        left: -3px;
+      }
+    }
+  }
+  #main-wrapper {
+    margin-left: $sidebar-width;
+  }
+
+  #topbar-wrapper {
+    left: $sidebar-width;
   }
 }
 
