@@ -8,16 +8,6 @@ categories: [Python, 2.Functions]
 tags: [python, args, star_args]    # TAG names should always be lowercase
 ---
 
-<!-- PyScript -->
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
-<pre>
-<py-env>
-- paths:
-    - /assets/python/print_redi.py
-</py-env>
-</pre>
-
 ---
 ## ***args**
 
@@ -71,3 +61,13 @@ with PrintRedi("pyresult2", Element):
 </py-script>
 </pre>
 
+
+<!-- PyScript -->
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+<pre>
+<py-env>
+- paths:
+    - /assets/python/print_redi.py
+</py-env>
+</pre>
