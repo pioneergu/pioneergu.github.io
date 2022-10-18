@@ -14,7 +14,7 @@ tags: [python, args, star_args]    # TAG names should always be lowercase
 <pre>
 <py-env>
 - paths:
-    - https://pioneergu.github.io/assets/python/print_redi.py
+    - /assets/python/print_redi.py
 </py-env>
 </pre>
 
