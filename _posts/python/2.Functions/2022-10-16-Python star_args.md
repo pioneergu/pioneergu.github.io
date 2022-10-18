@@ -13,7 +13,7 @@ tags: [python, args, star_args]    # TAG names should always be lowercase
 
 <py-env>
   - paths:
-      - ../../assets/python/print_redi.py
+      - /assets/python/print_redi.py
 </py-env>
 
 ---
