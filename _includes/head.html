@@ -116,6 +116,10 @@
   
   <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
 
+  <py-env>
+    - paths:
+      - https://pioneergu.github.io/assets/python/print_redi.py
+  </py-env>
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}

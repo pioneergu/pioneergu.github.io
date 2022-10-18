@@ -11,11 +11,6 @@ tags: [python, args, star_args]    # TAG names should always be lowercase
 <!-- PyScript -->
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
-<py-env>
-  - paths:
-      - https://pioneergu.github.io/assets/python/print_redi.py
-</py-env>
-
 ---
 ## ***args**
 
