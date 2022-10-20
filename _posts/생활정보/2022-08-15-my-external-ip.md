@@ -1,5 +1,5 @@
 ---
-title: 내 IP주소 확인!
+title: 내 IP주소 확인하기 (내부/외부 IP)
 author:
   name: pioneergu
   link: https://pioneergu.github.io
