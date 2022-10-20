@@ -1456,6 +1456,7 @@ $sidebar-display: "sidebar-display";
   // }
 
   #topbar-title,
+  #sidebar-trigger,
   #search-trigger {
     display: block;
   }
@@ -1484,9 +1485,9 @@ $sidebar-display: "sidebar-display";
   [data-topbar-visible=false] #topbar-wrapper {
     top: 0;
   }
-  // #panel-wrapper {
-  //   display: none;
-  // }
+  #panel-wrapper {
+    display: none;
+  }
   // // #sidebar {
   // //   display: none;
   // // }
@@ -1669,9 +1670,9 @@ $sidebar-display: "sidebar-display";
 
 /* panel hidden (max-width: 1199px)*/
 @media all and (max-width: 849px) {
-  #panel-wrapper {
-    display: none;
-  }
+  // #panel-wrapper {
+  //   display: none;
+  // }
   // #sidebar {
   //   display: none;
   // }
@@ -1690,10 +1691,15 @@ $sidebar-display: "sidebar-display";
 
 /* (min-width: 1200px) */
 @media all and (min-width: 850px) {
-  #back-to-top {
-    bottom: 6.5rem;
+  #panel-wrapper {
+    display: block;
   }
 
+  /* button 'back-to-Top' position */
+  #back-to-top {
+    bottom: 5rem;
+    right: 4%;
+  }
   #search-wrapper {
     margin-right: 4rem;
   }
