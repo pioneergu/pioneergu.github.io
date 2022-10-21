@@ -1,5 +1,5 @@
 ---
-title: 내 IP주소 확인하기 (내부/외부 IP)
+title: 내 IP주소 확인! (바로 확인가능)
 author:
   name: pioneergu
   link: https://pioneergu.github.io
@@ -11,7 +11,7 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 ---
 ## **내 아이피주소(IP address) 직접 확인!**
 
-아래에서 현재 *당신 컴퓨터의 IP주소(External IP)*를 확인 할 수 있다.  
+아래의 주소가 현재 이 글을 보시는 분이 *사용중인 컴퓨터의 IP주소(External IP)*이다.  
 
 <!-- <script>
   import("https://api.ipify.org?format=jsonp&callback=getIP");
