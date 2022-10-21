@@ -24,7 +24,6 @@ Loading...
 ```
 {:#pyresult1}
 
-<pre>
 <py-script>
 from print_redi import PrintRedi
 
@@ -32,7 +31,6 @@ with PrintRedi("pyresult1", Element):
     a, b, *c = 10, 20, 30, 40, 50
     print(a, b, c)
 </py-script>
-</pre>
 
 RHS(right hand side) iterable인 (10, 20, 30, 40, 50)를 LHS(left hand side)로 unpacking을 할때 position에 맞게 assign이 되고 `*c`를 만나면 나머지를 list 형태로 assign을 한다.  
 
@@ -79,7 +77,6 @@ Loading...
 ```
 {:#pyresult2}
 
-<pre>
 <py-script>
 with PrintRedi("pyresult2", Element):
     def func1(a, b, *args):
@@ -89,7 +86,6 @@ with PrintRedi("pyresult2", Element):
 
     func1(1, 2, 3, 4, 5)
 </py-script>
-</pre>
 
 Function으로 여러 Parameter를 전달할 때 Iterable unpacking과 마찬가지로 남은 parameter들을 *arg에 assign한다.  
 다만 Iterable unpacking과 다음과 같은 다른점이 존재한다.  
@@ -102,9 +98,7 @@ Function으로 여러 Parameter를 전달할 때 Iterable unpacking과 마찬가
 <!-- PyScript -->
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
-<pre>
 <py-env>
 - paths:
     - /assets/python/print_redi.py
 </py-env>
-</pre>
