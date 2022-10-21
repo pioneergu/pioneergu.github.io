@@ -179,11 +179,11 @@ sass:
   style: compressed
 
 compress_html:
-  clippings: []
+  clippings: all
   comments: all
-  endings: []
+  endings: all
   profile: false
-  blanklines: false
+  blanklines: true
   ignore:
     envs: [development]
     # envs: all
