@@ -27,11 +27,11 @@ JsException(PythonError: Traceback (most recent call last): File "/lib/python3.1
 ### **Compress HTML**  
 
 아무리 검색을 해 봐도 관련 오류에 대한 내용은 아무도 다루고 있지를 않았다...  
-좌절할 때쯤 Jekyll Blog의 여러 기능들을 살피다가 우연히 `Compress HTML in Jekyll`이라는 불필요한 whitespace, tag, comments등을 제거해 줘서 Compact한 HTML로 Refactoring 해주는 기능이 작동되고 있다는 것을 알게 되었다.  
+좌절할 때쯤 Jekyll Blog의 여러 기능들을 살피다가 우연히 `Compress HTML in Jekyll`이라는 *불필요한 whitespace, tag, comments등을 제거*해 줘서 Compact한 HTML로 Refactoring 해주는 기능이 작동되고 있다는 것을 알게 되었다.  
 
 > [Compress HTML in Jekyll Docs](https://jch.penibelst.de/)
 
-`Compress HTML`이 적용되고 있는 `Jekyll Blog`에서는 설정에 따라 줄바꿈을 제거 하는 경우가 있는데 이 경우 `<py-script>` Tag안의 Code가 줄바꿈되어 오류가 발생되는 것이다.  
+`Compress HTML`이 적용되고 있는 `Jekyll Blog`에서는 설정에 따라 줄바꿈을 제거 하는 경우가 있는데 이 경우 `<py-script>` Tag안의 `Code가 줄바꿈이 되지 않고 한줄로 작성되어 오류`가 발생되는 것이다.  
 
 > `Compress HTML`은 기본적으로 `<pre>`tag안의 내용은 줄바꿈을 제거하지 않기 때문에 `<py-script>`tag를 `<pre>`tag로 감싸줘도 문제는 해결된다.  
 > 하지만, 매번 `<pre>`tag로 감싸주는 것도 일이니 근본적인 문제를 해결해 보도록 하자.  
