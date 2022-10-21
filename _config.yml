@@ -179,14 +179,14 @@ sass:
   style: compressed
 
 compress_html:
-  clippings: all
+  clippings: []
   comments: all
-  endings: all
+  endings: []
   profile: false
   blanklines: false
   ignore:
-    envs: all
-    # envs: [development]
+    envs: [development]
+    # envs: all
 
 exclude:
   - '*.gem'
