@@ -1353,32 +1353,6 @@ $sidebar-display: "sidebar-display";
   body {
     overflow-x: hidden;
   }
-  
-  @mixin slide($append: null) {
-    $basic: transform 0.4s ease;
-    @if $append {
-      -webkit-transition: $basic, $append;
-      transition: $basic, $append;
-    } @else {
-      -webkit-transition: $basic;
-      transition: $basic;
-    }
-  }
-  [#{$sidebar-display}] {
-    #sidebar {
-      transform: translateX(0);
-    }
-
-    #topbar-wrapper,
-    #main-wrapper {
-      transform: translateX(#{$sidebar-width});
-    }
-  }
-  // 이게 있으면 back-to-top fade in out 안되서 화면에 안보임.
-  // back-to-top.js 참조. 
-  #sidebar-trigger {
-    display: block;
-  }
 
 }
 
@@ -1407,7 +1381,19 @@ $sidebar-display: "sidebar-display";
       transition: none;
     }
   }
-  
+  [#{$sidebar-display}] {
+    #sidebar {
+      transform: translateX(0);
+    }
+
+    #topbar-wrapper,
+    #main-wrapper {
+      transform: translateX(#{$sidebar-width});
+    }
+  }
+  #sidebar-trigger {
+    display: block;
+  }
   #main-wrapper {
     @include slide;
 

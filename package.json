@@ -1,17 +1,13 @@
 {
-  "name": "jekyll-theme-chirpy",
-  "version": "5.2.1",
-  "description": "A minimal, responsive, and powerful Jekyll theme for presenting professional writing.",
+  "name": "pioneergu",
+  "version": "1.0.0",
+  "description": "A python developer and A system trader.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
+    "url": "git+https://github.com/pioneergu/pioneergu.github.io"
   },
-  "author": "Cotes Chung",
+  "author": "pioneergu",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
-  },
-  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
