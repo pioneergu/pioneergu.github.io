@@ -17,7 +17,7 @@ image:
 또 이런일이 일어나지 않도록 미성년자 명의로 통장개설 시 필요한 서류를 정리해 놓으려 한다.  
 
 ---
-![Desktop View](https://dsm01pap007files.storage.live.com/y4mC9rD2Sw4cWUX5uHXx1OCmrb2mGVcqTrsSBEYgydsrf8uIttQVEObK9VoqC6eYTqJCRYWGDx8-jJQc6AjzurpwcfOQ3Wi2iHWwq5P-pzUh1Told1jXC29UA_dJ9bF3_gThnuD-1ZNV3XTGaHGOOQcyngOVF1f0SZGwpj5j1jwVrDf1aSUzN_2Oae7tVQ19F9p?width=660&height=583&cropmode=none){: style="max-width: 50%"}
+![Desktop View](https://dsm01pap007files.storage.live.com/y4mC9rD2Sw4cWUX5uHXx1OCmrb2mGVcqTrsSBEYgydsrf8uIttQVEObK9VoqC6eYTqJCRYWGDx8-jJQc6AjzurpwcfOQ3Wi2iHWwq5P-pzUh1Told1jXC29UA_dJ9bF3_gThnuD-1ZNV3XTGaHGOOQcyngOVF1f0SZGwpj5j1jwVrDf1aSUzN_2Oae7tVQ19F9p?width=660&height=583&cropmode=none){:.image-styling}{: style="max-width: 50%"}
 
 ---
 
@@ -43,8 +43,8 @@ image:
 
 여기서 기본증명서를 클릭하여 `약관동의` 및 `인증서로그인`을 한다. 
 
-![기본증명서발급1](/assets/img/posting/생활정보/기본증명서발급1.jpg){: style="max-width: 90%"}
-![기본증명서발급2](/assets/img/posting/생활정보/기본증명서발급2.jpg){: style="max-width: 90%"}
+![기본증명서발급1](/assets/img/posting/생활정보/기본증명서발급1.jpg){:.image-styling}
+![기본증명서발급2](/assets/img/posting/생활정보/기본증명서발급2.jpg){:.image-styling}
 
 > 아래와 같이 증명서를 출력하는 *옵션*이 여러가지가 있는데 하나씩 알아보자.  
 > `1. 발급대상자`: *가족*을 선택하고 통장을 발급받을 *자녀(미성년자)를 선택*한다.  
@@ -55,7 +55,7 @@ image:
 > `6. 신청사유`: 국내 은행(기관)에 제출하니 *국내 기관 제출*을 선택하자.  
 {:.prompt-info}
 
-![기본증명서발급3](/assets/img/posting/생활정보/기본증명서발급3.jpg){: style="max-width: 90%"}
+![기본증명서발급3](/assets/img/posting/생활정보/기본증명서발급3.jpg){:.image-styling}
 
 `신청하기` 버튼을 클릭하면 증명서의 출력이 가능한 화면이 나온다. 
 
@@ -65,7 +65,7 @@ image:
 
 아래처럼 선택을 해 준 후 신청하기 버튼을 누르면 마찬가지로 발급받은 가족관계등록부를 출력 할 수 있다.
 
-![기본증명서발급3](/assets/img/posting/생활정보/기본증명서발급4.jpg){: style="max-width: 90%"}
+![기본증명서발급3](/assets/img/posting/생활정보/기본증명서발급4.jpg){:.image-styling}
 
 참고로 인터넷 발급은 무료이다.  
 이제 출력한 `기본증명서(상세)`와 `가족관계등록부` 그리고 *신분증*과 *아이의 도장*을 챙겨서 은행으로 가자!

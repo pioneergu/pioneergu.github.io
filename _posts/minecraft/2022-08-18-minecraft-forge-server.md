@@ -54,7 +54,7 @@ image:
 위의 링크로 들어가보면 아래의 스샷처럼 여러 옵션이 나오게 되는데 `WINDOWS 오프라인 (64비트)`를 선택하자.  
 64비트를 선택해야 서버에 높은 메모리를 할당해 줄 수 있다.
 
-![forge-install-6-javadown](/assets/img/posting/minecraft/forge-install-6-javadown.jpg)
+![forge-install-6-javadown](/assets/img/posting/minecraft/forge-install-6-javadown.jpg){:.image-styling}  
 
 > `설치`를 눌러 설치를 진행해 주면 되는데 `구버젼`의 자바가 설치되어 있는 경우 `설치 해제`를 권장하는 문구가 뜨는데,  
 > `꼭 설치해제를 해주도록 하자!!!`
@@ -68,52 +68,52 @@ image:
 앞서 설치한 초현실 롤러코스터 forge 버젼과 같은 버젼인 1.7.10을 선택해서 서버를 구축하려한다.  
 포지 홈피의 좌측에서 내가 원하는 버젼을 선택한 후
 
-![forge-server1](/assets/img/posting/minecraft/forge-server1.jpg)
+![forge-server1](/assets/img/posting/minecraft/forge-server1.jpg){:.image-styling}  
 
 Download Recommended의 Installer를 눌러준다.
 
-![forge-server2](/assets/img/posting/minecraft/forge-server2.jpg)
+![forge-server2](/assets/img/posting/minecraft/forge-server2.jpg){:.image-styling}  
 
 Installer를 누르면 광고화면이 나오게 되는데 `우측상단`에 아래와 같이 뜨게되고
 
-![forge-install-wait-3](/assets/img/posting/minecraft/forge-install-wait-3.jpg)
+![forge-install-wait-3](/assets/img/posting/minecraft/forge-install-wait-3.jpg){:.image-styling}  
 
 잠시 기다려서 `SKIP` 버튼이 뜨면 눌러준다
 
-![forge-install-skip-4](/assets/img/posting/minecraft/forge-install-skip-4.jpg)
+![forge-install-skip-4](/assets/img/posting/minecraft/forge-install-skip-4.jpg){:.image-styling}  
 
 그럼 자동으로 다운로드가 되고 아래와 같은 파일이 다운로드 폴더에 받아지게 된다.
 
-![forge-server3](/assets/img/posting/minecraft/forge-server3.jpg)
+![forge-server3](/assets/img/posting/minecraft/forge-server3.jpg){:.image-styling}  
 
 다운 받아진 파일을 실행하면 아래와 같은 창이 뜨는데 `Install Sever`를 클릭해 주고,  
 `...`을 눌러서 설치폴더를 `서버를 운영할 폴더로 바꿔줘야 한다.`  
 내 경우에는 바탕화면에 `롤러코스터서버`라는 폴더를 만들어 그곳으로 지정해 주었다.
 
-![forge-server4](/assets/img/posting/minecraft/forge-server4.jpg)
+![forge-server4](/assets/img/posting/minecraft/forge-server4.jpg){:.image-styling}  
 
 `OK`를 눌러 설치를 완료하면 설치를 하라고 지정해 준 `롤러코스터 폴더`에 아래처럼 새로운 파일들이 생성된 것을 알 수 있다.
 
-![forge-server5](/assets/img/posting/minecraft/forge-server5.jpg)
+![forge-server5](/assets/img/posting/minecraft/forge-server5.jpg){:.image-styling}  
 
 ---
 ## **3. 포지(forge) 서버 실행**
 
 해당 폴더의 빈 곳에 마우스 우클릭을 하고 `새로만들기 > 텍스트 문서`를 클릭하면 `새 텍스트 문서`가 생성된다.
 
-![forge-server6](/assets/img/posting/minecraft/forge-server6.jpg)
+![forge-server6](/assets/img/posting/minecraft/forge-server6.jpg){:.image-styling}  
 
 생성된 `새 텍스트 문서`의 현재 확장자는 `.txt` 파일인데 스크립트를 실행해 줄 수 있는 배치파일인 `.bat` 파일로 바꿔줘야 한다.  
 그러기 위해서는 탐색기 상단의 `보기`를 클릭하고 `파일확장명`을 체크해 준다.
 
-![forge-server7](/assets/img/posting/minecraft/forge-server7.jpg)
+![forge-server7](/assets/img/posting/minecraft/forge-server7.jpg){:.image-styling}  
 
 그럼 이제 파일의 확장자명이 보이게 된다.  
 `F2`버튼을 누르거나 마우스 우클릭으로 `이름 바꾸기`를 클릭하여 적당한 이름의 `.bat`파일로 바꿔준다.  
 나는 `StartSever.bat`정도로 정하였다.  
 그런 후 `StartSever.bat`파일에 마우스 우클릭을 하여 `편집`을 눌러준다.
 
-![forge-server8](/assets/img/posting/minecraft/forge-server8.jpg)
+![forge-server8](/assets/img/posting/minecraft/forge-server8.jpg){:.image-styling}  
 
 `편집`을 누르면 텍스트 에디터가 뜨게 되는데,
 
@@ -123,7 +123,7 @@ Installer를 누르면 광고화면이 나오게 되는데 `우측상단`에 아
 > `-Xmx2G`는 메모리를 최대 2기가를 쓴다는 것이다.  
 > 참고로, 친구들이랑 즐기는 용도면 2기가면 충분하다.
 > 
-> ![forge-server9](/assets/img/posting/minecraft/forge-server9.jpg)
+> ![forge-server9](/assets/img/posting/minecraft/forge-server9.jpg){:.image-styling}  
 {:.prompt-info}
 
 이제 만들어준 `StartServer.bat`파일을 더블클릭하여 실행해 준다.
@@ -155,7 +155,7 @@ C:\Users\pyoneer\Desktop\롤러코스터서버>pause
 
 `JDK`를 지우려면 아래의 것을 지워주면된다.
 
-![forge-server10](/assets/img/posting/minecraft/forge-server10.jpg)
+![forge-server10](/assets/img/posting/minecraft/forge-server10.jpg){:.image-styling}  
 
 `JDK`를 지우고 다시 `StartServer.bat`를 실행 하면 또 다음과 같은 메세지를 띄우며 종료가 된다.
 
@@ -178,15 +178,15 @@ C:\Users\pyoneer\Desktop\롤러코스터서버>pause
 동의를 하지 않으면 사용이 불가능하니 동의를 해주도록 하자.  
 서버가 설치된 폴더를 보면 `eula.txt`파일이 생성된 것을 확인 할 수 있다.
 
-![forge-server11](/assets/img/posting/minecraft/forge-server11.jpg)
+![forge-server11](/assets/img/posting/minecraft/forge-server11.jpg){:.image-styling}  
 
 이 파일을 열고, `eula=false`를 `eula=true`로 바꿔주자.
 
-![forge-server12](/assets/img/posting/minecraft/forge-server12.jpg)
+![forge-server12](/assets/img/posting/minecraft/forge-server12.jpg){:.image-styling}  
 
 서버가 실행되는 중간에 아래와 같은 문구가 뜰 수 있는데 허용을 눌러주면된다.
 
-![forge-server13](/assets/img/posting/minecraft/forge-server13.jpg)
+![forge-server13](/assets/img/posting/minecraft/forge-server13.jpg){:.image-styling}  
 
 콘솔창에 아래처럼 `Done`이라는 메세지가 뜨면 서버가 잘 실행 된 것이다.
 
@@ -207,7 +207,7 @@ C:\Users\pyoneer\Desktop\롤러코스터서버>pause
 초현실 롤러코스터 모드 설치 시 넣은 `C:\Users\[유저이름]\AppData\Roaming\.minecraft\mods` 에서 복사해 오자.  
 `window키 + R`을 눌러 `%appdata%`를 치면 해당 폴더로의 접근이 쉽다.
 
-![forge-server14](/assets/img/posting/minecraft/forge-server14.jpg)
+![forge-server14](/assets/img/posting/minecraft/forge-server14.jpg){:.image-styling}  
 
 참고로, 접속하려는 친구의 마인크래프트에 같은 모드가 설치되어 있어야하고,  
 접속하려는 서버에도 같은 모드가 설치되어 있어야 멀티플레이 게임이 가능하다.  

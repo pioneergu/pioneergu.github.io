@@ -22,7 +22,7 @@ JsException(PythonError: Traceback (most recent call last): File "/lib/python3.1
   
 문제가 무엇인지 이리저리 찾아보다 Deploy한 웹페이지에서 `Ctrl + Shift + i`를 눌러 웹페이지의 `Source Code`를 확인해 보니 웬걸 `HTML Code`가 아래처럼 `한줄로 작성`되어 있는 것이 아닌가?!  
 
-![compress_html_pyscript_error](/assets/img/posting/git/compress_html_pyscript_error.jpg)
+![compress_html_pyscript_error](/assets/img/posting/git/compress_html_pyscript_error.jpg){:.image-styling}  
 
 ### **Compress HTML**  
 
@@ -53,6 +53,6 @@ compress_html:
 
 위 설정에서 `blanklines: true`한 후 `Deploy`하고 웹페이지에서 `Source Code`를 확인 해보면 아래처럼 HTML Code의 줄바꿈이 잘 되는 것을 확인 할 수 있다.  
 
-![compress_html_pyscript_correct](/assets/img/posting/git/compress_html_pyscript_correct.jpg)
+![compress_html_pyscript_correct](/assets/img/posting/git/compress_html_pyscript_correct.jpg){:.image-styling}  
 
 이제 나의 `Jekyll Blog`에서도 `py-script`를 불편함 없이 마음껏 사용할 수 있게 되었다.😁  

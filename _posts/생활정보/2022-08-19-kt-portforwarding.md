@@ -24,7 +24,7 @@ tags: [kt giga, portforwarding, 포트포워딩]    # TAG names should always be
 만일 아래처럼 `사이트에 연결할 수 없음`, `172.30.1.254에서 응답하는 데 시간이 너무 오래 걸립니다.`라는 메세지가 뜬다면  
 [KT GIGA Wifi 관리자 모드 접속이 안되는 경우](https://pioneergu.github.io/posts/kt-giga-connection-error/){: target="_blank"} 에 해결방법이 있으니 참고 바란다.
 
-![kt-portforwarding-1](/assets/img/posting/생활정보/kt-portforwarding-1.png)
+![kt-portforwarding-1](/assets/img/posting/생활정보/kt-portforwarding-1.png){:.image-styling}
 
 > id: ktuser  
 > pw: homehub (또는 megaap)
@@ -58,7 +58,7 @@ tags: [kt giga, portforwarding, 포트포워딩]    # TAG names should always be
 
 입력을 해 주고 `추가`버튼을 눌러주면 아래처럼 추가가 된다.
 
-![kt-portforwarding-4](/assets/img/posting/생활정보/kt-portforwarding-4.jpg)
+![kt-portforwarding-4](/assets/img/posting/생활정보/kt-portforwarding-4.jpg){:.image-styling}
 
 ---
 ## **외부에서 접속**
@@ -84,7 +84,7 @@ tags: [kt giga, portforwarding, 포트포워딩]    # TAG names should always be
 지정해준 외부포트번호인 `25565`를 `Port Number`에 입력하고 엔터를 누르면,  
 아래와 같이 초록색 깃발과 함께 `Port 25565 is open on [외부IP주소]`라는 문구가 뜨면 성공한 것이다!
 
-![kt-portforwarding-5](/assets/img/posting/생활정보/kt-portforwarding-5.jpg)
+![kt-portforwarding-5](/assets/img/posting/생활정보/kt-portforwarding-5.jpg){:.image-styling}
 
 이제 친구에게 `나의 외부IP주소:25565`를 알려주고,  
 집에서 친구와 마인크래프트 모드를 온라인으로 즐기자~!👏

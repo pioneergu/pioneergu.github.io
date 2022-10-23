@@ -47,11 +47,11 @@ image:
 따라서, `마인크래프트도 1.7.10을 설치`해야 한다.
 
 - 마인크래프트 1.7.10 Version 설치를 하려면 우선 Minecraft Launcher 상단의 "설치 설정" 버튼을 클릭한다.
-![minecraft-setting1](/assets/img/posting/minecraft/minecraft-setting1.png)
+![minecraft-setting1](/assets/img/posting/minecraft/minecraft-setting1.png){:.image-styling}  
 - 새 설치 설정을 클릭
-![minecraft-setting2][minecraft-setting2]
+![minecraft-setting2][minecraft-setting2]{:.image-styling}  
 - 설치환경이름을 적당히 설정해 주고 release 1.7.10을 선택 후 만들기 버튼을 클릭한다.
-![minecraft-setting3][minecraft-setting3]
+![minecraft-setting3][minecraft-setting3]{:.image-styling}  
 
 ---
 ## **2.마인크래프트 포지(Forge) 설치**
@@ -65,26 +65,26 @@ image:
 
 -   [https://files.minecraftforge.net/net/minecraftforge/forge/index\_1.7.10.html](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.7.10.html){: target="_blank"} 여기에 접속해서 **Installer**를 받아야 하는데 `Recommended` 를 받는것이 좋다. 우리가 필요한 Version은 **1.7.10**이니 이 버젼의 `Recommended의 Installer`를 클릭하자.
 
-![forge-install-1](/assets/img/posting/minecraft/forge-install-1.jpg)
+![forge-install-1](/assets/img/posting/minecraft/forge-install-1.jpg){:.image-styling}  
 
 -   참고로 좌측 패널에 다른 Version의 Forge Installer들도 있으니 하고자 하는 게임에 맞는 버젼을 다운받아 설치 하면 된다.
 
-![forge-install-2](/assets/img/posting/minecraft/forge-install-2.jpg)
+![forge-install-2](/assets/img/posting/minecraft/forge-install-2.jpg){:.image-styling}  
 
 -   Installer를 클릭하면 다른 광고 화면으로 넘어가게 되는데 여기서 우측 상단을 보면 아래처럼 **몇초 기다리라는 메세지**가 보이며 잠시 `기다리면 SKIP 버튼이 생기게 되는데` 이 버튼을 눌러주면 Forge Installer가 다운받아지게 된다.
 
-![forge-install-wait-3](/assets/img/posting/minecraft/forge-install-wait-3.jpg)
-![forge-install-skip-4](/assets/img/posting/minecraft/forge-install-skip-4.jpg)
+![forge-install-wait-3](/assets/img/posting/minecraft/forge-install-wait-3.jpg){:.image-styling}  
+![forge-install-skip-4](/assets/img/posting/minecraft/forge-install-skip-4.jpg){:.image-styling}  
 
 -   다운이 받아지는 폴더로 들어가면 아래와 같은 파일이 다운 받아져 있을 것이다. 이 파일을 실행 하려면 자바가 설치되어 있어야 한다.
 
-![forge-install-5](/assets/img/posting/minecraft/forge-install-5.jpg)
+![forge-install-5](/assets/img/posting/minecraft/forge-install-5.jpg){:.image-styling}  
 
 -   자바의 설치를 진행하기 위해 아래 링크로 접속해 `Windows오프라인(64비트)자바를 다운로드` 받고 설치를 진행 해 주면된다.
 
 > 자바 JRE 다운로드 페이지: [https://www.java.com/ko/download/manual.jsp](https://www.java.com/ko/download/manual.jsp){: target="_blank"}
 > 
-> ![forge-install-6-javadown](/assets/img/posting/minecraft/forge-install-6-javadown.jpg)
+> ![forge-install-6-javadown](/assets/img/posting/minecraft/forge-install-6-javadown.jpg){:.image-styling}  
 > 
 >   
 > 만일 `구버젼` 자바가 설치되어 있는 경우 설치해제를 권장하는 문구가 뜨는데 이 경우 `꼭 설치해제`를 해 주도록 하자.
@@ -92,7 +92,7 @@ image:
 -   자바를 설치해 줬으니 아까 다운로드 받은 `forge-1.7.10-10.13.4.1614-1.7.10-installer.jar`를 더블클릭해서 설치해 주자.
 -   아래와 같은 화면이 뜨면 기본값으로 `Install Client`가 선택이 되어 있는데 그대로 두고, 설치위치는 `C:\Users\[User-name]\AppData\Roaming\.minecraft`로 되어 있는데 `건드리지말고 확인을 눌러 설치`를 진행하자.  
 
-![forge-install-7](/assets/img/posting/minecraft/forge-install-7.jpg)
+![forge-install-7](/assets/img/posting/minecraft/forge-install-7.jpg){:.image-styling}  
 
 Forge의 설치는 완료가 되었다.
 
@@ -106,32 +106,32 @@ Mod 설치방법은 매우 간단하다.
 
 -   우선 **"window 키() + R"** 키를 누르면 아래와 같이 실행창이 뜨게 되는데 여기에 `"%appdata%"`를 입력하고 엔터를 친다.
 
-![mod-install-appdata](/assets/img/posting/minecraft/mod-install-appdata.jpg)
+![mod-install-appdata](/assets/img/posting/minecraft/mod-install-appdata.jpg){:.image-styling}  
 
 -   **%appdata%**를 입력하면 아래 그림처럼 `Roaming`이라는 폴더의 탐색기가 뜨게 되는데 여기서 `.minecraft`라는 폴더로 들어가 주자.
 
-![mod-install-minecraft-folder](/assets/img/posting/minecraft/mod-install-minecraft-folder.jpg)
+![mod-install-minecraft-folder](/assets/img/posting/minecraft/mod-install-minecraft-folder.jpg){:.image-styling}  
 
 -   .minecraft라는 폴더에 들어가서 아래로 조금 내리면 `mods`라는 폴더가 있다. 여기로 들어가서 위에서 다운로드 받은 모드 파일인 `"ExRollerCoaster-Mod-1.7.10.jar"` 파일을 넣어주자.
 
-![mod-install-mods-folder](/assets/img/posting/minecraft/mod-install-mods-folder.jpg)
-![mod-install-mods-folder2](/assets/img/posting/minecraft/mod-install-mods-folder2.jpg)
+![mod-install-mods-folder](/assets/img/posting/minecraft/mod-install-mods-folder.jpg){:.image-styling}  
+![mod-install-mods-folder2](/assets/img/posting/minecraft/mod-install-mods-folder2.jpg){:.image-styling}  
 
 -   이제 마인크래프트 런처를 실행하고 Java Edition을 선택한 후에 플레이 버튼 좌측에 버젼을 선택하는 곳에서 우리가 플레이하려는 버젼인 `Forge 1.7.10을 선택`하고 `플레이` 버튼을 누른다.
 
-![mod-install-launcher](/assets/img/posting/minecraft/mod-install-launcher.jpg)
+![mod-install-launcher](/assets/img/posting/minecraft/mod-install-launcher.jpg){:.image-styling}  
 
 -   마인크래프트 Main 화면에 `Mods`라는 버튼을 클릭해준다.
 
-![mod-install-main-window](/assets/img/posting/minecraft/mod-install-main-window.jpg)
+![mod-install-main-window](/assets/img/posting/minecraft/mod-install-main-window.jpg){:.image-styling}  
 
 -   아래의 화면에서 우리가 설치해 준 `"Ex Roller Coaster"`를 클릭한 후 `Done을 클릭`하면 끝이다.
 
-![mod-install-mod-select](/assets/img/posting/minecraft/mod-install-mod-select.jpg)
+![mod-install-mod-select](/assets/img/posting/minecraft/mod-install-mod-select.jpg){:.image-styling}  
 
 -   롤코 모드를 플레이 하는 모습이다~
 
-![mod-install-play](/assets/img/posting/minecraft/mod-install-play.jpg)
+![mod-install-play](/assets/img/posting/minecraft/mod-install-play.jpg){:.image-styling}  
 
 이제 즐기자~😊
 

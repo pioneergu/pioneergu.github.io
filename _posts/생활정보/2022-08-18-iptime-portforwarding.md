@@ -24,7 +24,7 @@ tags: [iptime, portforwarding, 포트포워딩]    # TAG names should always be 
 초기값은 `admin`/`admin`이다.  
 (보안을 위해 관리자페이지에서 바꿔주는 것이 좋다)
 
-![iptime-login][iptime-login]{: style="max-width: 70%"}
+iptime-login][iptime-login]{: style="max-width: 70%"}
 
 로그인을 하면 아래와 같은 화면이 나오는데 `관리도구`를 클릭해 준다.  
 (참고로, 스샷에 표시된 것처럼 나의 `외부 IP주소`를 보여준다)

@@ -42,8 +42,8 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 네이버든 다음이든 검색포털에 `내 IP주소` 또는 `내아이피`라고 치면 아래처럼 나의 외부 ip주소를 알려준다.  
 외부에서 접속할 때 필요한 IP주소이다.  
 
-![내IP-naver][내IP-naver]{: style="max-width: 70%"}
-![내IP-daum][내IP-daum]{: style="max-width: 70%"}
+![내IP-naver][내IP-naver]{:.image-styling}{: style="max-width: 70%"}
+![내IP-daum][내IP-daum]{:.image-styling}{: style="max-width: 70%"}
 
 > 지금까지는 외부 IP주소(External IP)를 조회 하는 방법에 대해 알아보았는데 공유기 환경에서는 내부적으로 사용하는 내부 IP(Private IP)가 따로 있다.
 > 이번엔 내부 IP(Private IP)에 대해서 알아보자.
@@ -70,11 +70,11 @@ tags: [IP주소, external IP]    # TAG names should always be lowercase
 ### **내부 IP주소 확인법**
 `Window키 + r`버튼을 누르면 아래와 같은 창이 뜨는데 여기에 `cmd`를 적어준다.
 
-![cmd][cmd]{: style="max-width: 70%"}
+![cmd][cmd]{:.image-styling}{: style="max-width: 70%"}
 
 그러면 아래와 같은 검은 창이 뜨는데 여기에 `ipconfig`를 쳐준다.
 
-![ipconfig][ipconfig]{: style="max-width: 70%"}
+![ipconfig][ipconfig]{:.image-styling}{: style="max-width: 70%"}
 
 여기 나오는 숫자중 `IPv4`주소가 `내부 IP주소`가 된다.
 

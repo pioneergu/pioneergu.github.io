@@ -33,11 +33,11 @@ MACD Line이 signal line을 `아래에서 위`로 뚫고 올라갈땐 `골든크
 
 > #### **골든크로스**
 > 
-> ![macd1](/assets/img/posting/systemtrading/macd1.jpg){: style="max-width: 80%"}
+> ![macd1](/assets/img/posting/systemtrading/macd1.jpg){:.image-styling}  
 > 
 > #### **데드크로스**
 > 
-> ![macd2](/assets/img/posting/systemtrading/macd2.jpg){: style="max-width: 80%"}
+> ![macd2](/assets/img/posting/systemtrading/macd2.jpg){:.image-styling}  
 
 ---
 ## **MACD 단점**
@@ -49,7 +49,7 @@ MACD는 후행성 추세지표이기 때문에 가격이 한 방향으로 충분
 다음의 차트는 최근 나스닥 3분봉 차트 중 일부인데,  
 매수 신호 중 첫번째 노란동그라미만 아주 약간의 수익을 주고 나머지 `빨간 동그라미들은 전부 손해`다.
 
-![macd3](/assets/img/posting/systemtrading/macd3.jpg){: style="max-width: 60%"}
+![macd3](/assets/img/posting/systemtrading/macd3.jpg){:.image-styling}{: style="max-width: 60%"}
 
 이처럼 시세가 날듯 말듯 움직이는 횡보 장에서 MACD만으로 거래를 하면 손해가 쌓여 큰 손해로 귀결될 수 있다.
 
@@ -62,7 +62,7 @@ MACD는 후행성 추세지표이기 때문에 가격이 한 방향으로 충분
 만일 매수신호가 장대양봉에서 나온 경우라면 큰 손실을 입을 수 있다.  
 이번에도 나스닥의 3분봉 차트를 예를 들어 아래에 스샷을 올린다.
 
-![macd4](/assets/img/posting/systemtrading/macd4.jpg){: style="max-width: 60%"}
+![macd4](/assets/img/posting/systemtrading/macd4.jpg){:.image-styling}{: style="max-width: 60%"}
 
 참고로 MACD는 짧은 시간봉에선 횡보장에서 엄청터지고,  
 긴 시간봉에선 휩소에 크게 터질 수 있다.......  
@@ -81,7 +81,7 @@ MACD는 가격이 한방향으로 `추세가 잘` 나거나 `가격 변동폭이
 아래의 그래프를 보면 2,278,000원에 진입해서 2,503,000원에 나온다.  
 거의 `10% 수익`이다!
 
-![macd5](/assets/img/posting/systemtrading/macd5.jpg){: style="max-width: 80%"}
+![macd5](/assets/img/posting/systemtrading/macd5.jpg){:.image-styling}{: style="max-width: 80%"}
 
 이렇듯 추세가 잘 나와줘서 큰 시세가 날 경우 MACD는 큰 수익을 안겨다 줄 수 있다.  
 다만, 중요한 점은 그냥 `MACD만` 돌리게 되면 수익과 손해를 반복하다 결국 그냥 `거의 100% 손해`다.

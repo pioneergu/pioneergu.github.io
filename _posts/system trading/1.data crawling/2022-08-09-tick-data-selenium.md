@@ -17,7 +17,7 @@ System Trading 시 시간 봉(차트)로 거래를 하면 소위말하는 휩소
 
 > [BitMex 과거 Tick Data - Link](https://public.bitmex.com/){: target="_blank"}  
 > 위 주소에 접속을 해 보면 아래 처럼 2014년 11월 부터 어제까지의 Data가 List-up되어 있는 것을 볼 수 있다.
->![bitmex1](/assets/img/posting/systemtrading/bitmex1.jpg){: style="max-width: 70%"}
+>![bitmex1](/assets/img/posting/systemtrading/bitmex1.jpg){:.image-styling}{: style="max-width: 70%"}
 
 이 자료를 수동을 받으려면 몇 일이 걸릴지... 이런 작업이 또 생긴다면?...  
 그래서 동적 웹 크롤링 (Crawling)을 사용하려 한다.
@@ -27,8 +27,8 @@ System Trading 시 시간 봉(차트)로 거래를 하면 소위말하는 휩소
 
 웹 크롤링을 하기 전에 크롤링을 하려는 웹 페이지의 구성을 보면,
 
-![bitmex2](/assets/img/posting/systemtrading/bitmex2.jpg){: style="max-width: 70%"}
-![bitmex3](/assets/img/posting/systemtrading/bitmex3.jpg){: style="max-width: 70%"}
+![bitmex2](/assets/img/posting/systemtrading/bitmex2.jpg){:.image-styling}{: style="max-width: 70%"}
+![bitmex3](/assets/img/posting/systemtrading/bitmex3.jpg){:.image-styling}{: style="max-width: 70%"}
 
 이 처럼 `listing` 이라는 id로 된 div tag 하위의 pre tag 안에 a tag로 link가 걸려 있다.  
 a tag의 href에 적힌 수많은 파일들의 링크 주소를 얻어야 tick data를 다운 받을 수 있다.  
@@ -101,8 +101,8 @@ Selenium에서 브라우져를 컨트롤 할 수 있게 하려면 브라우져�
 
 현재 사용중인 크롬 브라우져의 버젼 확인은 아래와 같이 확인이 가능하다.
 
-![bitmex4](/assets/img/posting/systemtrading/bitmex4.jpg){: style="max-width: 70%"}
-![bitmex5](/assets/img/posting/systemtrading/bitmex5.jpg){: style="max-width: 90%"}
+![bitmex4](/assets/img/posting/systemtrading/bitmex4.jpg){:.image-styling}{: style="max-width: 70%"}
+![bitmex5](/assets/img/posting/systemtrading/bitmex5.jpg){:.image-styling}{: style="max-width: 90%"}
 
 
 이 밖에 edge, firfox, opera 등의 브라우져 컨트롤도 가능하다.
@@ -142,7 +142,7 @@ if __name__ == '__main__':
 얻으려는 Coin의 Tick data link는 아래의 스샷 처럼 `id가 listing` 인 `div tag` 하위의  
 `pre tag` 하위에 `a tag`로 이루어져 있다.
 
-![bitmex6](/assets/img/posting/systemtrading/bitmex6.jpg){: style="max-width: 90%"}
+![bitmex6](/assets/img/posting/systemtrading/bitmex6.jpg){:.image-styling}
 
 `find_element_by_id('listing')`로 id가 listing인 element를 얻고  
 `find_element_by_tag_name('pre')`로 pre tag 객체를 얻고  

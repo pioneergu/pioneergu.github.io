@@ -15,11 +15,11 @@ tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG na
 엄밀히 말하면 `Window키 + R`을 눌러 `cmd`엔터를 쳐주면 나오는 창에 `ipconfig`를 치고 엔터를 쳐주면 나오는 주소 중 `기본게이트웨이`의 주소로 접속을 하면 된다.  
 그런데 간혹 아래처럼 `기본게이트웨이`가 KT공유기 기본설정인 `172.30.1.254`가 아닌 `엉뚱한 주소`로 되어 있는 경우가 있다.
 
-![kt-gateway][kt-gateway]
+![kt-gateway][kt-gateway]{:.image-styling}
 
 이 경우는 컴퓨터가 공유기에 연결이 되어 있는 것이 아닌 `모뎀에 직접 연결` 되어 있기 때문이고 접속을 시도하면 아래와 같은 Error를 띄운다.
 
-![kt-error][kt-error]
+![kt-error][kt-error]{:.image-styling}
 
 ## 해결 방법
 
@@ -27,15 +27,15 @@ tags: [KT GIGA Wifi, 관리자모드 접속 오류, 포트포워딩]    # TAG na
 아래의 사진이 `모뎀` 사진이다. 컴퓨터에 연결된 선을 따라가면 확인이 가능하다.  
 먼지가...
 
-![kt-modem][kt-modem]{: style="max-width: 50%"}
+![kt-modem][kt-modem]{:.image-styling}{: style="max-width: 50%"}
 
 모뎀에 연결된 선을 뽑아서 아래 사진처럼 `무선안테나가 있는 공유기`에 연결해주면 된다.
 
-![kt-share][kt-share]{: style="max-width: 50%"}
+![kt-share][kt-share]{:.image-styling}{: style="max-width: 50%"}
 
 이제 `homehub.olleh.com`나 `172.30.1.254`로 접속을 하면 잘 접속이 되는것을 확인 할 수 있다.
 
-![kt-login][kt-login]{: style="max-width: 70%"}
+![kt-login][kt-login]{:.image-styling}{: style="max-width: 70%"}
 
 보안문제 때문에라도 LAN선을 모뎀에 연결 된 채로 두는 것보다 KT Giga Wifi 공유기에 연결을 해 주는것이 좋다.👍
 

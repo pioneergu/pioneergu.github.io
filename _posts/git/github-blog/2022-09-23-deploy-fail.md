@@ -18,8 +18,8 @@ GitHub pages로 `Deploy`하여 사용하는 `Jekyll Theme Blog`를 잘 사용하
 그런데!! 갑자기 어느순간 `Deploy Error`가 뜨는것 아니겠는가!? 😢
 
 > Deploy Error가 생기면 아래 주황색 박스 친부분의 `✔`가 ❌로 바뀌게 된다.
-> ![deploy_check](https://dsm01pap007files.storage.live.com/y4mJTYJPpqVHYhF6g1fogEDls6JYv27AOl3hrY6Hcea6MnsveCNWOL-blrxRUF0wOnweZazIzLGvWaKNIh-YNAdCjLg6twgg7bWzj4C7GlIwy6L3whgWGzwdrSJmenCk1BuA0N7XPmEzDMnJGFvMevtUBN2djwO-KFB2aZvTfTWfKqKtGAiVjUjNCS0rXByQN1j?width=559&height=108&cropmode=none)  
-> ![deploy_error](https://dsm01pap007files.storage.live.com/y4mlOFSI86bWnEaSamepUj2L0cEfbFz4cMBGYb_K2gHf254i3Zwzl68Fs41hcPdHl8edDb6xBSL0SOSIfOs0AiaGsokAspRyi__pfOVC7MG1ZxN8Qs593Jtk1XhzrvS4-0Ujppa1zVGQRl5HG_lmP0rcEGpQSAtvd3Qt184SEqDm4Vu4sHNs9LoZhdeyEG9dSPy?width=284&height=76&cropmode=none)  
+> ![deploy_check](https://dsm01pap007files.storage.live.com/y4mJTYJPpqVHYhF6g1fogEDls6JYv27AOl3hrY6Hcea6MnsveCNWOL-blrxRUF0wOnweZazIzLGvWaKNIh-YNAdCjLg6twgg7bWzj4C7GlIwy6L3whgWGzwdrSJmenCk1BuA0N7XPmEzDMnJGFvMevtUBN2djwO-KFB2aZvTfTWfKqKtGAiVjUjNCS0rXByQN1j?width=559&height=108&cropmode=none){:.image-styling}  
+> ![deploy_error](https://dsm01pap007files.storage.live.com/y4mlOFSI86bWnEaSamepUj2L0cEfbFz4cMBGYb_K2gHf254i3Zwzl68Fs41hcPdHl8edDb6xBSL0SOSIfOs0AiaGsokAspRyi__pfOVC7MG1ZxN8Qs593Jtk1XhzrvS4-0Ujppa1zVGQRl5HG_lmP0rcEGpQSAtvd3Qt184SEqDm4Vu4sHNs9LoZhdeyEG9dSPy?width=284&height=76&cropmode=none){:.image-styling}  
 > 이 부분을 클릭하면 `Deploy Error Message`를 볼 수 있는데 캡쳐는 하지 못하였고 아래와 같은 메세지를 띄우며 `Deploy가 중지`된다.
 
 ```text

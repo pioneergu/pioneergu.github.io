@@ -14,7 +14,7 @@ image:
 ## **CDN**
 아래의 지도는 *해저케이블* 지도이다.  
 
-![submarinecablemap](/assets/img/posting/git/submarinecablemap.jpg){: style="max-width:90%"}
+![submarinecablemap](/assets/img/posting/git/submarinecablemap.jpg){:.image-styling}  
 > 제대로된 지도가 궁금하다면: <https://www.submarinecablemap.com/>{: target="_blank"}
 {:.prompt-tip}
 
@@ -38,7 +38,7 @@ image:
 > 이 블로그의 사용예로 아래와 같이 image를 넣으려는 곳에 cdn Link를 넣어주면 된다.  
 {:.prompt-info}
 ```markdown
-![image](https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/file_path)
+![image](https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/file_path){:.image-styling}  
 ```
 {:.nolineno}
 
@@ -72,13 +72,13 @@ img_cdn: https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master
 
 그런데 Chirpy theme의 CDN Link 자동 parsing 기능을 켜니까 Onedrive에서 임배드하여 호스팅 한 이미지링크가 깨지는 것이 아니겠는가?  
 
-![cdn-parsing-error](/assets/img/posting/git/cdn-parsing-error.jpg){: style="border: solid 2px #aaa"}
+![cdn-parsing-error](/assets/img/posting/git/cdn-parsing-error.jpg){:.image-styling}  
 
 이러면 안 되는데...  
 크롬개발자도구를 열어 url 을 확인해 보니 자동 Parsing을 위해 `_config.yml`에 넣어준 `img_cdn`의 링크가 Onedrive에서 `임배드 기능으로 생성된 link` 중간에 아래의 *노란 밑줄*처럼 `엉뚱한 곳`에 들어가 있는 것이 아니겠는가?  
 원래라면 `https://`로 시작하는 Onedrive link에는 변화가 없어야 하는데 말이다.
 
-![cdn-parsing-error-url](/assets/img/posting/git/cdn-parsing-error-url.jpg){: style="border: solid 2px #aaa"}
+![cdn-parsing-error-url](/assets/img/posting/git/cdn-parsing-error-url.jpg){:.image-styling}  
 
 이제 이걸 고쳐보자.🤞
 

@@ -15,7 +15,7 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 깃허브 블로그는 `1GB`를 넘을 수 없고, `트래픽은 한달에 100GB로 제한`되어 있다는 사실을 알게 되었다.  
 이런저런 이미지도 올리면서 블로깅을 하고 싶었는데... 1MB짜리 이미지 1,000 장이면 끝나는 것 아닌가?!
 
-![github-limits][github-limits]{: target="_blank"}
+![github-limits][github-limits]{:.image-styling}  
 
 -   출처: [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages){: target="_blank"}
 
@@ -56,27 +56,27 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 > 원드라이브 데스크톱버젼을 사용하지 않는 경우 아래의 링크로 들어가서 웹으로 접속하면 된다.  
 > [https://onedrive.live.com/](https://onedrive.live.com/){: target="_blank"}
 
-![onedrive-connection][onedrive-connection]
+![onedrive-connection][onedrive-connection]{:.image-styling}  
 
 다음으로 Blog에 호스팅할 이미지들을 모을 폴더를 하나 생성을 하고 거기에 이미지를 업로드 한다.  
 그 다음 아래처럼 원하는 이미지를 체크하고 우측 상단의 `임베드` 버튼을 눌러준다.
 
-![onedrive-embed][onedrive-embed]
+![onedrive-embed][onedrive-embed]{:.image-styling}  
 
 그러면 우측에 "블로그나 웹 페이지에 ~ 임베드"라는 타이틀과 함께 `HTML 코드 생성` 버튼이 생긴다~  
 이 버튼을 눌러주자.
 
-![onedrive-get-html][onedrive-get-html]
+![onedrive-get-html][onedrive-get-html]{:.image-styling}  
 
 그러면 아래와 같이 URL이 생성이 되는데 이 URL을 image tag에 넣어주거나 마크다운에서 이미지 링크를 걸어주면 된다.
 > *이미지 크기* 부분을 클릭하면 불필요하게 큰 이미지를 줄일 수도 있다~
 {:.prompt-tip}
 
-![onedrive-copy-url][onedrive-copy-url]
+![onedrive-copy-url][onedrive-copy-url]{:.image-styling}  
 
 아래의 이미지는 `원드라이브에서 생성한 URL로 삽입한 이미지`이다~😁
 
-![원드라이브 이미지][onedrive-image]
+![원드라이브 이미지][onedrive-image]{:.image-styling}  
 
 생각보다 매우 간단하다~  
 다음으로 구글드라이브에서 이미지 호스팅을 하는 방법을 보겠다.
@@ -88,15 +88,15 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 구글드라이브 데스크톱버젼을 설치했다면 탐색기로 호스팅할 이미지가 있는 곳으로 간 후 마우스 우클릭을 해서  
 `Google Drive로 공유를 누르거나~`
 
-![googledrive-connection][googledrive-connection]
+![googledrive-connection][googledrive-connection]{:.image-styling}  
 
 만약 `웹으로 접속`을 했다면 마찬가지로 원하는 이미지 우클릭을 누르고 `공유 버튼을 누른다~`
 
-![googledrive-share][googledrive-share]
+![googledrive-share][googledrive-share]{:.image-styling}  
 
 그러면 아래와 같은 창이 뜨는데 여기서 `일반 액세스`의 `제한됨`을 `링크가 있는 모든 사용자`로 바꿔주고, `링크복사`를 눌러서 링크를 복사한다.
 
-![googledrive-copy-url][googledrive-copy-url]
+![googledrive-copy-url][googledrive-copy-url]{:.image-styling}  
 
 > 복사된 링크를 붙여넣기하면 아래와 같은 `URL`이 나오는데 아래의 `주황색 글자`가 공유된 `이미지의 ID` 이다.
 > 
@@ -110,7 +110,7 @@ tags: [blogging, jekyll, github, onedrive, googledrive, image, hosting]    # TAG
 이 생성된 URL을 이미지 링크 부분에 넣어주면 끝!  
 아래는 `구글 드라이브`에서 생성한 링크로 호스팅한 이미지 이다.
 
-![구글드라이브 이미지][googledrive-image]
+![구글드라이브 이미지][googledrive-image]{:.image-styling}  
 
 두 가지 방법을 다 해보니 개인적으로 외부로의 `공유제한 풀기와 링크의 수동 수정이 없는 원드라이브의 이미지 호스팅 방법`이 훨씬 편한것 같다.  
 각자의 사정에 맞게 잘 골라서 쓰면 될 듯하다~😎

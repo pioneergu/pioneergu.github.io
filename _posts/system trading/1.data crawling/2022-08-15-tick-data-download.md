@@ -113,8 +113,8 @@ if __name__ == '__main__':
     download(file_path, url_links[0])
 ```
 
-![requests1](/assets/img/posting/systemtrading/requests1.jpg)
-![requests2](/assets/img/posting/systemtrading/requests2.jpg)
+![requests1](/assets/img/posting/systemtrading/requests1.jpg){:.image-styling}
+![requests2](/assets/img/posting/systemtrading/requests2.jpg){:.image-styling}
 
 첫 번째 tick data가 잘 저장된 것을 확인 할 수 있다.
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     # 역할에 맞게 함수명 수정.
 ```
 
-![requests3](/assets/img/posting/systemtrading/requests3.jpg)
+![requests3](/assets/img/posting/systemtrading/requests3.jpg){:.image-styling}
 
 4시간 넘게 기다리니 40 기가에 달하는 2,823개의 tick data가 다운 받아졌다...  
 이거 아무래도 다음에 또 이런걸 받을일이 생기면 동시성 코드를 짜서 한꺼번에 여러개를 다운로드 받을 수 있게 해야겠다.
