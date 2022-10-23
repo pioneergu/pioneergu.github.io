@@ -1,5 +1,5 @@
 ---
-title: 마인크래프트 맵 저장위치 (자바 에디션/윈도우 에디션)
+title: 마인크래프트 맵(월드) 저장위치 (자바 에디션/윈도우 에디션)
 author:
   name: pioneergu
   link: https://pioneergu.github.io
@@ -12,7 +12,7 @@ image:
 ---
 
 ---
-## **Minecraft 맵 저장위치**
+## **Minecraft 맵(월드) 저장위치**
 ### **Java Edition**
 
 마인크래프트 `자바 에디션`의 맵이 저장되는 위치는 다음과 같다.  
@@ -36,7 +36,9 @@ image:
 최종적으로 `...\saves` 폴더에 들어가면 아래와 같이 내가 저장한 월드들이 보일 것이다. 이 폴더들을 플레이하고 싶은 다른 컴퓨터에 복사하면 플레이가 가능하다.
 
 ![minecraft-save-java2](/assets/img/posting/minecraft/minecraft-save-java2.jpg){:.image-styling}
+  
 
+---
 ### **Windows Edition**
 
 마인크래프트 `윈도우즈 에디션`의 맵이 저장되는 위치는 다음과 같다.  
