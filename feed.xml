@@ -1,0 +1,604 @@
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://pioneergu.github.io/</id>
+ <title>Pioneergu</title>
+  <subtitle>A python developer and System Trader.</subtitle>
+  <updated>2023-01-15T17:48:30+09:00</updated>
+  <author>
+    <name>pioneergu</name>
+    <uri>https://pioneergu.github.io/</uri>
+  </author>
+<link rel="self" type="application/atom+xml" href="https://pioneergu.github.io/feed.xml"/>
+<link rel="alternate" type="text/html" hreflang="en"
+    href="https://pioneergu.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2023 pioneergu </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+  <entry>
+   <title>마인크래프트 맵(월드) 저장위치 (자바 에디션/윈도우 에디션)</title>
+  <link href="https://pioneergu.github.io/posts/minecraft-save/" rel="alternate" type="text/html" title="마인크래프트 맵(월드) 저장위치 (자바 에디션/윈도우 에디션)" />
+   <published>2022-10-21T23:34:00+09:00</published>
+    <updated>2022-10-23T19:49:38+09:00</updated>
+    <id>https://pioneergu.github.io/posts/minecraft-save/</id>
+    <content src="https://pioneergu.github.io/posts/minecraft-save/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="마인크래프트" />
+    <summary>
+Minecraft 맵(월드) 저장위치
+Java Edition
+마인크래프트 자바 에디션의 맵이 저장되는 위치는 다음과 같다.
+  C:\Users\[유저이름]\AppData\Roaming\.minecraft\saves
+AppData 폴더는 숨겨진 폴더이므로 위 폴더로 직접 이동하려면 아래 그림처럼 탐색기의 보기에서 숨긴항목을 체크해 줘서 위의 위치로 찾아가면 된다.
+또는 window키 + R을 눌러 %appdata%를 치면 바로 C:\Users\[유저이름]\AppData\Roaming\ 까지 가게 되는데 여기서 찾아 들어가면 더욱 쉽게 접근이 가능하다.
+  window키 + R를 누르면 위의 창이 뜨게 되고…
+  %appdata%를 치고 엔터를 치면 바로 위의 창이 뜨게 된...
+    </summary>
+  </entry>
+  <entry>
+   <title>Jekyll Blog에서 pyscript 줄바꿈 오류</title>
+  <link href="https://pioneergu.github.io/posts/jekyll-blog-pyscript-error/" rel="alternate" type="text/html" title="Jekyll Blog에서 pyscript 줄바꿈 오류" />
+   <published>2022-10-21T14:27:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/jekyll-blog-pyscript-error/</id>
+    <content src="https://pioneergu.github.io/posts/jekyll-blog-pyscript-error/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="PyScript" />
+    <summary>
+Jekyll Blog에서 pyscript 줄바꿈 오류
+Pyscript 줄바꿈 오류
+웹에서 Python code를 실행 시킬수 있다는 Pyscript를 알게 되어 test를 하던 중 Pyscript code가 2줄 이상이 되면 아래와 같은 오류를 띄우는 문제를 발견 하였다.
+JsException(PythonError: Traceback (most recent call last): File "/lib/python3.10/site-packages/_pyodide/_base.py", line 421, in eval_code CodeRunner( File "/lib/python3.10/site-packages/_pyodide/_base.py", line 237, in __init__ self.ast = n...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python star args(*args)</title>
+  <link href="https://pioneergu.github.io/posts/Python-star_args/" rel="alternate" type="text/html" title="Python star args(*args)" />
+   <published>2022-10-15T17:54:00+09:00</published>
+    <updated>2022-11-08T22:51:22+09:00</updated>
+    <id>https://pioneergu.github.io/posts/Python-star_args/</id>
+    <content src="https://pioneergu.github.io/posts/Python-star_args/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="2.Functions" />
+    <summary>
+*args
+Packing and Unpacking
+*arg에 대해서 알아보기 전에 Python의 Packing과 Unpacking에 대해서 알아보자.
+Packing
+Python에서는 a, b, c 이런식으로 변수를 콤마(,)로 나열해 쓰면 자동으로 Tuple로 Packing을 한다.
+a = 1
+b = 2
+c = 3
+t = a, b, c
+print(t)
+(1, 2, 3)
+위 코드를 실행 하면 a, b, c는 (1, 2, 3) Tuple로 Packing이 되에 변수 t에 저장이 된 것을 확인 할 수 있다.
+실은 (1, 2, 3)과 1, 2, 3은 둘 다 모두 Tuple이다. Python은 콤마(, )가 있으면 Tuple로 인식을 한다.
+Unpacking
+이번에는 변수를 좌변(LHS: Le...
+    </summary>
+  </entry>
+  <entry>
+   <title>GitHub(jekyll) Blog Deploy Error</title>
+  <link href="https://pioneergu.github.io/posts/deploy-fail/" rel="alternate" type="text/html" title="GitHub(jekyll) Blog Deploy Error" />
+   <published>2022-09-23T13:30:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/deploy-fail/</id>
+    <content src="https://pioneergu.github.io/posts/deploy-fail/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Git" />
+    <category term="Github-Blog" />
+    <summary>
+GitHub pages Gem관련 Deploy 오류 발생
+GitHub pages로 Deploy하여 사용하는 Jekyll Theme Blog를 잘 사용하고 있는 중에 pyscript를 쓰려고 시도하던 중 pyscript의 code가 Deploy만 하면 온라인상에서 Code 줄바뀜이 안 되는 현상을 발견하였다. (local에선 잘 된다.)
+  pyscript Deploy 시 Code 줄바꿈 오류 해결 방법
+이걸 해결해 보려고 gemspec을 건드려보고 bundle update도 하는 등 이것저것 손을 막 댔다.
+그런데!! 갑자기 어느순간 Deploy Error가 뜨는것 아니겠는가!? 😢
+  Deploy Error가 생기면 아래 주황색 박스 친부분의 ✔가 ❌로 바뀌게 된다.
+이 부분을 클릭하...
+    </summary>
+  </entry>
+  <entry>
+   <title>PyScript 설치 및 DOM객체 접근</title>
+  <link href="https://pioneergu.github.io/posts/pyscript/" rel="alternate" type="text/html" title="PyScript 설치 및 DOM객체 접근" />
+   <published>2022-09-22T10:16:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/pyscript/</id>
+    <content src="https://pioneergu.github.io/posts/pyscript/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="PyScript" />
+    <summary>
+PyScript
+Anaconda에서 HTML 웹페이지에서 python을 사용할 수 있는 PyScript를 출시 하였다.
+우선 pyscript를 이용해 "Hello World"를 찍어보겠다.
+&amp;lt;py-script&amp;gt;
+print("Hello World")
+&amp;lt;/py-script&amp;gt;
+Loading...
+code_text = Element("pyresult2 &amp;gt; .highlight .rouge-code &amp;gt; pre")
+code_text.write("Hello World")
+F5를 눌러 refresh해 보면 위의 text output 창의 Hello World가 Loading...에서 Hello World로 바뀌는 것을 볼 수 있을 것이다.
+pyscript의 Run...
+    </summary>
+  </entry>
+  <entry>
+   <title>Markdown 문법 및 Kramdown</title>
+  <link href="https://pioneergu.github.io/posts/markdown/" rel="alternate" type="text/html" title="Markdown 문법 및 Kramdown" />
+   <published>2022-09-05T15:53:00+09:00</published>
+    <updated>2022-09-21T14:17:21+09:00</updated>
+    <id>https://pioneergu.github.io/posts/markdown/</id>
+    <content src="https://pioneergu.github.io/posts/markdown/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Git" />
+    <category term="Github-Blog" />
+    <summary>
+Markdown 문법
+Markdown Processors
+마크다운 프로세서는 우리가 *.md file에 적어주는 Markdown Syntax를 html syntax로 변환해 주는 놈이다.
+기본적인 기능은 비슷하나 Markdown Processor에 따라서 지원하는 기능이 조금씩 다른데 이 프로세서가 수십가지나 된다.
+  마크다운 프로세서의 종류: https://github.com/markdown/markdown.github.com/wiki/Implementations
+여기에선 일반적으로 통용되는 마크다운 문법과 kramdown processor에 대해서 정리하고 알아보려한다.
+Markdown Cheat-sheet
+      Element
+      Markdown Synta...
+    </summary>
+  </entry>
+  <entry>
+   <title>GitHub 블로그 무료 CDN 사용하기 - jsdelivr</title>
+  <link href="https://pioneergu.github.io/posts/github-blog-jsdelivr-cdn/" rel="alternate" type="text/html" title="GitHub 블로그 무료 CDN 사용하기 - jsdelivr" />
+   <published>2022-09-05T15:53:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/github-blog-jsdelivr-cdn/</id>
+    <content src="https://pioneergu.github.io/posts/github-blog-jsdelivr-cdn/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Git" />
+    <category term="Github-Blog" />
+    <summary>
+CDN
+아래의 지도는 해저케이블 지도이다.
+  제대로된 지도가 궁금하다면: https://www.submarinecablemap.com/
+바다를 건너 데이터를 전송할 때 저 해저케이블들을 통해서 데이터가 전송 되는 것인데, 
+아무리 데이터 전송속도가 빠르다 한들 물리적으로 먼 곳에서의 용량이 큰 데이터 다운로드는 상대적으로 매우 느릴 수 밖에 없다.
+그래서 만들어진 것이 CDN이라는 콘텐츠 전송 네트워크 이다.
+지리적으로 먼 곳에 있는 콘텐츠에 접속을 할 때 용량이 큰 이미지나 동영상의 경우 지리적으로 가까운 CDN 서버에 미리 저장 해 둬서 빠른 로딩을 경험 할 수 있게 해준다.
+  (e.g. 한국에서 미국의 웹사이트에 접속할 때 용량이 큰 콘텐츠는 미리 저장된 한국 CDN서버에서 다운로...
+    </summary>
+  </entry>
+  <entry>
+   <title>실시간 차트의 MACD 지표계산 속도 비교 (pandas vs dictionary)</title>
+  <link href="https://pioneergu.github.io/posts/macd-pandas-vs-dict/" rel="alternate" type="text/html" title="실시간 차트의 MACD 지표계산 속도 비교 (pandas vs dictionary)" />
+   <published>2022-08-29T19:11:00+09:00</published>
+    <updated>2022-09-23T00:41:30+09:00</updated>
+    <id>https://pioneergu.github.io/posts/macd-pandas-vs-dict/</id>
+    <content src="https://pioneergu.github.io/posts/macd-pandas-vs-dict/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="System Trading" />
+    <category term="0.Indicators" />
+    <summary>
+실시간 MACD 지표계산 코드작성 (pandas와 dictionary)
+Dictionary를 활용한 실시간 차트의 MACD 모의 계산은 이전글에서 다루었으니,
+pandas library를 사용하여 실시간 차트 모의계산 함수를 우선 만들도록 해보겠다.
+import random
+import datetime
+import timeit
+import pandas as pd
+random.seed(0)  # 코드를 실행할 때마다 생성되는 Random 숫자가 동일하게 해주기
+class Indicators:
+    def __init__(self, tot_num):
+        """
+        tot_num개의 OHLCV and MACD dict list 생성
+        """
+        sel...
+    </summary>
+  </entry>
+  <entry>
+   <title>깃허브(GitHub, jekyll) 블로그 이미지 호스팅 하기 (원드라이브, 구글드라이브)</title>
+  <link href="https://pioneergu.github.io/posts/jekyll-github-blog-image-hosting/" rel="alternate" type="text/html" title="깃허브(GitHub, jekyll) 블로그 이미지 호스팅 하기 (원드라이브, 구글드라이브)" />
+   <published>2022-08-25T21:05:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/jekyll-github-blog-image-hosting/</id>
+    <content src="https://pioneergu.github.io/posts/jekyll-github-blog-image-hosting/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Git" />
+    <category term="Github-Blog" />
+    <summary>
+GitHub 저장소 제한 사항
+예전에 지킬(jekyll)을 이용해 깃허브 페이지로 블로그를 만들었는데,
+깃허브 블로그는 1GB를 넘을 수 없고, 트래픽은 한달에 100GB로 제한되어 있다는 사실을 알게 되었다.
+이런저런 이미지도 올리면서 블로깅을 하고 싶었는데… 1MB짜리 이미지 1,000 장이면 끝나는 것 아닌가?!
+  출처: GitHub Docs
+지금 당장엔 아무런 문제가 없을지 몰라도 이미지가 많아지고 블로그가 커지면 골치가 아플것 같단 생각을 했다.
+(물론 블로깅을 열심히 한다는 전제하에 이야기이긴하다… 꾸준히 할 수 있는지의 여부를 떠나 이제 시작하는데 당연히 열심히 한다는 가정하에 결정을 하는 것이 사람 심리가 아닌가!)
+이미지 업로드에 대한 막연한 불안감에 티스토리 블로그를...
+    </summary>
+  </entry>
+  <entry>
+   <title>MACD 지표의 python 코드 작성 (Pandas library and Dictionary)</title>
+  <link href="https://pioneergu.github.io/posts/macd-code/" rel="alternate" type="text/html" title="MACD 지표의 python 코드 작성 (Pandas library and Dictionary)" />
+   <published>2022-08-24T21:06:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/macd-code/</id>
+    <content src="https://pioneergu.github.io/posts/macd-code/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="System Trading" />
+    <category term="0.Indicators" />
+    <summary>
+MACD 지표의 python 코드 작성 (by Pandas library)
+Pandas 설치
+pandas library를 사용하려면 당연하게도 pandas library를 설치 해야한다.
+아래와 같이 나의 환경관리 툴에 맞게 설치를 해준다.
+# PyPi (python package index 환경)
+&amp;gt; pip install pandas
+# Conda (anaconda or miniconda 환경)
+&amp;gt; conda install pandas
+Data 준비
+OHLCV
+MACD를 계산할 OHLCV (Open, High, Low, Close, Volume)의 Data가 필요하다.
+요즘은 각종 증권사이트나 암호화폐 사이트에서 API를 이용하거나 크롤링을 하는 방식으로
+내가 원하는 종목의...
+    </summary>
+  </entry>
+  <entry>
+   <title>KT GIGA Wifi 공유기 관리자 모드 접속이 안되는 경우</title>
+  <link href="https://pioneergu.github.io/posts/kt-giga-connection-error/" rel="alternate" type="text/html" title="KT GIGA Wifi 공유기 관리자 모드 접속이 안되는 경우" />
+   <published>2022-08-20T23:31:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/kt-giga-connection-error/</id>
+    <content src="https://pioneergu.github.io/posts/kt-giga-connection-error/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="생활정보" />
+    <summary>
+KT GIGA Wifi 접속 오류 Case
+KT Giga Wifi 공유기의 경우 homehub.olleh.com나 homehub.kt.com또는 172.30.1.254를 브라우져 주소창에 입력하고 이동하면 관리자 페이지에 접속이 가능하다.
+엄밀히 말하면 Window키 + R을 눌러 cmd엔터를 쳐주면 나오는 창에 ipconfig를 치고 엔터를 쳐주면 나오는 주소 중 기본게이트웨이의 주소로 접속을 하면 된다.
+그런데 간혹 아래처럼 기본게이트웨이가 KT공유기 기본설정인 172.30.1.254가 아닌 엉뚱한 주소로 되어 있는 경우가 있다.
+이 경우는 컴퓨터가 공유기에 연결이 되어 있는 것이 아닌 모뎀에 직접 연결 되어 있기 때문이고 접속을 시도하면 아래와 같은 Error를 띄운다.
+해결 방법
+...
+    </summary>
+  </entry>
+  <entry>
+   <title>MACD 지표의 고찰</title>
+  <link href="https://pioneergu.github.io/posts/macd-theory/" rel="alternate" type="text/html" title="MACD 지표의 고찰" />
+   <published>2022-08-20T16:56:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/macd-theory/</id>
+    <content src="https://pioneergu.github.io/posts/macd-theory/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="System Trading" />
+    <category term="0.Indicators" />
+    <summary>
+MACD (Moving Average Convergence Divergence) 계산식
+  MACD = Short_period EMA - Long_period EMA
+MACD_signal = Signal_period EMA of MACD
+EMA: Exponential Moving Average
+    Short_period: 일반적으로 12를 사용
+    Long_period: 일반적으로 26을 사용
+    Signal_period: 일반적으로 9를 사용
+  예로 Short period MA는 최근 12 기간동안의 평균가격을 이야기 한다.
+다만 여기서는 EMA로 Exponential(지수)라는 단어가 들어가는데 EMA는 새로만들어진 봉에 대한 MA뿐아니라 이미 만들어진 봉의 MA...
+    </summary>
+  </entry>
+  <entry>
+   <title>KT GIGA Wifi 포트포워딩</title>
+  <link href="https://pioneergu.github.io/posts/kt-portforwarding/" rel="alternate" type="text/html" title="KT GIGA Wifi 포트포워딩" />
+   <published>2022-08-19T13:11:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/kt-portforwarding/</id>
+    <content src="https://pioneergu.github.io/posts/kt-portforwarding/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="생활정보" />
+    <summary>
+포트포워딩 (Port Forwarding)
+외부 망에서 공유기를 지나 내 컴퓨터에 접속하게 하기 위해서는 포트포워딩이란 것을 해 줘야 한다.
+내 컴퓨터 원격접속을 하거나 내 컴퓨터에 마인크래프트와 같은 게임의 서버(e.g.포지서버)를 열어서 외부 사용자가 개인서버에 접속해 멀티플레이를 하는 경우가 대표적인 예이다.
+포트포워딩을 하는 방법은 집에 설치된 공유기마다 다른데 여기서는 KT GIGA Wifi 공유기 기준으로 방법을 설명하려 한다.
+  참고: ipTIME 공유기 포트포워딩 방법: https://pioneergu.github.io/posts/iptime-portforwarding/
+KT공유기 관리자 페이지 접속
+KT Giga Wifi 공유기의 경우 homehub.olleh.com, ...
+    </summary>
+  </entry>
+  <entry>
+   <title>포지 서버 (forge server)열기, 마인크래프트 자바 온라인플레이</title>
+  <link href="https://pioneergu.github.io/posts/minecraft-forge-server/" rel="alternate" type="text/html" title="포지 서버 (forge server)열기, 마인크래프트 자바 온라인플레이" />
+   <published>2022-08-18T20:21:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/minecraft-forge-server/</id>
+    <content src="https://pioneergu.github.io/posts/minecraft-forge-server/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="마인크래프트" />
+    <summary>
+포지모드(Forge Mod) 온라인 플레이를 위한 포지서버(Forge Server) 열기
+저번에 설치한 초현실 롤러코스터 모드인 EX Roller Coaster Mod 를 친구랑 같은 공유기환경이 아닌 각자의 집에서 온라인으로 접속해 함께 즐길 수 있는 방법에 대해서 알아보자.
+포지 모드 게임을 온라인으로 플레이하려면 누군가 한 명이 포지 서버를 열어야 한다.
+우선 서버의 종류부터 알아보자.
+0. 서버 종류
+  공식 서버: 플러그인이나 모드 적용이 되지 않는 서버 구축 가능.
+    마인크래프트 Java Edition 공식 서버 구축: https://www.minecraft.net/ko-kr/download/server
+  아래의 버킷은 플러그인 적용이 가능하나 모드는 적용이...
+    </summary>
+  </entry>
+  <entry>
+   <title>ipTIME 포트포워딩</title>
+  <link href="https://pioneergu.github.io/posts/iptime-portforwarding/" rel="alternate" type="text/html" title="ipTIME 포트포워딩" />
+   <published>2022-08-18T17:21:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/iptime-portforwarding/</id>
+    <content src="https://pioneergu.github.io/posts/iptime-portforwarding/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="생활정보" />
+    <summary>
+포트포워딩 (Port Forwarding)
+외부 망에서 공유기를 지나 내 컴퓨터에 접속하게 하기 위해서는 포트포워딩이란 것을 해 줘야 한다.
+내 컴퓨터 원격접속을 하거나 내 컴퓨터에 마인크래프트와 같은 게임의 서버(e.g.포지서버)를 열어서 외부 사용자가 개인서버에 접속해 멀티플레이를 하는 경우가 대표적인 예이다.
+포트포워딩을 하는 방법은 집에 설치된 공유기마다 다른데 여기서는 ipTIME 공유기 기준으로 방법을 설명하려 한다.
+  참고: KT GIGA Wifi 공유기 포트포워딩 방법: https://pioneergu.github.io/posts/kt-portforwarding/
+iptime 관리자 페이지 접속하기
+브라우저 주소창에 192.168.0.1을 입력하면 아래와 같이 로그인 이름...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python - Requests를 이용한 File download</title>
+  <link href="https://pioneergu.github.io/posts/tick-data-download/" rel="alternate" type="text/html" title="Python - Requests를 이용한 File download" />
+   <published>2022-08-15T21:05:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/tick-data-download/</id>
+    <content src="https://pioneergu.github.io/posts/tick-data-download/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="System Trading" />
+    <category term="1.Data Crawling" />
+    <summary>
+Requests 설치
+앞에서 동적 웹크롤링으로 Tick data를 다운로드 할 수 있는 Link를 얻었다.
+이제 그 Link를 Requests를 이용해서 File을 다운로드 해보자.
+Requests 라이브러리를 설치한다.
+pip install requests
+Requests를 이용한 File Download 함수 만들기
+코인들의 Tick data link들을 list형태로 얻었으니,
+이제 requests library를 사용하여 file을 다운로드 할 차례다!
+우선 file을 저장할 path를 결정하고 해당 폴더를 만들고 file path를 얻는 함수를 만들고,
+requests를 이용한 download 함수를 만들자.
+import os
+def make_save_path(folder_pa...
+    </summary>
+  </entry>
+  <entry>
+   <title>내 IP주소 확인! (바로 확인가능)</title>
+  <link href="https://pioneergu.github.io/posts/my-external-ip/" rel="alternate" type="text/html" title="내 IP주소 확인! (바로 확인가능)" />
+   <published>2022-08-15T15:24:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/my-external-ip/</id>
+    <content src="https://pioneergu.github.io/posts/my-external-ip/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="생활정보" />
+    <summary>
+내 아이피주소(IP address) 직접 확인!
+아래의 주소가 현재 이 글을 보시는 분이 사용중인 컴퓨터의 IP주소(External IP)이다.
+  당신의 IP주소는: Loading IP Address... 입니다.
+추가로 검색포털을 활용하여 IP 주소를 확인 할 수 있다~
+아래에 그 내용이 있다.
+검색포털 활용 (외부 IP주소)
+네이버든 다음이든 검색포털에 내 IP주소 또는 내아이피라고 치면 아래처럼 나의 외부 ip주소를 알려준다.
+외부에서 접속할 때 필요한 IP주소이다.
+  지금까지는 외부 IP주소(External IP)를 조회 하는 방법에 대해 알아보았는데 공유기 환경에서는 내부적으로 사용하는 내부 IP(Private IP)가 따로 있다.
+이번엔 내부 IP(Pri...
+    </summary>
+  </entry>
+  <entry>
+   <title>미성년자 통장개설 시 필요서류 및 발급 방법 (생활정보)</title>
+  <link href="https://pioneergu.github.io/posts/bank-docs-for-minor/" rel="alternate" type="text/html" title="미성년자 통장개설 시 필요서류 및 발급 방법 (생활정보)" />
+   <published>2022-08-11T12:24:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/bank-docs-for-minor/</id>
+    <content src="https://pioneergu.github.io/posts/bank-docs-for-minor/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="생활정보" />
+    <summary>
+미성년자 통장개설 시 필요한 서류들
+이번에 아이들 명의로 용돈 통장을 만들어 주는데
+필요 서류 부족으로 은행을 두 번 방문했다. 😢
+또 이런일이 일어나지 않도록 미성년자 명의로 통장개설 시 필요한 서류를 정리해 놓으려 한다.
+1. 상세 기본증명서 (미성년자 기준)
+✔ 미성년자의 기본증명서를 상세로 뗀다.
+2. 가족관계 증명서 (주민번호 기재 / 내방고객 기준)
+✔ 법정대리인인 부모의 기준으로 가족관계 증명서를 뗀다. 주민번호 모두 표시!!
+3. 내방고객(법정대리인) 신분증
+✔ 부모의 신분증 지참 필!
+4. 통장사용 인감
+✔ 미성년자의 통장에 사용할 도장도 필요하다~
+필요한 서류는 확인 했으니 이제 서류의 발급 방법을 알아 보자.
+기본증명서(상세) 및 가족관계등록부 발급 방법
+기본증명...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python - Selenium 암호화폐 Tick Data 동적 웹 크롤링</title>
+  <link href="https://pioneergu.github.io/posts/tick-data-selenium/" rel="alternate" type="text/html" title="Python - Selenium 암호화폐 Tick Data 동적 웹 크롤링" />
+   <published>2022-08-09T22:48:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/tick-data-selenium/</id>
+    <content src="https://pioneergu.github.io/posts/tick-data-selenium/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="System Trading" />
+    <category term="1.Data Crawling" />
+    <summary>
+BitMex 과거 Raw Tick Data
+System Trading 시 시간 봉(차트)로 거래를 하면 소위말하는 휩소(whipsaw: 가늘고 긴 톱)에 당하기 쉽다.
+그래서 Tick 차트를 활용하는 것이 좋은데, Tick 차트를 만들려면 Tick Data가 필요하다.
+이것 저것 검색을 하다 보니 BitMex에서 비트코인 및 코인들의 Tick Data를 제공하고 있다는 것을 알게 되었다.
+  BitMex 과거 Tick Data - Link
+위 주소에 접속을 해 보면 아래 처럼 2014년 11월 부터 어제까지의 Data가 List-up되어 있는 것을 볼 수 있다.
+이 자료를 수동을 받으려면 몇 일이 걸릴지… 이런 작업이 또 생긴다면?…
+그래서 동적 웹 크롤링 (Crawling)을 사용하려 한...
+    </summary>
+  </entry>
+  <entry>
+   <title>마인크래프트 포지 모드 설치 - (도티TV 초현실 롤러코스터)</title>
+  <link href="https://pioneergu.github.io/posts/ex-roller-coaster-mod/" rel="alternate" type="text/html" title="마인크래프트 포지 모드 설치 - (도티TV 초현실 롤러코스터)" />
+   <published>2022-07-01T22:08:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/ex-roller-coaster-mod/</id>
+    <content src="https://pioneergu.github.io/posts/ex-roller-coaster-mod/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="마인크래프트" />
+    <summary>
+도티TV 초현실 롤러코스터
+8살짜리 아들이 도티TV에서 초현실 롤러코스터 모드인 EX Roller Coaster Mod를 보고 해보고 싶다고 해서,
+자전거를 마스터하면 사준다고 했더니… 하루만에 조금 타게 되더니 3일이 지난 후엔 마스터(?)를 해버리는 것이 아니겠는가??
+약속대로 아래 링크된 초현실 롤러코스터 모드를 하기 위해 마인크래프트 자바 에디션을 구매하였다…….
+  저 EX Roller Coaster Mod는 Mincraft Java Edition에 Forge(포지)를 설치하여 Mod를 깔아야한다…
+(마인크래프트 윈도우즈 에디션도 있는데… 저것 하나 때문에 자바에디션을 추가로 구매를….. 흑흑)
+롤러코스터모드를 컴퓨터에 설치하고 한참 후에 노트북에 설치해 주려는데….
+가...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python - print()로 파일에 출력하기 (sys.stdout - redirection)</title>
+  <link href="https://pioneergu.github.io/posts/sys.stdout-redirection/" rel="alternate" type="text/html" title="Python - print()로 파일에 출력하기 (sys.stdout - redirection)" />
+   <published>2022-04-11T17:05:00+09:00</published>
+    <updated>2022-10-23T15:24:37+09:00</updated>
+    <id>https://pioneergu.github.io/posts/sys.stdout-redirection/</id>
+    <content src="https://pioneergu.github.io/posts/sys.stdout-redirection/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="1.Generals" />
+    <summary>
+print() 함수로 파일에 기록(출력)하기
+print() 함수를 사용하면 기본적으로 콘솔창에 출력이 된다.
+그런데 이걸 파일에 기록하고 싶을 때가 있는데 이 때에는 sys.stdout을 redirection 해 주면 된다.
+아래의 예제코드를 보자.
+import sys
+original_stdout = sys.stdout  # original stdout을 임시 저장
+file_path = ".\\log_test.txt"
+log = open(file_path, "w")
+sys.stdout = log  # stdout을 log_test.txt로 redirection
+print("hello world")
+sys.stdout = original_stdout  # sys.stdout을 원래로 돌림.
+pr...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python sys.stdout.flush()</title>
+  <link href="https://pioneergu.github.io/posts/sys.stdout-flush/" rel="alternate" type="text/html" title="Python sys.stdout.flush()" />
+   <published>2022-02-14T14:56:00+09:00</published>
+    <updated>2022-09-07T16:41:50+09:00</updated>
+    <id>https://pioneergu.github.io/posts/sys.stdout-flush/</id>
+    <content src="https://pioneergu.github.io/posts/sys.stdout-flush/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="1.Generals" />
+    <summary>
+print function
+아래의 help(print)를 보면 print() 함수는 default로 줄바꿈을 해준다.
+help(print)
+Help on built-in function print in module builtins:  
+print(...)  
+    print(value, ..., sep=' ', **end='\n'**, file=sys.stdout, flush=False)  
+    Prints the values to a stream, or to sys.stdout by default.  
+    Optional keyword arguments:  
+    file:  a file-like object (stream); defaults to the current sy...
+    </summary>
+  </entry>
+  <entry>
+   <title>Python Sequences</title>
+  <link href="https://pioneergu.github.io/posts/Python-Sequences/" rel="alternate" type="text/html" title="Python Sequences" />
+   <published>2022-02-04T17:54:00+09:00</published>
+    <updated>2022-09-07T16:41:50+09:00</updated>
+    <id>https://pioneergu.github.io/posts/Python-Sequences/</id>
+    <content src="https://pioneergu.github.io/posts/Python-Sequences/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Python" />
+    <category term="3.Iterables and Generator" />
+    <summary>
+Sequence Type
+Python의 Sequence type은 Mutable과 Immutable Sequence Type으로 나뉜다.
+Immutable Sequence Type에는 String과 Tuple이 있다.
+      Mutable Sequences
+      Immutable Sequences
+      list
+      string
+      bytearrays
+      tuple
+       
+      range
+       
+      bytes
+  NOTE: Mutable은 내용의 변경이 가능한 Type이며, Immutable은 변경이 불가능하다.
+tu...
+    </summary>
+  </entry>
+  <entry>
+   <title>Jekyll 테마를 이용해 GitHub 블로그 만들기</title>
+  <link href="https://pioneergu.github.io/posts/jekyll-theme-make/" rel="alternate" type="text/html" title="Jekyll 테마를 이용해 GitHub 블로그 만들기" />
+   <published>2022-01-25T23:24:00+09:00</published>
+    <updated>2022-09-09T01:03:32+09:00</updated>
+    <id>https://pioneergu.github.io/posts/jekyll-theme-make/</id>
+    <content src="https://pioneergu.github.io/posts/jekyll-theme-make/" />
+    <author>
+      <name>{"name"=>"pioneergu", "link"=>"https://pioneergu.github.io"}</name>
+    </author>
+    <category term="Git" />
+    <category term="Github-Blog" />
+    <summary>
+Github Blog (with jekyll theme) 사용 이유
+뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면
+많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다.
+비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거
+Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다.
+Jekyll-theme-chirpy 테마 선정
+Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여러 사이트가 검색되는데
+그 중에서 개인적으로는 아래의 사이트가 Jekyll theme를 카테고리별로 볼 수 있어 마음에 든다.
+  Jekyll theme 모음: https://jekyll-themes.com/
+...
+    </summary>
+  </entry>
+</feed>

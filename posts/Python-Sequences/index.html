@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en"
+    data-mode="dark"
+>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX0RHSMFG1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VX0RHSMFG1');
+  </script>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="naver-site-verification" content="8b08cc41ee055bd3027f752d1c15fd04c2c13697" />
+ <meta name="google-site-verification" content="TUMz9mXFwO4hftArSF_6GkO2bwamGZ8AOQzfaROxNQQ" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+     crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://pioneergu.github.io/rss.xml" title="Pioneergu Feed">
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Python Sequences" />
+<meta name="author" content="pioneergu" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Sequence Type" />
+<meta property="og:description" content="Sequence Type" />
+<link rel="canonical" href="https://pioneergu.github.io/posts/Python-Sequences/" />
+<meta property="og:url" content="https://pioneergu.github.io/posts/Python-Sequences/" />
+<meta property="og:site_name" content="Pioneergu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-04T17:54:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Python Sequences" />
+<meta name="twitter:site" content="@pioneergu" />
+<meta name="twitter:creator" content="@pioneergu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"pioneergu"},"dateModified":"2022-09-07T16:41:50+09:00","datePublished":"2022-02-04T17:54:00+09:00","description":"Sequence Type","headline":"Python Sequences","mainEntityOfPage":{"@type":"WebPage","@id":"https://pioneergu.github.io/posts/Python-Sequences/"},"url":"https://pioneergu.github.io/posts/Python-Sequences/"}</script>
+ <title>Python Sequences | Pioneergu
+ </title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Pioneergu">
+<meta name="application-name" content="Pioneergu">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+ <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+ <div class="profile-wrapper text-center">
+   <div id="avatar">
+      <a href="/" class="mx-auto">
+          <img src="https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png" alt="avatar" onerror="this.style.display='none'">
+      </a>
+   </div>
+   <div class="site-title mt-3">
+      <a href="/">Pioneergu</a>
+   </div>
+   <div class="site-subtitle font-italic">Try everything, Try everyday!</div>
+ </div>
+ <ul class="w-100">
+   <li class="nav-item">
+      <a href="/" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>HOME</span>
+      </a>
+   <li class="nav-item">
+      <a href="/categories/" class="nav-link">
+        <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>CATEGORIES</span>
+      </a>
+   <li class="nav-item">
+      <a href="/tags/" class="nav-link">
+        <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>TAGS</span>
+      </a>
+   <li class="nav-item">
+      <a href="/archives/" class="nav-link">
+        <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>ARCHIVES</span>
+      </a>
+   <li class="nav-item">
+      <a href="/about/" class="nav-link">
+        <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>ABOUT</span>
+      </a>
+ </ul>
+ <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+      <a href="https://github.com/pioneergu" aria-label="github"
+        target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://instagram.com/hangmoonam" aria-label="instagram"
+        target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/pioneergu" aria-label="twitter"
+        target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="
+          javascript:location.href = 'mailto:' + ['hangmoonam','gmail.com'].join('@')" aria-label="email"
+        >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="/feed.xml" aria-label="rss"
+        >
+        <i class="fas fa-rss"></i>
+      </a>
+ </div>
+</div>
+<div id="topbar-wrapper">
+ <div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4">
+    <span id="breadcrumb">
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
+            <span>Python Sequences</span>
+    </span>
+    <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+   <div id="topbar-title">
+      Post
+   </div>
+    <i id="search-trigger" class="fas fa-search fa-fw"></i>
+    <span id="search-wrapper" class="align-items-center">
+      <i class="fas fa-search fa-fw"></i>
+      <input class="form-control" id="search-input" type="search"
+        aria-label="search" autocomplete="off" placeholder="Search...">
+    </span>
+    <span id="search-cancel" >Cancel</span>
+ </div>
+</div>
+   <div id="main-wrapper" class="d-flex justify-content-center">
+     <div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+ <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4 pb-5">
+   <div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<div class="post-meta text-muted post-head-img-bg" style="background-image:url('https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/moon_circle.png')">
+ <h1 data-toc-skip>Python Sequences</h1>
+    <span>
+      Posted
+<em class=""
+    data-ts="1643964840"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  Feb  4, 2022
+</em>
+    </span>
+    <span>
+      Updated
+<em class=""
+    data-ts="1662536510"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  Sep  7, 2022
+</em>
+    </span>
+ <div class="d-flex justify-content-between">
+    <span>
+      By
+      <em>
+        pioneergu
+      </em>
+    </span>
+   <div>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom"
+  title="1417 words">
+  <em>7 min</em> read</span>
+   </div>
+ </div>
+</div>
+<div class="post-content">
+ <hr />
+<h2 id="sequence-type"><span class="mr-2"><strong>Sequence Type</strong></span><a href="#sequence-type" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Python의 Sequence type은 <code class="language-plaintext highlighter-rouge">Mutable</code>과 <code class="language-plaintext highlighter-rouge">Immutable</code> Sequence Type으로 나뉜다.<br />
+<code class="language-plaintext highlighter-rouge">Immutable</code> Sequence Type에는 <code class="language-plaintext highlighter-rouge">String</code>과 <code class="language-plaintext highlighter-rouge">Tuple</code>이 있다.</p>
+<div class="table-wrapper"><table>
+<thead>
+   <tr>
+     <th style="text-align: left">Mutable Sequences
+     <th style="text-align: left">Immutable Sequences
+ <tbody>
+   <tr>
+     <td style="text-align: left">list
+     <td style="text-align: left">string
+   <tr>
+     <td style="text-align: left">bytearrays
+     <td style="text-align: left">tuple
+   <tr>
+     <td style="text-align: left"> 
+     <td style="text-align: left">range
+   <tr>
+     <td style="text-align: left"> 
+     <td style="text-align: left">bytes
+</table></div>
+<blockquote class="prompt-tip"><div>
+ <p>NOTE: <code class="language-plaintext highlighter-rouge">Mutable</code>은 내용의 변경이 가능한 Type이며, <code class="language-plaintext highlighter-rouge">Immutable</code>은 변경이 불가능하다.</p>
+</div></blockquote>
+<p><code class="language-plaintext highlighter-rouge">tuple</code> element의 값을 변경하는 코드를 실행해보자.</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-3-155b9e8fb284&gt; in &lt;module&gt;()
+----&gt; 1 t[0] = 10
+
+TypeError: 'tuple' object does not support item assignment
+</pre></table></code></div></div>
+<p>위 코드의 실행 결과처럼 <code class="language-plaintext highlighter-rouge">tuple</code>에 새로운 값을 assign하려고 하면 <code class="language-plaintext highlighter-rouge">TypeError</code>를 띄우게 된다.</p>
+<p>반면 <code class="language-plaintext highlighter-rouge">tuple</code>안에 <code class="language-plaintext highlighter-rouge">mutable</code> sequence type인 <code class="language-plaintext highlighter-rouge">list</code>가 있는 경우,<br />
+<code class="language-plaintext highlighter-rouge">list</code>의 element는 <em>수정이 가능</em>하다.</p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">t</span> <span class="o">=</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>([10, 2], 3, 4)
+</pre></table></code></div></div>
+<hr />
+<h2 id="concatenation-and-repetition"><span class="mr-2"><strong>Concatenation and Repetition</strong></span><a href="#concatenation-and-repetition" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><code class="language-plaintext highlighter-rouge">Concatenate</code>는 <code class="language-plaintext highlighter-rouge">+</code> operator를 사용하여 할 수 있고,<br />
+<code class="language-plaintext highlighter-rouge">Repetition</code>은 <code class="language-plaintext highlighter-rouge">*</code> operator를 사용하여 할 수 있다.<br />
+그리고 <code class="language-plaintext highlighter-rouge">Concatenate</code> 및 <code class="language-plaintext highlighter-rouge">Repetition</code>은 언제나 새로운 Object를 반환한다.</p>
+<h3 id="concatenation"><span class="mr-2"><strong>Concatenation</strong></span><a href="#concatenation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="c1"># Concatenation
+</span><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">l3</span> <span class="o">=</span> <span class="n">l1</span> <span class="o">+</span> <span class="n">l2</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"l3: </span><span class="si">{</span><span class="n">l3</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l1: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l2: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l3: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l3</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>l3: [1, 2, 3, 4, 5, 6]  
+id of l1: 2619302087680  
+id of l2: 2619302081984  
+id of l3: 2619308460288  
+</pre></table></code></div></div>
+<p>위의 결과를 보면 알 수 있듯이 <code class="language-plaintext highlighter-rouge">Concatenation</code>의 결과인 <code class="language-plaintext highlighter-rouge">l3</code>는 <code class="language-plaintext highlighter-rouge">l1</code> 및 <code class="language-plaintext highlighter-rouge">l2</code>와 다른 메모리 주소를 보여준다.</p>
+<p>아래의 <code class="language-plaintext highlighter-rouge">Inplace-concatenation</code>을 보면 메모리 주소가 변하지 않는 것을 볼 수 있다.</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="c1"># inplace-concatenation
+</span><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">l3</span> <span class="o">=</span> <span class="n">l1</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"l1: </span><span class="si">{</span><span class="n">l1</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"l3: </span><span class="si">{</span><span class="n">l3</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l1: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l2: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l3: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l3</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>l1: [1, 2, 3, 4, 5, 6]  
+l3: None  
+id of l1: 2619302087680  
+id of l2: 2619314922560  
+id of l3: 140719011362992  
+</pre></table></code></div></div>
+<p><code class="language-plaintext highlighter-rouge">l3</code>를 보면 <code class="language-plaintext highlighter-rouge">None</code>인 것을 볼 수 있는데 <code class="language-plaintext highlighter-rouge">Inplace-concatenation</code>은 <code class="language-plaintext highlighter-rouge">Return</code>이 없이 자기 자신을 변경 시키는 것이 특징이다.</p>
+<p>다른 Type의 Sequence를 <code class="language-plaintext highlighter-rouge">Concatenation</code>하면 <code class="language-plaintext highlighter-rouge">TypeError</code>를 띄운다</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-25-67a9e2ed8695&gt; in &lt;module&gt;()
+----&gt; 1 (1, 2, 3) + [4, 5, 6]
+
+TypeError: can only concatenate tuple (not "list") to tuple
+</pre></table></code></div></div>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="s">'abc'</span> <span class="o">+</span> <span class="p">[</span><span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">]</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&lt;ipython-input-26-8cbdd441adc1&gt; in &lt;module&gt;()
+----&gt; 1 'abc' + ['d', 'e', 'f']
+
+TypeError: must be str, not list
+</pre></table></code></div></div>
+<p>아래와 같이 해결 가능하다.</p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>(1, 2, 3, 4, 5, 6)
+</pre></table></code></div></div>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">tuple</span><span class="p">(</span><span class="s">'abc'</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>('a', 'b', 'c', 'd', 'e', 'f')
+</pre></table></code></div></div>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="s">''</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="s">'abc'</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">))</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>'abcdef'
+</pre></table></code></div></div>
+<p>참고로 <code class="language-plaintext highlighter-rouge">tuple</code>은 immutable sequence type이므로 <code class="language-plaintext highlighter-rouge">concatenation</code>을 할 경우 <em>New object를 생성</em>한다.</p>
+<h3 id="repetition"><span class="mr-2"><strong>Repetition</strong></span><a href="#repetition" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="c1"># Repetition
+</span><span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="n">l1</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l1: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"id of l2: </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>[1, 2, 3, 1, 2, 3, 1, 2, 3]  
+id of l1: 2619302087424  
+id of l2: 2619314821952
+</pre></table></code></div></div>
+<p><code class="language-plaintext highlighter-rouge">Repetition</code>도 마찬가지로 <code class="language-plaintext highlighter-rouge">l2</code> 의 메모리 주소가 <code class="language-plaintext highlighter-rouge">l1</code>과 다른 <em>New object</em>를 Return한다.</p>
+<hr />
+<h2 id="slicing"><span class="mr-2"><strong>Slicing</strong></span><a href="#slicing" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><code class="language-plaintext highlighter-rouge">sequence[start, stop, step]</code> 으로 사용할 수 있다.<br />
+또한 start가 비어있으면 0을, stop이 비어있으면 맨 마지막을 가르킨다.<br />
+그리고 stop이 range를 벗어나도 문제가 없다.</p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="n">l</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span> <span class="n">l</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">],</span> <span class="n">l</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">9</span><span class="p">],</span> <span class="n">l</span><span class="p">[</span><span class="mi">6</span><span class="p">:],</span> <span class="n">l</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">100</span><span class="p">]</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>([1, 2, 3], [1, 2, 3], [4, 5, 6], [7, 8, 9], [7, 8, 9], [7, 8, 9])
+</pre></table></code></div></div>
+<p><code class="language-plaintext highlighter-rouge">sequence[start:stop:step]</code>는 <code class="language-plaintext highlighter-rouge">sequence[slice(start, stop, step)]</code>과 동일하다.</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">sl</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="n">sl</span><span class="p">])</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>[1, 2, 3]
+[1, 2, 3]
+</pre></table></code></div></div>
+<p><code class="language-plaintext highlighter-rouge">-</code>를 써서 slice도 가능한데 맨 마지막 위치가 <code class="language-plaintext highlighter-rouge">-1</code>로 시작해서 좌측으로 갈수록 <code class="language-plaintext highlighter-rouge">-1</code>씩 더해주면 된다.<br />
+그리고 step을 <code class="language-plaintext highlighter-rouge">-1</code>을 주면 반대로 slicing을 한다.</p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">l</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>([7, 8], [9, 8, 7, 6, 5, 4, 3, 2, 1])
+</pre></table></code></div></div>
+<hr />
+<h2 id="finding-in-sequences"><span class="mr-2"><strong>Finding in Sequences</strong></span><a href="#finding-in-sequences" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Sequence 안에 element의 index를 찾는 법.<br />
+<code class="language-plaintext highlighter-rouge">index(찾을것)</code></p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"hello python"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>0
+</pre></table></code></div></div>
+<p>Optional로 찾기 시작할 위치를 start로 지정가능 하며,
+optional로 end를 지정할 수도 있다.<br />
+<code class="language-plaintext highlighter-rouge">index(찾을것, start, end)</code></p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"hello python"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">),</span> <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>(0, 9, 9)
+</pre></table></code></div></div>
+<p>만일 찾고자하는 element를 찾지 못하면 <code class="language-plaintext highlighter-rouge">ValueError</code>를 띄운다.</p>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"hello python"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-terminal highlighter-rouge"><div class="code-header">
+        <span data-label-text="Terminal"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="go">---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+</span><span class="gp">&lt;ipython-input-25-669dc875185c&gt;</span><span class="w"> </span><span class="k">in</span> &lt;module&gt;
+<span class="gp">----&gt;</span><span class="w"> </span>1 s.index<span class="o">(</span><span class="s1">'h'</span>, 10<span class="o">)</span>
+<span class="go">
+ValueError: substring not found
+</span></pre></table></code></div></div>
+<p><code class="language-plaintext highlighter-rouge">ValueError</code>로 인해 프로그램이 종료되는 것을 방지하기 위해서,<br />
+아래와 같이 예외처리를 해 줄 수 있다.</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="n">s</span> <span class="o">=</span> <span class="s">"hello python"</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">'h'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'finding element is not exist'</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>finding element is not exist
+</pre></table></code></div></div>
+<hr />
+<h2 id="caveats-주의사항"><span class="mr-2"><strong>Caveats</strong> (주의사항)</span><a href="#caveats-주의사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><code class="language-plaintext highlighter-rouge">list object</code>를 <code class="language-plaintext highlighter-rouge">Concatenation</code>을 하게 되면 Return되는 object는 New object이다.<br />
+하지만, <code class="language-plaintext highlighter-rouge">copy된 list</code> 내부의 element는 <code class="language-plaintext highlighter-rouge">original element를 그대로 referencing</code>하게 되어 같은 <code class="language-plaintext highlighter-rouge">id</code>를 가지게 된다.<br />
+element자체가 <code class="language-plaintext highlighter-rouge">immutable object</code>라면 element를 수정할 때 <code class="language-plaintext highlighter-rouge">immutable</code>이기 때문에 수정하려는 값으로 reference를 바꾸게 되어 문제가 없지만,<br />
+<code class="language-plaintext highlighter-rouge">mutable object</code>면 orinal object의 element를 수정할 때 copy본의 element도 같이 수정되는 의도치 않은 문제가 생길수 있게 된다.</p>
+<ul>
+ <li>참고사항
+   <blockquote>
+     <p><em>Mutable object</em>: <code class="language-plaintext highlighter-rouge">list</code>, <code class="language-plaintext highlighter-rouge">set</code>, <code class="language-plaintext highlighter-rouge">dict</code><br />
+<em>Immutable object</em>: <code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">complex</code>, <code class="language-plaintext highlighter-rouge">bool</code>, <code class="language-plaintext highlighter-rouge">string</code>, <code class="language-plaintext highlighter-rouge">tuple</code>, <code class="language-plaintext highlighter-rouge">frozen set</code>, <code class="language-plaintext highlighter-rouge">range</code></p>
+   </blockquote>
+</ul>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+<span class="n">l</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">id</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></table></code></div></div>
+<div class="language-text no-code-header highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>[[1, 2], [1, 2]]  
+2619315234368 2619315234368  
+True
+</pre></table></code></div></div>
+<div class="language-python nolineno highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></table></code></div></div>
+<div class="language-text no-code-header highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>[[50, 2], [50, 2]]  
+</pre></table></code></div></div>
+<p>original list의 element를 수정하였으나 copy본인 l의 element가 다 바뀌어버리는 의도치 않은 결과가 나오게 된다.<br />
+이와 관련해서 다음 <code class="language-plaintext highlighter-rouge">copy</code>에 대해서 자세히 다뤄보도록 한다.</p>
+<hr />
+<h2 id="next-shallow-copy-deep-copy"><span class="mr-2">NEXT: <strong>Shallow Copy, Deep Copy</strong></span><a href="#next-shallow-copy-deep-copy" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+</div>
+<div class="post-tail-wrapper text-muted">
+ <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
+      <a href='/categories/python/'>Python</a>,
+      <a href='/categories/3-iterables-and-generator/'>3.Iterables and Generator</a>
+ </div>
+ <div class="post-tags">
+    <i class="fa fa-tags fa-fw mr-1"></i>
+      <a href="/tags/python/"
+          class="post-tag no-text-decoration" >python</a>
+      <a href="/tags/sequence/"
+          class="post-tag no-text-decoration" >sequence</a>
+      <a href="/tags/mutable/"
+          class="post-tag no-text-decoration" >mutable</a>
+      <a href="/tags/immutable/"
+          class="post-tag no-text-decoration" >immutable</a>
+ </div>
+ <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+   <div class="license-wrapper">
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+   </div>
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
+        <a href="https://twitter.com/intent/tweet?text=Python+Sequences+-+Pioneergu&url=https%3A%2F%2Fpioneergu.github.io%2Fposts%2FPython-Sequences%2F" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Python+Sequences+-+Pioneergu&u=https%3A%2F%2Fpioneergu.github.io%2Fposts%2FPython-Sequences%2F" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+        <a href="https://t.me/share/url?url=https%3A%2F%2Fpioneergu.github.io%2Fposts%2FPython-Sequences%2F&text=Python+Sequences+-+Pioneergu" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        data-title-succeed="Link copied successfully!">
+    </i>
+  </span>
+</div>
+ </div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6162869599022724"
+     data-ad-slot="9601563471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+   </div>
+ </div>
+ <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
+   <div class="access">
+<div class="panel-category-heading">
+  <a href="/" class="nav-link">
+    <span>CATEGORIES</span>
+  </a>
+</div>
+ <div id="access-category" class="post">
+   <div id="h_0"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/git/" class="ml-1 mr-2">Git</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <a href="#l_0" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_0-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_0" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/github-blog/" class="ml-1 mr-2">Github-Blog</a>
+          <span class="text-muted small font-weight-light">
+            5
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_1"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/python/" class="ml-1 mr-2">Python</a>
+        <span class="text-muted small font-weight-light">
+          6
+            posts
+        </span>
+      </span>
+      <a href="#l_1" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_1-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_1" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/1-generals/" class="ml-1 mr-2">1.Generals</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+       <li>
+          <a href="/categories/2-functions/" class="ml-1 mr-2">2.Functions</a>
+          <span class="text-muted small font-weight-light">
+            1
+              post
+          </span>
+       <li>
+          <a href="/categories/3-iterables-and-generator/" class="ml-1 mr-2">3.Iterables and Generator</a>
+          <span class="text-muted small font-weight-light">
+            1
+              post
+          </span>
+       <li>
+          <a href="/categories/pyscript/" class="ml-1 mr-2">PyScript</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_2"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/system-trading/" class="ml-1 mr-2">System Trading</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <a href="#l_2" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_2-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_2" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/0-indicators/" class="ml-1 mr-2">0.Indicators</a>
+          <span class="text-muted small font-weight-light">
+            3
+              posts
+          </span>
+       <li>
+          <a href="/categories/1-data-crawling/" class="ml-1 mr-2">1.Data Crawling</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_3"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/categories/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8/" class="ml-1 mr-2">마인크래프트</a>
+        <span class="text-muted small font-weight-light">
+          3
+            posts
+        </span>
+      </span>
+      <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+        <i class="fas fa-fw fa-angle-right"></i>
+      </span>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_4"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/categories/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B4/" class="ml-1 mr-2">생활정보</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+        <i class="fas fa-fw fa-angle-right"></i>
+      </span>
+   </div>
+ </div>
+ <div id="access-lastmod" class="post">
+ </div>
+ <div id="access-lastmod" class="post">
+   <div class="panel-heading">Recently Updated</div>
+   <ul class="post-content pl-0 pb-1 ml-1 mt-2">
+     <li><a href="/posts/Python-star_args/">Python star args(*args)</a>
+     <li><a href="/posts/minecraft-save/">마인크래프트 맵(월드) 저장위치 (자바 에디션/윈도우 에디션)</a>
+     <li><a href="/posts/macd-code/">MACD 지표의 python 코드 작성 (Pandas library and Dictionary)</a>
+     <li><a href="/posts/jekyll-github-blog-image-hosting/">깃허브(GitHub, jekyll) 블로그 이미지 호스팅 하기 (원드라이브, 구글드라이브)</a>
+     <li><a href="/posts/github-blog-jsdelivr-cdn/">GitHub 블로그 무료 CDN 사용하기 - jsdelivr</a>
+   </ul>
+ </div>
+ <div id="access-tags">
+   <div class="panel-heading">Trending Tags</div>
+   <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+      <a class="post-tag" href="/tags/python/">python</a>
+      <a class="post-tag" href="/tags/blogging/">blogging</a>
+      <a class="post-tag" href="/tags/github/">github</a>
+      <a class="post-tag" href="/tags/jekyll/">jekyll</a>
+      <a class="post-tag" href="/tags/indicators/">indicators</a>
+      <a class="post-tag" href="/tags/macd/">macd</a>
+      <a class="post-tag" href="/tags/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%9E%90%EB%B0%94/">마인크래프트 자바</a>
+      <a class="post-tag" href="/tags/%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9/">포트포워딩</a>
+      <a class="post-tag" href="/tags/bitcoin/">bitcoin</a>
+      <a class="post-tag" href="/tags/btc/">btc</a>
+      <a class="post-tag" href="/tags/crypto-currency/">crypto currency</a>
+      <a class="post-tag" href="/tags/dictionary/">dictionary</a>
+      <a class="post-tag" href="/tags/eth/">eth</a>
+   </div>
+ </div>
+   </div>
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+ <div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+ <nav id="toc" data-toggle="toc"></nav>
+ <nav id="toc-ads">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+        crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6162869599022724"
+        data-ad-slot="9192168232"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+ </nav>
+</div>
+ </div>
+</div>
+<div class="row">
+ <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4">
+ <div id="related-posts" class="mb-2 mb-sm-4">
+   <h3 class="pt-2 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+   <div class="card-deck mb-4">
+     <div class="card">
+        <a href="/posts/pyscript/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1663809360"
+    data-df="ll"
+    >
+  Sep 22, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>PyScript 설치 및 DOM객체 접근</h3>
+           <div class="text-muted small">
+             <p>
+PyScript
+Anaconda에서 HTML 웹페이지에서 python을 사용할 수 있는 PyScript를 출시 하였다.
+우선 pyscript를 이용해 &quot;Hello World&quot;를 찍어보겠다.
+1
+2
+3
+&amp;lt;py-script&amp;gt;
+print(&quot;Hello World&quot;)
+&amp;lt;/py-script&amp;gt;
+1
+Loading...
+cod...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+     <div class="card">
+        <a href="/posts/sys.stdout-flush/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1644818160"
+    data-df="ll"
+    >
+  Feb 14, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Python sys.stdout.flush()</h3>
+           <div class="text-muted small">
+             <p>
+print function
+아래의 help(print)를 보면 print() 함수는 default로 줄바꿈을 해준다.
+1
+help(print)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Help on built-in function print in module builtins:  
+print(...)  
+    print(value, ...,...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+     <div class="card">
+        <a href="/posts/sys.stdout-redirection/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1649664300"
+    data-df="ll"
+    >
+  Apr 11, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Python - print()로 파일에 출력하기 (sys.stdout - redirection)</h3>
+           <div class="text-muted small">
+             <p>
+print() 함수로 파일에 기록(출력)하기
+print() 함수를 사용하면 기본적으로 콘솔창에 출력이 된다.
+그런데 이걸 파일에 기록하고 싶을 때가 있는데 이 때에는 sys.stdout을 redirection 해 주면 된다.
+아래의 예제코드를 보자.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+import sys
+original_stdout = sys...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+   </div>
+ </div>
+<div class="post-navigation d-flex justify-content-between">
+  <a href="/posts/jekyll-theme-make/" class="btn btn-outline-primary"
+    prompt="Older">
+   <p>Jekyll 테마를 이용해 GitHub 블로그 만들기</p>
+  </a>
+  <a href="/posts/sys.stdout-flush/" class="btn btn-outline-primary"
+    prompt="Newer">
+   <p>Python sys.stdout.flush()</p>
+  </a>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="pioneergu/pioneergu.github.io"
+        issue-term="pathname"
+        crossorigin="anonymous"
+        async>
+</script>
+<script type="text/javascript">
+  $(function() {
+    const origin = "https://utteranc.es";
+    const iframe = "iframe.utterances-frame";
+    const lightTheme = "github-light";
+    const darkTheme = "github-dark";
+    let initTheme = lightTheme;
+    if ($("html[data-mode=dark]").length > 0
+        || ($("html[data-mode]").length == 0
+            && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      initTheme = darkTheme;
+    }
+    addEventListener("message", (event) => {
+      let theme;
+      /* credit to <https://github.com/utterance/utterances/issues/170#issuecomment-594036347> */
+      if (event.origin === origin) {
+        /* page initial */
+        theme = initTheme;
+      } else if (event.source === window && event.data &&
+            event.data.direction === ModeToggle.ID) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme);
+      } else {
+        return;
+      }
+      const message = {
+        type: "set-theme",
+        theme: theme
+      };
+      const utterances = document.querySelector(iframe).contentWindow;
+      utterances.postMessage(message, origin);
+    });
+  });
+</script>
+ </div>
+</div>
+<footer class="row pl-3 pr-3">
+ <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+   <div class="footer-left">
+     <p class="mb-0">
+        © 2023
+        <a href="https://twitter.com/pioneergu">pioneergu</a>.
+        <span data-toggle="tooltip" data-placement="top"
+          title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span>
+     </p>
+   </div>
+   <div class="footer-right">
+     <p class="mb-0">
+        Powered by 
+          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+         with 
+          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+         theme.
+     </p>
+   </div>
+ </div>
+</footer>
+     </div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+ <div class="col-12 col-sm-11 post-content">
+   <div id="search-hints">
+ <div id="access-tags">
+   <div class="panel-heading">Trending Tags</div>
+   <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+      <a class="post-tag" href="/tags/python/">python</a>
+      <a class="post-tag" href="/tags/blogging/">blogging</a>
+      <a class="post-tag" href="/tags/github/">github</a>
+      <a class="post-tag" href="/tags/jekyll/">jekyll</a>
+      <a class="post-tag" href="/tags/indicators/">indicators</a>
+      <a class="post-tag" href="/tags/macd/">macd</a>
+      <a class="post-tag" href="/tags/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%9E%90%EB%B0%94/">마인크래프트 자바</a>
+      <a class="post-tag" href="/tags/%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9/">포트포워딩</a>
+      <a class="post-tag" href="/tags/bitcoin/">bitcoin</a>
+      <a class="post-tag" href="/tags/btc/">btc</a>
+      <a class="post-tag" href="/tags/crypto-currency/">crypto currency</a>
+      <a class="post-tag" href="/tags/dictionary/">dictionary</a>
+      <a class="post-tag" href="/tags/eth/">eth</a>
+   </div>
+ </div>
+   </div>
+   <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+ </div>
+</div>
+   </div>
+   <div id="mask"></div>
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+     <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+        data-animation="true" data-autohide="false">
+       <div class="toast-header">
+          <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+       </div>
+       <div class="toast-body text-center pt-0">
+         <p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+          <button type="button" class="btn btn-primary" aria-label="Update">
+            Update
+          </button>
+       </div>
+     </div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/assets/js/data/search.json',
+  searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">  <a href="{url}">{title}</a> <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">    {categories}    {tags} </div><p>{snippet}</p></div>',
+  noResultsText: '<p class="mt-5">Oops! No results found.</p>',
+  templateMiddleware: function(prop, value, template) {
+    if (prop === 'categories') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+      }
+    }
+    if (prop === 'tags') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+      }
+    }
+  }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/app.js"></script>
+  

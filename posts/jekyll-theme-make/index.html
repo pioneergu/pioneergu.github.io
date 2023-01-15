@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en"
+    data-mode="dark"
+>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX0RHSMFG1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VX0RHSMFG1');
+  </script>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="naver-site-verification" content="8b08cc41ee055bd3027f752d1c15fd04c2c13697" />
+ <meta name="google-site-verification" content="TUMz9mXFwO4hftArSF_6GkO2bwamGZ8AOQzfaROxNQQ" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+     crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="https://pioneergu.github.io/rss.xml" title="Pioneergu Feed">
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Jekyll 테마를 이용해 GitHub 블로그 만들기" />
+<meta name="author" content="pioneergu" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Github Blog (with jekyll theme) 사용 이유 뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면 많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다. 비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거 Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다." />
+<meta property="og:description" content="Github Blog (with jekyll theme) 사용 이유 뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면 많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다. 비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거 Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다." />
+<link rel="canonical" href="https://pioneergu.github.io/posts/jekyll-theme-make/" />
+<meta property="og:url" content="https://pioneergu.github.io/posts/jekyll-theme-make/" />
+<meta property="og:site_name" content="Pioneergu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-25T23:24:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Jekyll 테마를 이용해 GitHub 블로그 만들기" />
+<meta name="twitter:site" content="@pioneergu" />
+<meta name="twitter:creator" content="@pioneergu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"pioneergu"},"dateModified":"2022-09-09T01:03:32+09:00","datePublished":"2022-01-25T23:24:00+09:00","description":"Github Blog (with jekyll theme) 사용 이유 뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면 많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다. 비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거 Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다.","headline":"Jekyll 테마를 이용해 GitHub 블로그 만들기","mainEntityOfPage":{"@type":"WebPage","@id":"https://pioneergu.github.io/posts/jekyll-theme-make/"},"url":"https://pioneergu.github.io/posts/jekyll-theme-make/"}</script>
+ <title>Jekyll 테마를 이용해 GitHub 블로그 만들기 | Pioneergu
+ </title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Pioneergu">
+<meta name="application-name" content="Pioneergu">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+ <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+ <div class="profile-wrapper text-center">
+   <div id="avatar">
+      <a href="/" class="mx-auto">
+          <img src="https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/android-chrome-192x192.png" alt="avatar" onerror="this.style.display='none'">
+      </a>
+   </div>
+   <div class="site-title mt-3">
+      <a href="/">Pioneergu</a>
+   </div>
+   <div class="site-subtitle font-italic">Try everything, Try everyday!</div>
+ </div>
+ <ul class="w-100">
+   <li class="nav-item">
+      <a href="/" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>HOME</span>
+      </a>
+   <li class="nav-item">
+      <a href="/categories/" class="nav-link">
+        <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>CATEGORIES</span>
+      </a>
+   <li class="nav-item">
+      <a href="/tags/" class="nav-link">
+        <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>TAGS</span>
+      </a>
+   <li class="nav-item">
+      <a href="/archives/" class="nav-link">
+        <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>ARCHIVES</span>
+      </a>
+   <li class="nav-item">
+      <a href="/about/" class="nav-link">
+        <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>ABOUT</span>
+      </a>
+ </ul>
+ <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+      <a href="https://github.com/pioneergu" aria-label="github"
+        target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://instagram.com/hangmoonam" aria-label="instagram"
+        target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/pioneergu" aria-label="twitter"
+        target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="
+          javascript:location.href = 'mailto:' + ['hangmoonam','gmail.com'].join('@')" aria-label="email"
+        >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="/feed.xml" aria-label="rss"
+        >
+        <i class="fas fa-rss"></i>
+      </a>
+ </div>
+</div>
+<div id="topbar-wrapper">
+ <div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4">
+    <span id="breadcrumb">
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
+            <span>Jekyll 테마를 이용해 GitHub 블로그 만들기</span>
+    </span>
+    <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+   <div id="topbar-title">
+      Post
+   </div>
+    <i id="search-trigger" class="fas fa-search fa-fw"></i>
+    <span id="search-wrapper" class="align-items-center">
+      <i class="fas fa-search fa-fw"></i>
+      <input class="form-control" id="search-input" type="search"
+        aria-label="search" autocomplete="off" placeholder="Search...">
+    </span>
+    <span id="search-cancel" >Cancel</span>
+ </div>
+</div>
+   <div id="main-wrapper" class="d-flex justify-content-center">
+     <div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+ <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4 pb-5">
+   <div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<div class="post-meta text-muted post-head-img-bg" style="background-image:url('https://cdn.jsdelivr.net/gh/pioneergu/pioneergu.github.io@master/assets/img/favicons/moon_circle.png')">
+ <h1 data-toc-skip>Jekyll 테마를 이용해 GitHub 블로그 만들기</h1>
+    <span>
+      Posted
+<em class=""
+    data-ts="1643120640"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  Jan 25, 2022
+</em>
+    </span>
+    <span>
+      Updated
+<em class=""
+    data-ts="1662653012"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  Sep  9, 2022
+</em>
+    </span>
+ <div class="d-flex justify-content-between">
+    <span>
+      By
+      <em>
+        pioneergu
+      </em>
+    </span>
+   <div>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom"
+  title="658 words">
+  <em>3 min</em> read</span>
+   </div>
+ </div>
+</div>
+<div class="post-content">
+ <hr />
+<h2 id="github-blog-with-jekyll-theme-사용-이유"><span class="mr-2"><strong>Github Blog (with jekyll theme) 사용 이유</strong></span><a href="#github-blog-with-jekyll-theme-사용-이유" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>뭔가 멋들어진 이유가 있기보단.. 프로그래머분들의 Blog를 보다보면<br />
+많은 분들이 GitHub blog를 사용하고 계셔서 관심이 생기게 되었다.</p>
+<p>비록 전공자는 아니지만 기왕 Programming을 배우기 시작한거<br />
+Git도 배워볼겸 GitHub blog를 만들어보기로 마음을 먹게 되었다.</p>
+<hr />
+<h2 id="jekyll-theme-chirpy-테마-선정"><span class="mr-2"><strong>Jekyll-theme-chirpy 테마 선정</strong></span><a href="#jekyll-theme-chirpy-테마-선정" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Google에 jekyll theme이라고 검색을 하면 jekyll 테마를 모아둔 여러 사이트가 검색되는데<br />
+그 중에서 개인적으로는 아래의 사이트가 Jekyll theme를 카테고리별로 볼 수 있어 마음에 든다.</p>
+<blockquote>
+ <p>Jekyll theme 모음: <a href="https://jekyll-themes.com/" target="_blank">https://jekyll-themes.com/</a></p>
+</blockquote>
+<p>처음에 고른 jekyll theme는 <a href="https://lanyon.getpoole.com/" target="_blank">lanyon theme</a>였다.<br />
+아주 Simple해서 마음에 들었었는데…<br />
+초보자인 내가 category나 tag기능 등을 직접 만들어 Customizing하기엔 시간낭비가 크다는 느낌을 받았다.<br />
+(이것 말고도 배울게 많은데…)<br />
+뭐 그래도 lanyon theme에 category를 직접 만들어 보면서 jekyll site에 대한 이해도가 많이 올라가서
+큰 도움이 되었다.</p>
+<p>결국 있을 웬만한 기능은 다 있고 깔끔한 Dark(and Light) theme인 <a href="https://chirpy.cotes.page/" target="_blank">Chirpy theme</a>를 선택하게 되었다.<br />
+(현재 이 Blog theme이다.)</p>
+<p>이 테마를 적용하고 나서 좀 더 검색을 해보니<br />
+지금 이 theme보다 나름 더 예쁘다고 생각되는 design의 theme(<a href="https://devlopr.netlify.app/#/" target="_blank">devlopr theme</a>)를 발견하였다.<br />
+순간 theme를 바꿀까 고민했지만… 차차 이 Blog를 나만의 Design으로 꾸며보기로 결정했다!</p>
+<hr />
+<h3 id="내-마음에-드는-테마들"><span class="mr-2"><strong>내 마음에 드는 테마들</strong></span><a href="#내-마음에-드는-테마들" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+ <li><code class="language-plaintext highlighter-rouge">Simple and Clean Theme</code>
+   <blockquote>
+     <ol>
+       <li>Lanyon Theme: <a href="https://lanyon.getpoole.com/" target="_blank">https://lanyon.getpoole.com/</a>
+         <ul>
+           <li>Github: <a href="https://github.com/poole/lanyon" target="_blank">https://github.com/poole/lanyon</a>
+         </ul>
+       <li>Clean Blog Theme: <a href="http://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/" target="_blank">http://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/</a>
+         <ul>
+           <li>Github: <a href="https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll" target="_blank">https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll</a>
+         </ul>
+     </ol>
+   </blockquote>
+ <li><code class="language-plaintext highlighter-rouge">Dark and Funtional Theme</code>
+   <blockquote>
+     <ol>
+       <li>Chirpy Theme: <a href="https://chirpy.cotes.page/" target="_blank">https://chirpy.cotes.page/</a>
+         <ul>
+           <li>Github: <a href="https://github.com/cotes2020" target="_blank">https://github.com/cotes2020</a>
+         </ul>
+       <li>Devlopr Theme: <a href="https://devlopr.netlify.app/#/" target="_blank">https://devlopr.netlify.app/#/</a>
+         <ul>
+           <li>Github: <a href="https://github.com/sujaykundu777/devlopr-jekyll" target="_blank">https://github.com/sujaykundu777/devlopr-jekyll</a>
+         </ul>
+     </ol>
+   </blockquote>
+</ul>
+<hr />
+<h2 id="jekyll-theme-chirpy-테마-설치"><span class="mr-2"><strong>Jekyll-theme-chirpy 테마 설치</strong></span><a href="#jekyll-theme-chirpy-테마-설치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="chirpy-theme"><span class="mr-2"><strong>Chirpy Theme</strong></span><a href="#chirpy-theme" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>처음에 Jekyll 테마 설치를 블로그들을 보면서 설치를 했었다.<br />
+그런데 내 테마랑 맞지 않는 설치법을 보고 설치를 하다보니 GitHub에 Deploy오류가 난다던지 여러 오류로 오랜시간을 낭비하고 스트레스만 쌓였었다.<br />
+알고보니 내가 선정한 <em>테마에 맞는 설치법</em>을 이미 테마 개발자가 잘 올려놨던 것이다…😱<br />
+그간의 노력들이 허무해 진 순간이었다…OTL</p>
+<p>Chirpy Theme의 설치법은 아래의 <code class="language-plaintext highlighter-rouge">Chirpy theme Demo Site</code>에 잘 나와 있다.</p>
+<blockquote>
+ <p><a href="https://chirpy.cotes.page/posts/getting-started/" target="_blank">https://chirpy.cotes.page/posts/getting-started/</a></p>
+</blockquote>
+<p>어떤 테마던 테마개발자 GitHub에 <code class="language-plaintext highlighter-rouge">README.MD</code> 나 <code class="language-plaintext highlighter-rouge">Demo Site</code>를 보면 설치법이 아주 잘 나와 있을 것이다.</p>
+<p>끝~!👍</p>
+</div>
+<div class="post-tail-wrapper text-muted">
+ <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
+      <a href='/categories/git/'>Git</a>,
+      <a href='/categories/github-blog/'>Github-Blog</a>
+ </div>
+ <div class="post-tags">
+    <i class="fa fa-tags fa-fw mr-1"></i>
+      <a href="/tags/blogging/"
+          class="post-tag no-text-decoration" >blogging</a>
+      <a href="/tags/jekyll/"
+          class="post-tag no-text-decoration" >jekyll</a>
+      <a href="/tags/github/"
+          class="post-tag no-text-decoration" >github</a>
+ </div>
+ <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+   <div class="license-wrapper">
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+   </div>
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
+        <a href="https://twitter.com/intent/tweet?text=Jekyll+%ED%85%8C%EB%A7%88%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%B4+GitHub+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EB%A7%8C%EB%93%A4%EA%B8%B0+-+Pioneergu&url=https%3A%2F%2Fpioneergu.github.io%2Fposts%2Fjekyll-theme-make%2F" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Jekyll+%ED%85%8C%EB%A7%88%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%B4+GitHub+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EB%A7%8C%EB%93%A4%EA%B8%B0+-+Pioneergu&u=https%3A%2F%2Fpioneergu.github.io%2Fposts%2Fjekyll-theme-make%2F" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+        <a href="https://t.me/share/url?url=https%3A%2F%2Fpioneergu.github.io%2Fposts%2Fjekyll-theme-make%2F&text=Jekyll+%ED%85%8C%EB%A7%88%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%B4+GitHub+%EB%B8%94%EB%A1%9C%EA%B7%B8+%EB%A7%8C%EB%93%A4%EA%B8%B0+-+Pioneergu" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title="Copy link"
+        data-title-succeed="Link copied successfully!">
+    </i>
+  </span>
+</div>
+ </div>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6162869599022724"
+     data-ad-slot="9601563471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+   </div>
+ </div>
+ <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
+   <div class="access">
+<div class="panel-category-heading">
+  <a href="/" class="nav-link">
+    <span>CATEGORIES</span>
+  </a>
+</div>
+ <div id="access-category" class="post">
+   <div id="h_0"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/git/" class="ml-1 mr-2">Git</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <a href="#l_0" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_0-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_0" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/github-blog/" class="ml-1 mr-2">Github-Blog</a>
+          <span class="text-muted small font-weight-light">
+            5
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_1"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/python/" class="ml-1 mr-2">Python</a>
+        <span class="text-muted small font-weight-light">
+          6
+            posts
+        </span>
+      </span>
+      <a href="#l_1" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_1-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_1" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/1-generals/" class="ml-1 mr-2">1.Generals</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+       <li>
+          <a href="/categories/2-functions/" class="ml-1 mr-2">2.Functions</a>
+          <span class="text-muted small font-weight-light">
+            1
+              post
+          </span>
+       <li>
+          <a href="/categories/3-iterables-and-generator/" class="ml-1 mr-2">3.Iterables and Generator</a>
+          <span class="text-muted small font-weight-light">
+            1
+              post
+          </span>
+       <li>
+          <a href="/categories/pyscript/" class="ml-1 mr-2">PyScript</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_2"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <a href="/categories/system-trading/" class="ml-1 mr-2">System Trading</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <a href="#l_2" data-toggle="collapse"
+        aria-expanded="true" aria-label="h_2-trigger"
+        class="category-trigger hide-border-bottom">
+        <i class="fas fa-fw fa-angle-down"></i>
+      </a>
+   </div>
+   <div id="l_2" class="collapse show" aria-expanded="true">
+     <ul class="list-group panel-sub-category">
+       <li>
+          <a href="/categories/0-indicators/" class="ml-1 mr-2">0.Indicators</a>
+          <span class="text-muted small font-weight-light">
+            3
+              posts
+          </span>
+       <li>
+          <a href="/categories/1-data-crawling/" class="ml-1 mr-2">1.Data Crawling</a>
+          <span class="text-muted small font-weight-light">
+            2
+              posts
+          </span>
+     </ul>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_3"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/categories/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8/" class="ml-1 mr-2">마인크래프트</a>
+        <span class="text-muted small font-weight-light">
+          3
+            posts
+        </span>
+      </span>
+      <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+        <i class="fas fa-fw fa-angle-right"></i>
+      </span>
+   </div>
+ </div>
+ <div id="access-category" class="post">
+   <div id="h_4"
+      class="panel-heading">
+      <span>
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/categories/%EC%83%9D%ED%99%9C%EC%A0%95%EB%B3%B4/" class="ml-1 mr-2">생활정보</a>
+        <span class="text-muted small font-weight-light">
+          5
+            posts
+        </span>
+      </span>
+      <span data-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+        <i class="fas fa-fw fa-angle-right"></i>
+      </span>
+   </div>
+ </div>
+ <div id="access-lastmod" class="post">
+ </div>
+ <div id="access-lastmod" class="post">
+   <div class="panel-heading">Recently Updated</div>
+   <ul class="post-content pl-0 pb-1 ml-1 mt-2">
+     <li><a href="/posts/Python-star_args/">Python star args(*args)</a>
+     <li><a href="/posts/minecraft-save/">마인크래프트 맵(월드) 저장위치 (자바 에디션/윈도우 에디션)</a>
+     <li><a href="/posts/macd-code/">MACD 지표의 python 코드 작성 (Pandas library and Dictionary)</a>
+     <li><a href="/posts/jekyll-github-blog-image-hosting/">깃허브(GitHub, jekyll) 블로그 이미지 호스팅 하기 (원드라이브, 구글드라이브)</a>
+     <li><a href="/posts/github-blog-jsdelivr-cdn/">GitHub 블로그 무료 CDN 사용하기 - jsdelivr</a>
+   </ul>
+ </div>
+ <div id="access-tags">
+   <div class="panel-heading">Trending Tags</div>
+   <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+      <a class="post-tag" href="/tags/python/">python</a>
+      <a class="post-tag" href="/tags/blogging/">blogging</a>
+      <a class="post-tag" href="/tags/github/">github</a>
+      <a class="post-tag" href="/tags/jekyll/">jekyll</a>
+      <a class="post-tag" href="/tags/indicators/">indicators</a>
+      <a class="post-tag" href="/tags/macd/">macd</a>
+      <a class="post-tag" href="/tags/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%9E%90%EB%B0%94/">마인크래프트 자바</a>
+      <a class="post-tag" href="/tags/%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9/">포트포워딩</a>
+      <a class="post-tag" href="/tags/bitcoin/">bitcoin</a>
+      <a class="post-tag" href="/tags/btc/">btc</a>
+      <a class="post-tag" href="/tags/crypto-currency/">crypto currency</a>
+      <a class="post-tag" href="/tags/dictionary/">dictionary</a>
+      <a class="post-tag" href="/tags/eth/">eth</a>
+   </div>
+ </div>
+   </div>
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+ <div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+ <nav id="toc" data-toggle="toc"></nav>
+ <nav id="toc-ads">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162869599022724"
+        crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6162869599022724"
+        data-ad-slot="9192168232"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+ </nav>
+</div>
+ </div>
+</div>
+<div class="row">
+ <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4">
+ <div id="related-posts" class="mb-2 mb-sm-4">
+   <h3 class="pt-2 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+   <div class="card-deck mb-4">
+     <div class="card">
+        <a href="/posts/jekyll-github-blog-image-hosting/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1661429100"
+    data-df="ll"
+    >
+  Aug 25, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>깃허브(GitHub, jekyll) 블로그 이미지 호스팅 하기 (원드라이브, 구글드라이브)</h3>
+           <div class="text-muted small">
+             <p>
+GitHub 저장소 제한 사항
+예전에 지킬(jekyll)을 이용해 깃허브 페이지로 블로그를 만들었는데,
+깃허브 블로그는 1GB를 넘을 수 없고, 트래픽은 한달에 100GB로 제한되어 있다는 사실을 알게 되었다.
+이런저런 이미지도 올리면서 블로깅을 하고 싶었는데… 1MB짜리 이미지 1,000 장이면 끝나는 것 아닌가?!
+  출처: GitHub...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+     <div class="card">
+        <a href="/posts/github-blog-jsdelivr-cdn/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1662360780"
+    data-df="ll"
+    >
+  Sep  5, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>GitHub 블로그 무료 CDN 사용하기 - jsdelivr</h3>
+           <div class="text-muted small">
+             <p>
+CDN
+아래의 지도는 해저케이블 지도이다.
+  제대로된 지도가 궁금하다면: https://www.submarinecablemap.com/
+바다를 건너 데이터를 전송할 때 저 해저케이블들을 통해서 데이터가 전송 되는 것인데, 
+아무리 데이터 전송속도가 빠르다 한들 물리적으로 먼 곳에서의 용량이 큰 데이터 다운로드는 상대적으로 매우 느릴 수 밖...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+     <div class="card">
+        <a href="/posts/markdown/">
+         <div class="card-body">
+<em class="small"
+    data-ts="1662360780"
+    data-df="ll"
+    >
+  Sep  5, 2022
+</em>
+           <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Markdown 문법 및 Kramdown</h3>
+           <div class="text-muted small">
+             <p>
+Markdown 문법
+Markdown Processors
+마크다운 프로세서는 우리가 *.md file에 적어주는 Markdown Syntax를 html syntax로 변환해 주는 놈이다.
+기본적인 기능은 비슷하나 Markdown Processor에 따라서 지원하는 기능이 조금씩 다른데 이 프로세서가 수십가지나 된다.
+  마크다운 프로세서의 종류:...
+             </p>
+           </div>
+         </div>
+        </a>
+     </div>
+   </div>
+ </div>
+<div class="post-navigation d-flex justify-content-between">
+ <div class="btn btn-outline-primary disabled"
+    prompt="Older">
+   <p>-</p>
+ </div>
+  <a href="/posts/Python-Sequences/" class="btn btn-outline-primary"
+    prompt="Newer">
+   <p>Python Sequences</p>
+  </a>
+</div>
+<script src="https://utteranc.es/client.js"
+        repo="pioneergu/pioneergu.github.io"
+        issue-term="pathname"
+        crossorigin="anonymous"
+        async>
+</script>
+<script type="text/javascript">
+  $(function() {
+    const origin = "https://utteranc.es";
+    const iframe = "iframe.utterances-frame";
+    const lightTheme = "github-light";
+    const darkTheme = "github-dark";
+    let initTheme = lightTheme;
+    if ($("html[data-mode=dark]").length > 0
+        || ($("html[data-mode]").length == 0
+            && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      initTheme = darkTheme;
+    }
+    addEventListener("message", (event) => {
+      let theme;
+      /* credit to <https://github.com/utterance/utterances/issues/170#issuecomment-594036347> */
+      if (event.origin === origin) {
+        /* page initial */
+        theme = initTheme;
+      } else if (event.source === window && event.data &&
+            event.data.direction === ModeToggle.ID) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme);
+      } else {
+        return;
+      }
+      const message = {
+        type: "set-theme",
+        theme: theme
+      };
+      const utterances = document.querySelector(iframe).contentWindow;
+      utterances.postMessage(message, origin);
+    });
+  });
+</script>
+ </div>
+</div>
+<footer class="row pl-3 pr-3">
+ <div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+   <div class="footer-left">
+     <p class="mb-0">
+        © 2023
+        <a href="https://twitter.com/pioneergu">pioneergu</a>.
+        <span data-toggle="tooltip" data-placement="top"
+          title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span>
+     </p>
+   </div>
+   <div class="footer-right">
+     <p class="mb-0">
+        Powered by 
+          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+         with 
+          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+         theme.
+     </p>
+   </div>
+ </div>
+</footer>
+     </div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+ <div class="col-12 col-sm-11 post-content">
+   <div id="search-hints">
+ <div id="access-tags">
+   <div class="panel-heading">Trending Tags</div>
+   <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
+      <a class="post-tag" href="/tags/python/">python</a>
+      <a class="post-tag" href="/tags/blogging/">blogging</a>
+      <a class="post-tag" href="/tags/github/">github</a>
+      <a class="post-tag" href="/tags/jekyll/">jekyll</a>
+      <a class="post-tag" href="/tags/indicators/">indicators</a>
+      <a class="post-tag" href="/tags/macd/">macd</a>
+      <a class="post-tag" href="/tags/%EB%A7%88%EC%9D%B8%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%9E%90%EB%B0%94/">마인크래프트 자바</a>
+      <a class="post-tag" href="/tags/%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9/">포트포워딩</a>
+      <a class="post-tag" href="/tags/bitcoin/">bitcoin</a>
+      <a class="post-tag" href="/tags/btc/">btc</a>
+      <a class="post-tag" href="/tags/crypto-currency/">crypto currency</a>
+      <a class="post-tag" href="/tags/dictionary/">dictionary</a>
+      <a class="post-tag" href="/tags/eth/">eth</a>
+   </div>
+ </div>
+   </div>
+   <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+ </div>
+</div>
+   </div>
+   <div id="mask"></div>
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+     <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+        data-animation="true" data-autohide="false">
+       <div class="toast-header">
+          <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+       </div>
+       <div class="toast-body text-center pt-0">
+         <p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+          <button type="button" class="btn btn-primary" aria-label="Update">
+            Update
+          </button>
+       </div>
+     </div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/assets/js/data/search.json',
+  searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">  <a href="{url}">{title}</a> <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">    {categories}    {tags} </div><p>{snippet}</p></div>',
+  noResultsText: '<p class="mt-5">Oops! No results found.</p>',
+  templateMiddleware: function(prop, value, template) {
+    if (prop === 'categories') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+      }
+    }
+    if (prop === 'tags') {
+      if (value === '') {
+        return `${value}`;
+      } else {
+        return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+      }
+    }
+  }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/app.js"></script>
+  
